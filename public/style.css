@@ -750,6 +750,14 @@ video {
   left: calc(50% - 99px);
 }
 
+.left-\[calc\(50\%-200px\)\] {
+  left: calc(50% - 200px);
+}
+
+.left-\[calc\(50\%-402px\)\] {
+  left: calc(50% - 402px);
+}
+
 .z-\[1\] {
   z-index: 1;
 }
