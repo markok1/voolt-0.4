@@ -7,10 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- swiper slider start  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- swiper slider end  -->
   </head>
   <body>
     <!-- ############### navbar ############### -->
-    <nav class="fixed left-0 top-0 right-0 bg-[#fff]">
+    <nav class="fixed left-0 top-0 right-0 bg-[#fff] z-10">
       <div class="wrapper max-w-[1440px] m-auto px-[80px] py-[20px] flex flex-col max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px]">
         <div class="flex justify-between items-center">
           <div class="">
@@ -346,44 +350,44 @@
     <br /><br />
 
     <!-- ############### boxes ############### -->
-    <h2 class="text-[#09090B] text-[40px] font-extrabold leading-[120%]">boxes (moram zavrsiti responsive)</h2>
+    <h2 class="text-[#09090B] text-[40px] font-extrabold leading-[120%]">boxes</h2>
 
     <br /><br />
 
     <section class="blog">
       <div class="wrapper max-w-[1440px] m-auto lg:p-[80px] md:py-[80px] md:px-[40px] xsm:py-[40px] xsm:px-[32px] py-[32px] px-[16px] flex flex-col">
         <div class="blog-holder flex flex-wrap gap-[40px]">
-          <div class="blog-box max-w-[calc(33%-40px)] w-full rounded-[24px] border-border border-[1px] bg-light-background overflow-hidden">
-            <img src="imgs/blog1.png" alt="Blog1" />
-            <div class="py-[24px] px-[32px] flex flex-col gap-[24px]">
+          <div class="blog-box xl:max-w-[calc(33%-40px)] lg:max-w-[calc(50%-20px)] max-w-[100%] w-full rounded-[24px] border-border border-[1px] bg-light-background overflow-hidden">
+            <img class="xsm:h-[260px] h-[200px] w-full object-cover" src="imgs/blog1.png" alt="Blog1" />
+            <div class="xsm:py-[24px] xsm:px-[32px] py-[24px] px-[16px] flex flex-col gap-[24px]">
               <div class="flex flex-col gap-[16px]">
                 <p class="bg-blue-foreground rounded-[8px] max-w-fit p-[8px] text-white font-inter-tight text-[12px] font-semibold leading-[100%] uppercase">Blog post</p>
-                <p class="font-inter-tight text-foreground text-[22px] font-semibold leading-[135%]">Master Seasonal Fluctuations...</p>
-                <p class="font-inter-tight text-muted-foreground text-[18px] font-semibold leading-[140%]">Brief description lorem ipsum brief description lorem ipsum</p>
+                <p class="font-inter-tight text-foreground font-semibold xsm:text-[22px] xsm:leading-[135%] text-[18px] leading-[28px]">Master Seasonal Fluctuations...</p>
+                <p class="font-inter-tight text-muted-foreground font-semibold xsm:text-[18px] xsm:leading-[140%] text-[14px] leading-[20px]">Brief description lorem ipsum brief description lorem ipsum</p>
               </div>
-              <a href="#" class="font-inter-tight text-Color-Blue-500---primary text-[18px] font-semibold leading-[140%]">Read More</a>
+              <a href="#" class="font-inter-tight text-Color-Blue-500---primary font-semibold xsm:text-[18px] xsm:leading-[140%] text-[14px] leading-[20px]">Read More</a>
             </div>
           </div>
-          <div class="blog-box max-w-[calc(33%-40px)] w-full rounded-[24px] border-border border-[1px] bg-light-background overflow-hidden">
-            <img src="imgs/blog1.png" alt="Blog1" />
-            <div class="py-[24px] px-[32px] flex flex-col gap-[24px]">
+          <div class="blog-box xl:max-w-[calc(33%-40px)] lg:max-w-[calc(50%-20px)] max-w-[100%] w-full rounded-[24px] border-border border-[1px] bg-light-background overflow-hidden">
+            <img class="xsm:h-[260px] h-[200px] w-full object-cover" src="imgs/blog2.png" alt="Blog1" />
+            <div class="xsm:py-[24px] xsm:px-[32px] py-[24px] px-[16px] flex flex-col gap-[24px]">
               <div class="flex flex-col gap-[16px]">
                 <p class="bg-blue-foreground rounded-[8px] max-w-fit p-[8px] text-white font-inter-tight text-[12px] font-semibold leading-[100%] uppercase">Blog post</p>
-                <p class="font-inter-tight text-foreground text-[22px] font-semibold leading-[135%]">Master Seasonal Fluctuations...</p>
-                <p class="font-inter-tight text-muted-foreground text-[18px] font-semibold leading-[140%]">Brief description lorem ipsum brief description lorem ipsum</p>
+                <p class="font-inter-tight text-foreground font-semibold xsm:text-[22px] xsm:leading-[135%] text-[18px] leading-[28px]">Master Seasonal Fluctuations...</p>
+                <p class="font-inter-tight text-muted-foreground font-semibold xsm:text-[18px] xsm:leading-[140%] text-[14px] leading-[20px]">Brief description lorem ipsum brief description lorem ipsum</p>
               </div>
-              <a href="#" class="font-inter-tight text-Color-Blue-500---primary text-[18px] font-semibold leading-[140%]">Read More</a>
+              <a href="#" class="font-inter-tight text-Color-Blue-500---primary font-semibold xsm:text-[18px] xsm:leading-[140%] text-[14px] leading-[20px]">Read More</a>
             </div>
           </div>
-          <div class="blog-box max-w-[calc(33%-40px)] w-full rounded-[24px] border-border border-[1px] bg-light-background overflow-hidden">
-            <img src="imgs/blog1.png" alt="Blog1" />
-            <div class="py-[24px] px-[32px] flex flex-col gap-[24px]">
+          <div class="blog-box xl:max-w-[calc(33%-40px)] lg:max-w-[calc(50%-20px)] max-w-[100%] w-full rounded-[24px] border-border border-[1px] bg-light-background overflow-hidden">
+            <img class="xsm:h-[260px] h-[200px] w-full object-cover" src="imgs/blog3.png" alt="Blog1" />
+            <div class="xsm:py-[24px] xsm:px-[32px] py-[24px] px-[16px] flex flex-col gap-[24px]">
               <div class="flex flex-col gap-[16px]">
                 <p class="bg-blue-foreground rounded-[8px] max-w-fit p-[8px] text-white font-inter-tight text-[12px] font-semibold leading-[100%] uppercase">Blog post</p>
-                <p class="font-inter-tight text-foreground text-[22px] font-semibold leading-[135%]">Master Seasonal Fluctuations...</p>
-                <p class="font-inter-tight text-muted-foreground text-[18px] font-semibold leading-[140%]">Brief description lorem ipsum brief description lorem ipsum</p>
+                <p class="font-inter-tight text-foreground font-semibold xsm:text-[22px] xsm:leading-[135%] text-[18px] leading-[28px]">Master Seasonal Fluctuations...</p>
+                <p class="font-inter-tight text-muted-foreground font-semibold xsm:text-[18px] xsm:leading-[140%] text-[14px] leading-[20px]">Brief description lorem ipsum brief description lorem ipsum</p>
               </div>
-              <a href="#" class="font-inter-tight text-Color-Blue-500---primary text-[18px] font-semibold leading-[140%]">Read More</a>
+              <a href="#" class="font-inter-tight text-Color-Blue-500---primary font-semibold xsm:text-[18px] xsm:leading-[140%] text-[14px] leading-[20px]">Read More</a>
             </div>
           </div>
         </div>
@@ -395,6 +399,227 @@
     <!-- ############### boxes end ############### -->
 
     <br /><br />
+
+    <!-- ############### slider ############### -->
+    <h2 class="text-[#09090B] text-[40px] font-extrabold leading-[120%]">slider</h2>
+
+    <br /><br />
+    <section>
+      <div class="wrapper max-w-[1440px] m-auto lg:p-[80px] md:py-[80px] md:px-[40px] xsm:py-[40px] xsm:px-[32px] py-[32px] px-[16px] flex lg:flex-row flex-col gap-[40px]">
+        <div class="slider-box lg:max-w-[730px] max-w-[100%] w-full">
+          <div class="swiper testimonial-swiper w-full h-full m-auto">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide md:py-[32px] md:px-[80px] xsm:py-[32px] xsm:px-[40px] p-[32px] !flex flex-col justify-center items-center gap-[32px] min-h-[484px] rounded-[12px] border-[1px] custom-bg">
+                <div class="flex flex-col gap-[16px] items-center">
+                  <img src="imgs/Avatar2.png" alt="Avatar" />
+                  <div class="flex xsm:items-end items-center gap-[8px] xsm:flex-row flex-col">
+                    <p class="font-inter-tight text-foreground text-[16px] font-semibold leading-[24px]">Fernando V.</p>
+                    <p class="font-inter-tight text-muted-foreground text-[12px] font-normal leading-[150%]">Nando’s Lawn and Garden Maintenance</p>
+                  </div>
+                </div>
+                <p class="font-inter-tight text-foreground text-center text-[16px] font-semibold leading-[24px]">“My company never got so busy with all the leads I’m receiving. There are 4-5 people contacting me every week, and I’m expanding my business to not let my new clients waiting.”</p>
+              </div>
+              <div class="swiper-slide md:py-[32px] md:px-[80px] xsm:py-[32px] xsm:px-[40px] p-[32px] !flex flex-col justify-center items-center gap-[32px] min-h-[484px] rounded-[12px] border-[1px] custom-bg">
+                <div class="flex flex-col gap-[16px] items-center">
+                  <img src="imgs/Avatar2.png" alt="Avatar" />
+                  <div class="flex xsm:items-end items-center gap-[8px] xsm:flex-row flex-col">
+                    <p class="font-inter-tight text-foreground text-[16px] font-semibold leading-[24px]">Fernando V.</p>
+                    <p class="font-inter-tight text-muted-foreground text-[12px] font-normal leading-[150%]">Nando’s Lawn and Garden Maintenance</p>
+                  </div>
+                </div>
+                <p class="font-inter-tight text-foreground text-center text-[16px] font-semibold leading-[24px]">“My company never got so busy with all the leads I’m receiving. There are 4-5 people contacting me every week, and I’m expanding my business to not let my new clients waiting.”</p>
+              </div>
+              <div class="swiper-slide md:py-[32px] md:px-[80px] xsm:py-[32px] xsm:px-[40px] p-[32px] !flex flex-col justify-center items-center gap-[32px] min-h-[484px] rounded-[12px] border-[1px] custom-bg">
+                <div class="flex flex-col gap-[16px] items-center">
+                  <img src="imgs/Avatar2.png" alt="Avatar" />
+                  <div class="flex xsm:items-end items-center gap-[8px] xsm:flex-row flex-col">
+                    <p class="font-inter-tight text-foreground text-[16px] font-semibold leading-[24px]">Fernando V.</p>
+                    <p class="font-inter-tight text-muted-foreground text-[12px] font-normal leading-[150%]">Nando’s Lawn and Garden Maintenance</p>
+                  </div>
+                </div>
+                <p class="font-inter-tight text-foreground text-center text-[16px] font-semibold leading-[24px]">“My company never got so busy with all the leads I’m receiving. There are 4-5 people contacting me every week, and I’m expanding my business to not let my new clients waiting.”</p>
+              </div>
+            </div>
+            <div class="swiper-button-next custom-next after:hidden flex justify-center items-center bg-muted rounded-[50%] md:!right-[28px] xsm:!right-[16px] xsm:!w-[40px] xsm:h-[40px] !w-[30px] !h-[30px]">
+              <svg class="xsm:max-w-[24px] max-w-[18px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9 17.9961L15 11.9961L9 5.99609" stroke="#71717A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="swiper-button-prev custom-prev after:hidden flex justify-center items-center bg-muted rounded-[50%] md:!left-[28px] xsm:!left-[16px] xsm:!w-[40px] xsm:h-[40px] !w-[30px] !h-[30px]">
+              <svg class="xsm:max-w-[24px] max-w-[18px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M15 17.9961L9 11.9961L15 5.99609" stroke="#71717A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <!-- if pagination is needed -->
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+        <div class="w-full bg-gray-500">test</div>
+      </div>
+    </section>
+
+    <br /><br />
+
+    <!-- ############### slider end ############### -->
+
+    <br /><br />
+
+    <!-- ############### tabs ############### -->
+    <h2 class="text-[#09090B] text-[40px] font-extrabold leading-[120%]">How it works section (tabs + slider)</h2>
+
+    <br /><br />
+
+    <section>
+      <div class="wrapper max-w-[1440px] m-auto md:py-[80px] xsm:py-[40px] py-[32px] flex flex-col">
+        <div class="flex gap-[40px] justify-center lg:p-[80px] md:pl-[40px] xsm:pl-[32px] pl-[16px]">
+          <div class="slider-box lg:max-w-[620px] max-w-[100%] w-full">
+            <div class="swiper how-it-works-swiper w-full h-full m-auto !lg:pb-[0px] !pb-[30px]">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide !flex flex-col gap-[24px]">
+                  <div class="border-border border-[1px] !h-[544px] bg-muted rounded-[12px] overflow-hidden">
+                    <img class="w-full h-full object-cover border-border bg-muted rounded-[12px]" src="imgs/how-it-works.png" alt="How it works" />
+                  </div>
+
+                  <div class="lg:hidden flex flex-col gap-[4px]">
+                    <p class="font-inter-tight text-blue-foreground text-[12px] font-semibold leading-[100%] uppercase">STEP1</p>
+                    <p class="font-inter-tight text-foreground text-[16px] font-semibold leading-[24px]">Build your pro website for free in 60 seconds.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide !flex flex-col gap-[24px]">
+                  <div class="border-border border-[1px] !h-[544px] bg-muted rounded-[12px] overflow-hidden">
+                    <img class="w-full h-full object-cover border-border bg-muted rounded-[12px]" src="imgs/how2.png" alt="How it works" />
+                  </div>
+
+                  <div class="lg:hidden flex flex-col gap-[4px]">
+                    <p class="font-inter-tight text-blue-foreground text-[12px] font-semibold leading-[100%] uppercase">STEP1</p>
+                    <p class="font-inter-tight text-foreground text-[16px] font-semibold leading-[24px]">Build your pro website for free in 60 seconds.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide !flex flex-col gap-[24px]">
+                  <div class="border-border border-[1px] !h-[544px] bg-muted rounded-[12px] overflow-hidden">
+                    <img class="w-full h-full object-cover border-border bg-muted rounded-[12px]" src="imgs/how-it-works.png" alt="How it works" />
+                  </div>
+
+                  <div class="lg:hidden flex flex-col gap-[4px]">
+                    <p class="font-inter-tight text-blue-foreground text-[12px] font-semibold leading-[100%] uppercase">STEP1</p>
+                    <p class="font-inter-tight text-foreground text-[16px] font-semibold leading-[24px]">Build your pro website for free in 60 seconds.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="horizontal-tabs lg:flex hidden flex-col gap-[16px]">
+            <div class="cursor-pointer horizontal-tab active-horizontal-tab p-[16px] max-w-[400px] min-w-[328px] w-full flex items-center gap-[16px] rounded-[12px] opacity-90 bg-white">
+              <div class="tab-number border-border border-[1px] p-[10px] w-[64px] h-[64px] flex justify-center items-center rounded-[16px] shrink-0">
+                <p class="font-inter-tight text-muted-foreground text-[32px] font-bold leading-[125%]">1</p>
+              </div>
+              <div class="tab-text flex flex-col gap-[4px]">
+                <p class="font-inter-tight text-muted-foreground text-[12px] font-semibold leading-[100%] uppercase">Step 1</p>
+                <p class="font-inter-tight text-muted-foreground text-[16px] font-semibold leading-[24px]">Build your pro website for free in 60 seconds.</p>
+              </div>
+            </div>
+            <div class="cursor-pointer horizontal-tab p-[16px] max-w-[400px] min-w-[328px] w-full flex items-center gap-[16px] rounded-[12px] opacity-90 bg-white">
+              <div class="border-border border-[1px] p-[10px] w-[64px] h-[64px] flex justify-center items-center rounded-[16px] shrink-0">
+                <p class="font-inter-tight text-muted-foreground text-[32px] font-bold leading-[125%]">2</p>
+              </div>
+              <div class="flex flex-col gap-[4px]">
+                <p class="font-inter-tight text-muted-foreground text-[12px] font-semibold leading-[100%] uppercase">Step 1</p>
+                <p class="font-inter-tight text-muted-foreground text-[16px] font-semibold leading-[24px]">Build your pro website for free in 60 seconds.</p>
+              </div>
+            </div>
+            <div class="cursor-pointer horizontal-tab p-[16px] max-w-[400px] min-w-[328px] w-full flex items-center gap-[16px] rounded-[12px] opacity-90 bg-white">
+              <div class="border-border border-[1px] p-[10px] w-[64px] h-[64px] flex justify-center items-center rounded-[16px] shrink-0">
+                <p class="font-inter-tight text-muted-foreground text-[32px] font-bold leading-[125%]">2</p>
+              </div>
+              <div class="flex flex-col gap-[4px]">
+                <p class="font-inter-tight text-muted-foreground text-[12px] font-semibold leading-[100%] uppercase">Step 1</p>
+                <p class="font-inter-tight text-muted-foreground text-[16px] font-semibold leading-[24px]">Build your pro website for free in 60 seconds.</p>
+              </div>
+            </div>
+            <div class="cursor-pointer horizontal-tab p-[16px] max-w-[400px] min-w-[328px] w-full flex items-center gap-[16px] rounded-[12px] opacity-90 bg-white">
+              <div class="border-border border-[1px] p-[10px] w-[64px] h-[64px] flex justify-center items-center rounded-[16px] shrink-0">
+                <p class="font-inter-tight text-muted-foreground text-[32px] font-bold leading-[125%]">2</p>
+              </div>
+              <div class="flex flex-col gap-[4px]">
+                <p class="font-inter-tight text-muted-foreground text-[12px] font-semibold leading-[100%] uppercase">Step 1</p>
+                <p class="font-inter-tight text-muted-foreground text-[16px] font-semibold leading-[24px]">Build your pro website for free in 60 seconds.</p>
+              </div>
+            </div>
+            <div class="cursor-pointer horizontal-tab p-[16px] max-w-[400px] min-w-[328px] w-full flex items-center gap-[16px] rounded-[12px] opacity-90 bg-white">
+              <div class="border-border border-[1px] p-[10px] w-[64px] h-[64px] flex justify-center items-center rounded-[16px] shrink-0">
+                <p class="font-inter-tight text-muted-foreground text-[32px] font-bold leading-[125%]">2</p>
+              </div>
+              <div class="flex flex-col gap-[4px]">
+                <p class="font-inter-tight text-muted-foreground text-[12px] font-semibold leading-[100%] uppercase">Step 1</p>
+                <p class="font-inter-tight text-muted-foreground text-[16px] font-semibold leading-[24px]">Build your pro website for free in 60 seconds.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+
+    <!-- ############### tabs ############### -->
+
+    <br /><br />
+
+    <!-- swiper slider start  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper slider end  -->
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".testimonial-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
+        },
+      });
+
+      // HOW IT WORKS SECTION
+
+      var swiperHow;
+
+      // Function to initialize Swiper if the screen is less than 1024px
+      function initSwiper() {
+        var screenWidth = window.innerWidth;
+
+        if (screenWidth < 1024 && !swiperHow) {
+          // Initialize Swiper if it is not initialized and screen is less than 1024px
+          swiper = new Swiper(".how-it-works-swiper", {
+            slidesPerView: 1.2,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+              769: {
+                slidesPerView: 1.5,
+              },
+            },
+          });
+        } else if (screenWidth >= 1024 && swiperHow) {
+          // Destroy Swiper if screen is greater than or equal to 1024px
+          swiperHow.destroy(true, true);
+          swiperHow = undefined;
+        }
+      }
+
+      // Initialize Swiper on page load
+      window.addEventListener("load", initSwiper);
+
+      // Reinitialize Swiper on window resize
+      window.addEventListener("resize", initSwiper);
+    </script>
 
     <script src="js/main.js"></script>
   </body>
