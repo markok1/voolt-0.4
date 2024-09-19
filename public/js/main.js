@@ -29,3 +29,13 @@ faqBoxes.forEach((faqBox) => {
     }
   });
 });
+
+$(".xsm-tab").on("click", function (e) {
+  e.preventDefault();
+  if ($(this).parent().hasClass("active-tab")) {
+    $(this).parent().removeClass("active-tab");
+  } else {
+    $(".active-tab").removeClass("active-tab");
+    $(this).parent().addClass("active-tab");
+  }
+});
