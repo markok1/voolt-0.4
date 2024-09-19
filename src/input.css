@@ -16,7 +16,7 @@
     margin-top: -8px;
   }
   .active-nav-list {
-    width: 320px !important;
+    width: 100% !important;
   }
 }
 
@@ -82,11 +82,10 @@
     ),
     #f3f4f6;
 }
-
 .active-tab ul {
   height: unset;
-  padding-top: 12px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 12px;
   padding-left: 12px;
 }
 .active-tab h3 svg {
