@@ -3,9 +3,11 @@ $(".nav-hamb").on("click", function (e) {
   if ($(this).hasClass("active-nav")) {
     $(this).removeClass("active-nav");
     $(".mobile-nav-list").removeClass("active-nav-list");
+    $("body").removeClass("disable_scroll");
   } else {
     $(this).addClass("active-nav");
     $(".mobile-nav-list").addClass("active-nav-list");
+    $("body").addClass("disable_scroll");
   }
 });
 
@@ -37,5 +39,17 @@ $(".xsm-tab").on("click", function (e) {
   } else {
     $(".active-tab").removeClass("active-tab");
     $(this).parent().addClass("active-tab");
+  }
+});
+
+$(".dropdown-tag").on("click", function (e) {
+  if ($(window).width() < 1024) {
+    e.preventDefault();
+    if ($(this).parent().hasClass("active-dd-tab")) {
+      $(this).parent().removeClass("active-dd-tab");
+    } else {
+      $(".active-tab").removeClass("active-dd-tab");
+      $(this).parent().addClass("active-dd-tab");
+    }
   }
 });

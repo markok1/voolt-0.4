@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.disable_scroll {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
 @media (max-width: 1023px) {
   .active-nav div div:nth-child(1) {
     transform: rotate(45deg);
@@ -17,6 +24,10 @@
   }
   .active-nav-list {
     width: 100% !important;
+  }
+  .mobile-nav-list {
+    overflow: auto !important;
+    bottom: 0 !important;
   }
 }
 
@@ -90,4 +101,29 @@
 }
 .active-tab h3 svg {
   transform: rotate(180deg);
+}
+
+@media (max-width: 1024px) {
+  .active-dd-tab .dropdown {
+    display: block;
+  }
+  .active-dd-tab .dropdown-tag {
+    color: #058beb;
+  }
+  .active-dd-tab .dropdown-tag svg {
+    transform: rotate(180deg);
+  }
+  .active-dd-tab .dropdown-tag svg path {
+    fill: #058beb;
+  }
+}
+
+/* Ensure Swiper elements are correctly styled */
+.swiper-wrapper {
+  display: flex; /* Ensure slides are in a row */
+}
+
+.swiper-slide {
+  flex-shrink: 0; /* Prevent slides from shrinking */
+  width: 100%; /* Make each slide take up full width */
 }
