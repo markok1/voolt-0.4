@@ -3,9 +3,11 @@ $(".nav-hamb").on("click", function (e) {
   if ($(this).hasClass("active-nav")) {
     $(this).removeClass("active-nav");
     $(".mobile-nav-list").removeClass("active-nav-list");
+    $("body").removeClass("disable_scroll");
   } else {
     $(this).addClass("active-nav");
     $(".mobile-nav-list").addClass("active-nav-list");
+    $("body").addClass("disable_scroll");
   }
 });
 
@@ -40,6 +42,18 @@ $(".xsm-tab").on("click", function (e) {
   }
 });
 
+$(".dropdown-tag").on("click", function (e) {
+  if ($(window).width() < 1024) {
+    e.preventDefault();
+    if ($(this).parent().hasClass("active-dd-tab")) {
+      $(this).parent().removeClass("active-dd-tab");
+    } else {
+      $(".active-tab").removeClass("active-dd-tab");
+      $(this).parent().addClass("active-dd-tab");
+    }
+  }
+});
+
 //tabs
 
 const tabs = document.querySelectorAll(".tab");
@@ -65,5 +79,33 @@ tabs.forEach((tab) => {
 
     // Show the content that matches the clicked tab by adding active-content class
     document.getElementById(`tab-${tabId}`).classList.add("active-content");
+  });
+});
+
+//tabs
+
+const horizontaltabs = document.querySelectorAll(".horizontal-tab");
+const horizontalcontents = document.querySelectorAll(".horizontal-content");
+
+// Add click event to all tabs
+horizontaltabs.forEach((horizontaltab) => {
+  horizontaltab.addEventListener("click", (event) => {
+    // Prevent default action of <a> (navigation)
+    event.preventDefault();
+
+    // Remove active class from all tabs
+    horizontaltabs.forEach((t) => t.classList.remove("active-horizontal-tab"));
+
+    // Add active class to the clicked tab
+    horizontaltab.classList.add("active-horizontal-tab");
+
+    // Get the corresponding content ID
+    const tabId = horizontaltab.getAttribute("data-tab");
+
+    // Hide all contents by removing active-content class
+    horizontalcontents.forEach((horizontalcontent) => horizontalcontent.classList.remove("active-horizontal"));
+
+    // Show the content that matches the clicked tab by adding active-content class
+    document.getElementById(`h-tab-${tabId}`).classList.add("active-horizontal");
   });
 });
