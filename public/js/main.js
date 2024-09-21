@@ -39,3 +39,31 @@ $(".xsm-tab").on("click", function (e) {
     $(this).parent().addClass("active-tab");
   }
 });
+
+//tabs
+
+const tabs = document.querySelectorAll(".tab");
+const contents = document.querySelectorAll(".tab-content");
+
+// Add click event to all tabs
+tabs.forEach((tab) => {
+  tab.addEventListener("click", (event) => {
+    // Prevent default action of <a> (navigation)
+    event.preventDefault();
+
+    // Remove active class from all tabs
+    tabs.forEach((t) => t.classList.remove("active-tab-type1"));
+
+    // Add active class to the clicked tab
+    tab.classList.add("active-tab-type1");
+
+    // Get the corresponding content ID
+    const tabId = tab.getAttribute("data-tab");
+
+    // Hide all contents by removing active-content class
+    contents.forEach((content) => content.classList.remove("active-content"));
+
+    // Show the content that matches the clicked tab by adding active-content class
+    document.getElementById(`tab-${tabId}`).classList.add("active-content");
+  });
+});

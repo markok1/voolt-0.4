@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voolt 4.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- swiper slider start  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- swiper slider end  -->
+  </head>
+  <body>
+    <!-- ############### navbar ############### -->
+    <nav class="fixed left-0 top-0 right-0 bg-[#fff] z-10">
+      <div class="wrapper max-w-[1440px] m-auto px-[80px] py-[20px] flex flex-col max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px]">
+        <div class="flex justify-between items-center">
+          <div class="">
+            <img class="w-[133px] max-xsm:w-[80px]" src="imgs/logo.svg" alt="" />
+          </div>
+          <ul class="mobile-nav-list flex gap-[32px] items-center justify-center max-lg:fixed max-lg:right-[0] max-lg:bottom-[0] max-lg:bg-[#fff] max-lg:top-[85px] max-lg:w-[0] max-lg:overflow-hidden max-lg:flex-col max-lg:gap-[20px] max-lg:items-start transition-all duration-300 max-xsm:top-[70px] max-lg:justify-start max-lg:py-[20px] max-lg:gap-[32px]">
+            <li class="max-lg:w-[320px]">
+              <a href="" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Home</a>
+            </li>
+            <li class="max-lg:w-[320px]">
+              <a href="" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Who We Serve</a>
+            </li>
+            <li class="max-lg:w-[320px] group/item">
+              <a href="" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] group-hover/item:text-[#058BEB] transition-all duration-300"
+                >Features
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none" class="transition-all duration-300 group-hover/item:rotate-180">
+                  <path
+                    d="M5.00002 6.20866C4.88377 6.20866 4.76741 6.16454 4.67866 6.0764L0.13321 1.56254C-0.0444033 1.38616 -0.0444033 1.10054 0.13321 0.924277C0.310823 0.74801 0.598436 0.747897 0.775936 0.924277L5.00002 5.11901L9.22411 0.924277C9.40172 0.747897 9.68933 0.747897 9.86683 0.924277C10.0443 1.10066 10.0444 1.38627 9.86683 1.56254L5.32138 6.0764C5.23263 6.16454 5.11627 6.20866 5.00002 6.20866Z"
+                    fill="#09090B"
+                    class="group-hover/item:fill-[#058BEB] transition-all duration-300"
+                  />
+                </svg>
+              </a>
+              <div class="dropdown top-[50px] absolute flex px-[40px] py-[20px] flex-col items-start rounded-tl-none rounded-br-[12px] rounded-tr-none rounded-bl-[12px] border-[1px] border-[solid] border-[#E4E4E7] bg-[#FAFAFA] opacity-0 invisible group-hover/item:visible transition-all duration-300"></div>
+              <div class="dropdown top-[85px] absolute flex px-[40px] py-[20px] flex-col items-start rounded-tl-none rounded-br-[12px] rounded-tr-none rounded-bl-[12px] border-[1px] border-[solid] border-[#E4E4E7] bg-[#FAFAFA] opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300">
+                <h2 class="mb-[40px] font-inter-tight text-[#09090B] tracking-[-0.11px] text-[22px] not-italic font-semibold leading-[135%]">Features</h2>
+                <ul class="flex flex-col gap-[16px]">
+                  <li class="">
+                    <a href="" class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] hover:bg-[#F4F4F5] transition-all duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path
+                          d="M3.00003 14.2214V6.39913C3.00003 5.40348 3.00003 4.90566 3.1938 4.52537C3.36424 4.19086 3.63621 3.9189 3.97072 3.74845C4.35101 3.55469 4.84883 3.55469 5.84448 3.55469H16.1556C17.1512 3.55469 17.6491 3.55469 18.0294 3.74845C18.3639 3.9189 18.6358 4.19086 18.8063 4.52537C19 4.90566 19 5.40348 19 6.39913V14.2214H14.2558C14.0384 14.2214 13.9297 14.2214 13.8274 14.2459C13.7367 14.2677 13.65 14.3036 13.5704 14.3523C13.4807 14.4073 13.4039 14.4842 13.2501 14.6379L13.1944 14.6937C13.0406 14.8474 12.9638 14.9243 12.8741 14.9793C12.7945 15.028 12.7078 15.0639 12.6171 15.0857C12.5148 15.1102 12.4061 15.1102 12.1887 15.1102H9.81136C9.59395 15.1102 9.48524 15.1102 9.38294 15.0857C9.29224 15.0639 9.20553 15.028 9.126 14.9793C9.0363 14.9243 8.95943 14.8474 8.8057 14.6937L8.74993 14.6379C8.59619 14.4842 8.51932 14.4073 8.42962 14.3523C8.35009 14.3036 8.26338 14.2677 8.17269 14.2459C8.07038 14.2214 7.96168 14.2214 7.74426 14.2214H3.00003ZM3.00003 14.2214C2.50911 14.2214 2.11115 14.6193 2.11115 15.1102V15.4065C2.11115 15.9576 2.11115 16.2332 2.17172 16.4593C2.33611 17.0728 2.8153 17.5519 3.4288 17.7163C3.65487 17.7769 3.93042 17.7769 4.48152 17.7769H17.5186C18.0696 17.7769 18.3452 17.7769 18.5713 17.7163C19.1848 17.5519 19.664 17.0728 19.8283 16.4593C19.8889 16.2332 19.8889 15.9576 19.8889 15.4065C19.8889 15.131 19.8889 14.9932 19.8586 14.8802C19.7764 14.5734 19.5368 14.3338 19.2301 14.2516C19.1171 14.2214 18.9793 14.2214 18.7037 14.2214H18.1111"
+                          stroke="url(#paint0_linear_906_25768)"
+                          stroke-width="1.33333"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient id="paint0_linear_906_25768" x1="10.3335" y1="-12.1668" x2="10.8005" y2="17.78" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="#0095FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div>
+                        <h3 class="font-inter-tight tracking-[0.16px] text-[#09090B] text-[16px] not-italic font-semibold leading-[24px]">Website Builder</h3>
+                        <p class="font-inter-tight tracking-[0.12px] text-[#71717A] text-[12px] not-italic font-medium leading-[150%]">Create a website in 60 seconds.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="" class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] hover:bg-[#F4F4F5] transition-all duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path
+                          d="M6.5556 13.4131V19.5551L10.7359 17.883C10.8335 17.844 10.8823 17.8244 10.9327 17.8167C10.9773 17.8099 11.0228 17.8099 11.0674 17.8167C11.1178 17.8244 11.1666 17.844 11.2641 17.883L15.4445 19.5551V13.4131M17.6667 8.44401C17.6667 12.1259 14.6819 15.1107 11 15.1107C7.31814 15.1107 4.33337 12.1259 4.33337 8.44401C4.33337 4.76211 7.31814 1.77734 11 1.77734C14.6819 1.77734 17.6667 4.76211 17.6667 8.44401Z"
+                          stroke="url(#paint0_linear_906_25772)"
+                          stroke-width="1.33333"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient id="paint0_linear_906_25772" x1="10.5001" y1="-17.8745" x2="11.4727" y2="19.5428" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="#0095FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div>
+                        <h3 class="font-inter-tight tracking-[0.16px] text-[#09090B] text-[16px] not-italic font-semibold leading-[24px]">Voolt Premium</h3>
+                        <p class="font-inter-tight tracking-[0.12px] text-[#71717A] text-[12px] not-italic font-medium leading-[150%]">Rank higher on serch results.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="" class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] hover:bg-[#F4F4F5] transition-all duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path
+                          d="M3.88893 12.4431L5.28861 18.0418C5.32797 18.1993 5.34766 18.278 5.37094 18.3467C5.59841 19.0183 6.20316 19.4905 6.90983 19.5483C6.98217 19.5542 7.06332 19.5542 7.22563 19.5542C7.42887 19.5542 7.53049 19.5542 7.6161 19.5459C8.46225 19.4638 9.13189 18.7942 9.21396 17.948C9.22226 17.8624 9.22226 17.7608 9.22226 17.5575V4.88751M16.7778 11.9986C18.496 11.9986 19.8889 10.6057 19.8889 8.88751C19.8889 7.16929 18.496 5.7764 16.7778 5.7764M9.44448 4.88751H6.11114C3.90201 4.88751 2.11114 6.67837 2.11115 8.88751C2.11115 11.0966 3.90201 12.8875 6.11114 12.8875H9.44448C11.0146 12.8875 12.9354 13.7292 14.4172 14.537C15.2817 15.0082 15.7139 15.2438 15.997 15.2092C16.2595 15.177 16.458 15.0592 16.6119 14.8441C16.7778 14.6121 16.7778 14.148 16.7778 13.2197V4.55532C16.7778 3.62706 16.7778 3.16293 16.6119 2.93097C16.458 2.71586 16.2595 2.598 15.997 2.56585C15.7139 2.53117 15.2817 2.7668 14.4172 3.23805C12.9354 4.04583 11.0146 4.88751 9.44448 4.88751Z"
+                          stroke="url(#paint0_linear_906_25790)"
+                          stroke-width="1.33333"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient id="paint0_linear_906_25790" x1="10.3335" y1="-16.2204" x2="11" y2="19.5542" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="#0095FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div>
+                        <h3 class="font-inter-tight tracking-[0.16px] text-[#09090B] text-[16px] not-italic font-semibold leading-[24px]">Voolt Marketing</h3>
+                        <p class="font-inter-tight tracking-[0.12px] text-[#71717A] text-[12px] not-italic font-medium leading-[150%]">Get found by local clients.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="" class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] hover:bg-[#F4F4F5] transition-all duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path
+                          d="M2.72159 13.9063L4.41776 12.9272C4.50964 12.8741 4.61745 12.8557 4.72173 12.8752L8.05906 13.4998C8.33333 13.5511 8.5865 13.34 8.58526 13.061L8.57227 10.1369C8.57191 10.0574 8.59286 9.97932 8.63293 9.91072L10.3171 7.02731C10.4048 6.87725 10.3969 6.68986 10.297 6.54766L7.4613 2.51128M17.2225 4.31872C12.3336 6.66627 15.0001 9.77738 15.8891 10.2218C17.5576 11.0559 19.8779 11.1107 19.8779 11.1107C19.8852 10.9634 19.8889 10.8153 19.8889 10.6662C19.8889 5.75704 15.9092 1.77734 11 1.77734C6.09084 1.77734 2.11115 5.75704 2.11115 10.6662C2.11115 15.5754 6.09084 19.5551 11 19.5551C11.1491 19.5551 11.2972 19.5515 11.4445 19.5442M15.2292 19.5016L12.4143 12.0805L19.8354 14.8954L16.5446 16.2108L15.2292 19.5016Z"
+                          stroke="url(#paint0_linear_906_25797)"
+                          stroke-width="1.33333"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient id="paint0_linear_906_25797" x1="10.3335" y1="-17.8745" x2="11.0631" y2="19.5539" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="#0095FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div>
+                        <h3 class="font-inter-tight tracking-[0.16px] text-[#09090B] text-[16px] not-italic font-semibold leading-[24px]">Custom Domain</h3>
+                        <p class="font-inter-tight tracking-[0.12px] text-[#71717A] text-[12px] not-italic font-medium leading-[150%]">Build trust among your customers.</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="max-lg:w-[320px]">
+              <a href="" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Pricing</a>
+            </li>
+            <li class="max-lg:w-[320px]">
+              <a href="" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Support</a>
+            </li>
+            <li class="max-lg:w-[320px]">
+              <a href="" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Blog</a>
+            </li>
+          </ul>
+          <div class="flex gap-[12px] items-center max-md:gap-[8px]">
+            <a href="" class="flex px-[16px] py-[6px] justify-center items-center gap-[8px] border-[1px] border-[solid] border-[#E4E4E7] rounded-[6px] bg-[#fff] text-[#27272A] font-inter-tight text-[14px] not-italic font-medium leading-[20px] hover:bg-muted transition-all duration-300 max-xsm:text-[12px] max-xsm:leading-[150%] max-xsm:px-[12px] max-xsm:py-[5px]">Login </a>
+            <a href="" class="flex px-[16px] py-[8px] justify-center items-center gap-[8px] rounded-[6px] bg-[#FCC82C] text-[#27272A] font-inter-tight text-[14px] not-italic font-medium leading-[20px] hover:bg-primary/90 transition-all duration-300 max-xsm:text-[12px] max-xsm:leading-[150%] max-xsm:px-[12px] max-xsm:py-[6px]">Sign Up </a>
+            <a href="" class="lg:hidden hover:opacity-90 nav-hamb">
+              <div class="p-[2px] flex flex-col gap-[6px] max-xsm:p-[1px] max-xsm:gap-[4px]">
+                <div class="bg-[#09090B] w-[28px] h-[2px] rounded-[5px] transition-all duration-300 max-xsm:w-[22px]"></div>
+                <div class="bg-[#09090B] w-[19px] h-[2px] rounded-[5px] transition-all duration-300 max-xsm:w-[15px]"></div>
+                <div class="bg-[#09090B] w-[28px] h-[2px] rounded-[5px] transition-all duration-300 max-xsm:w-[22px]"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ############### navbar end ############### -->
+
+    <section class="hero overflow-hidden pt-[85px]">
+      <div class="wrapper max-w-[1440px] m-auto lg:p-[80px] md:py-[80px] md:px-[40px] xsm:py-[40px] xsm:px-[32px] py-[32px] px-[16px] flex flex-col">
+        <p class="text-Color-Blue-500---primary font-inter-tight uppercase xsm:text-[14px] font-[600] xsm:leading-[20px] xsm:tracking-[0.14px] text-[12px] leading-[20px] tracking-[0.12px] text-center lg:mb-[7px] xsm:mb-[25px] mb-[16px]">No contracts. No credit card required</p>
+        <h1 class="text-foreground font-inter-tight md:text-[80px] md:font-[800] md:leading-[96px] md:tracking-[-1.6px] xsm:text-[48px] xsm:font-[700] xsm:leading-[57px] xsm:tracking-[0.48px] text-center text-[32px] font-[700] leading-[40px] xl:mb-[24px] lg:mb-[6px] md:mb-[25px] xsm:mb-[27px] mb-[16px] md:flex md:flex-col relative">
+          <span>Automate your</span> <span> digital marketing in</span>
+          <span>60 seconds with Voolt</span>
+
+          <svg class="absolute bottom-[-18px] left-[calc(50%-402px)] xl:flex hidden" xmlns="http://www.w3.org/2000/svg" width="418" height="33" viewBox="0 0 418 33" fill="none">
+            <path d="M3.12891 8.82458C55.5556 2.14202 322.611 -0.0778897 403.279 10.1366C483.947 20.3511 111.608 11.6679 53.0168 18.9382C-5.57389 26.2084 290.468 19.7168 374.069 29.9407" stroke="#FFD000" stroke-width="5" stroke-linecap="round" />
+          </svg>
+        </h1>
+        <h4 class="text-muted-foreground font-inter-tight xsm:text-[22px] font-[600] xsm:leading-[29px] xsm:tracking-[-0.11px] text-[16px] leading-[24px] tracking-[0.16px] text-center xsm:mb-[40px] mb-[32px]">Use AI to boost your lead acquisition online. See your business thriving while you focus on your job offline.</h4>
+        <div class="md:mb-[40px] xsm:mb-[15px] mb-[10px] flex xsm:flex-row flex-col gap-[16px] justify-center">
+          <a href="" class="font-inter-tight rounded-[3px] tracking-[0.16px] inline-flex w-min whitespace-nowrap py-[16px] px-[32px] justify-center items-center gap-[8px] bg-primary hover:bg-primary/90 transition-all duration-300 text-[16px] not-italic font-[600] leading-[24px] max-sm:w-[100%]">
+            <span>Get Started for Free</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="flex">
+              <path d="M6 12L10 8L6 4" stroke="#030916" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="" class="font-inter-tight rounded-[3px] tracking-[0.16px] inline-flex w-min whitespace-nowrap py-[16px] px-[32px] justify-center items-center gap-[8px] hover:bg-muted transition-all duration-300 text-[16px] not-italic font-[600] leading-[24px] max-sm:w-[100%]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+              <path d="M8.50065 14.6663C12.1826 14.6663 15.1673 11.6816 15.1673 7.99967C15.1673 4.31778 12.1826 1.33301 8.50065 1.33301C4.81875 1.33301 1.83398 4.31778 1.83398 7.99967C1.83398 11.6816 4.81875 14.6663 8.50065 14.6663Z" stroke="#030916" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M6.83398 5.97656C6.83398 5.65837 6.83398 5.49928 6.90048 5.41046C6.95843 5.33306 7.04713 5.28463 7.14357 5.27774C7.25424 5.26984 7.38807 5.35587 7.65572 5.52793L10.8028 7.55105C11.035 7.70035 11.1512 7.77501 11.1913 7.86993C11.2263 7.95288 11.2263 8.04647 11.1913 8.12941C11.1512 8.22434 11.035 8.299 10.8028 8.4483L7.65572 10.4714C7.38807 10.6435 7.25424 10.7295 7.14357 10.7216C7.04713 10.7147 6.95843 10.6663 6.90048 10.5889C6.83398 10.5001 6.83398 10.341 6.83398 10.0228V5.97656Z"
+                stroke="#030916"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Watch Video</span>
+          </a>
+        </div>
+
+        <div class="inline-flex items-center gap-[8px] justify-center mb-[12px]">
+          <div class="flex items-center pl-[12px]">
+            <img class="ml-[-12px]" src="imgs/Avatar.png" alt="" />
+            <img class="ml-[-12px]" src="imgs/Avatar.png" alt="" />
+            <img class="ml-[-12px]" src="imgs/Avatar.png" alt="" />
+            <img class="ml-[-12px]" src="imgs/Avatar.png" alt="" />
+          </div>
+          <div class="flex flex-col justify-center items-start gap-[8px]">
+            <div class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M7.52242 2.30302C7.67608 1.99173 7.7529 1.83609 7.8572 1.78636C7.94795 1.74309 8.05338 1.74309 8.14412 1.78636C8.24842 1.83609 8.32525 1.99173 8.47891 2.30302L9.93669 5.25634C9.98205 5.34824 10.0047 5.39419 10.0379 5.42986C10.0672 5.46145 10.1024 5.48705 10.1415 5.50523C10.1857 5.52576 10.2364 5.53317 10.3378 5.548L13.5986 6.02462C13.942 6.07481 14.1137 6.0999 14.1932 6.18377C14.2623 6.25674 14.2948 6.35701 14.2817 6.45666C14.2665 6.5712 14.1422 6.69227 13.8936 6.9344L11.535 9.23176C11.4614 9.30338 11.4247 9.33918 11.4009 9.38179C11.3799 9.41951 11.3665 9.46096 11.3613 9.50382C11.3554 9.55223 11.3641 9.60281 11.3814 9.70397L11.938 12.9489C11.9967 13.2911 12.026 13.4623 11.9708 13.5638C11.9229 13.6522 11.8376 13.7141 11.7387 13.7325C11.6251 13.7535 11.4714 13.6727 11.1641 13.5111L8.2489 11.978C8.15807 11.9303 8.11266 11.9064 8.06481 11.897C8.02245 11.8887 7.97888 11.8887 7.93651 11.897C7.88867 11.9064 7.84325 11.9303 7.75242 11.978L4.83727 13.5111C4.52993 13.6727 4.37626 13.7535 4.26263 13.7325C4.16377 13.7141 4.07847 13.6522 4.03048 13.5638C3.97532 13.4623 4.00467 13.2911 4.06337 12.9489L4.61991 9.70397C4.63726 9.60281 4.64593 9.55223 4.64006 9.50382C4.63487 9.46096 4.62139 9.41951 4.60039 9.38179C4.57667 9.33918 4.5399 9.30337 4.46637 9.23176L2.10769 6.9344C1.85909 6.69227 1.73479 6.5712 1.71967 6.45666C1.70651 6.35701 1.73902 6.25674 1.80815 6.18377C1.88761 6.0999 2.0593 6.07481 2.40268 6.02462L5.66353 5.548C5.76493 5.53317 5.81564 5.52576 5.8598 5.50523C5.89889 5.48705 5.93409 5.46145 5.96344 5.42986C5.99659 5.39419 6.01927 5.34824 6.06463 5.25634L7.52242 2.30302Z"
+                  fill="#FCC82C"
+                  stroke="#FCC82C"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M7.52242 2.30302C7.67608 1.99173 7.7529 1.83609 7.8572 1.78636C7.94795 1.74309 8.05338 1.74309 8.14412 1.78636C8.24842 1.83609 8.32525 1.99173 8.47891 2.30302L9.93669 5.25634C9.98205 5.34824 10.0047 5.39419 10.0379 5.42986C10.0672 5.46145 10.1024 5.48705 10.1415 5.50523C10.1857 5.52576 10.2364 5.53317 10.3378 5.548L13.5986 6.02462C13.942 6.07481 14.1137 6.0999 14.1932 6.18377C14.2623 6.25674 14.2948 6.35701 14.2817 6.45666C14.2665 6.5712 14.1422 6.69227 13.8936 6.9344L11.535 9.23176C11.4614 9.30338 11.4247 9.33918 11.4009 9.38179C11.3799 9.41951 11.3665 9.46096 11.3613 9.50382C11.3554 9.55223 11.3641 9.60281 11.3814 9.70397L11.938 12.9489C11.9967 13.2911 12.026 13.4623 11.9708 13.5638C11.9229 13.6522 11.8376 13.7141 11.7387 13.7325C11.6251 13.7535 11.4714 13.6727 11.1641 13.5111L8.2489 11.978C8.15807 11.9303 8.11266 11.9064 8.06481 11.897C8.02245 11.8887 7.97888 11.8887 7.93651 11.897C7.88867 11.9064 7.84325 11.9303 7.75242 11.978L4.83727 13.5111C4.52993 13.6727 4.37626 13.7535 4.26263 13.7325C4.16377 13.7141 4.07847 13.6522 4.03048 13.5638C3.97532 13.4623 4.00467 13.2911 4.06337 12.9489L4.61991 9.70397C4.63726 9.60281 4.64593 9.55223 4.64006 9.50382C4.63487 9.46096 4.62139 9.41951 4.60039 9.38179C4.57667 9.33918 4.5399 9.30337 4.46637 9.23176L2.10769 6.9344C1.85909 6.69227 1.73479 6.5712 1.71967 6.45666C1.70651 6.35701 1.73902 6.25674 1.80815 6.18377C1.88761 6.0999 2.0593 6.07481 2.40268 6.02462L5.66353 5.548C5.76493 5.53317 5.81564 5.52576 5.8598 5.50523C5.89889 5.48705 5.93409 5.46145 5.96344 5.42986C5.99659 5.39419 6.01927 5.34824 6.06463 5.25634L7.52242 2.30302Z"
+                  fill="#FCC82C"
+                  stroke="#FCC82C"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M7.52242 2.30302C7.67608 1.99173 7.7529 1.83609 7.8572 1.78636C7.94795 1.74309 8.05338 1.74309 8.14412 1.78636C8.24842 1.83609 8.32525 1.99173 8.47891 2.30302L9.93669 5.25634C9.98205 5.34824 10.0047 5.39419 10.0379 5.42986C10.0672 5.46145 10.1024 5.48705 10.1415 5.50523C10.1857 5.52576 10.2364 5.53317 10.3378 5.548L13.5986 6.02462C13.942 6.07481 14.1137 6.0999 14.1932 6.18377C14.2623 6.25674 14.2948 6.35701 14.2817 6.45666C14.2665 6.5712 14.1422 6.69227 13.8936 6.9344L11.535 9.23176C11.4614 9.30338 11.4247 9.33918 11.4009 9.38179C11.3799 9.41951 11.3665 9.46096 11.3613 9.50382C11.3554 9.55223 11.3641 9.60281 11.3814 9.70397L11.938 12.9489C11.9967 13.2911 12.026 13.4623 11.9708 13.5638C11.9229 13.6522 11.8376 13.7141 11.7387 13.7325C11.6251 13.7535 11.4714 13.6727 11.1641 13.5111L8.2489 11.978C8.15807 11.9303 8.11266 11.9064 8.06481 11.897C8.02245 11.8887 7.97888 11.8887 7.93651 11.897C7.88867 11.9064 7.84325 11.9303 7.75242 11.978L4.83727 13.5111C4.52993 13.6727 4.37626 13.7535 4.26263 13.7325C4.16377 13.7141 4.07847 13.6522 4.03048 13.5638C3.97532 13.4623 4.00467 13.2911 4.06337 12.9489L4.61991 9.70397C4.63726 9.60281 4.64593 9.55223 4.64006 9.50382C4.63487 9.46096 4.62139 9.41951 4.60039 9.38179C4.57667 9.33918 4.5399 9.30337 4.46637 9.23176L2.10769 6.9344C1.85909 6.69227 1.73479 6.5712 1.71967 6.45666C1.70651 6.35701 1.73902 6.25674 1.80815 6.18377C1.88761 6.0999 2.0593 6.07481 2.40268 6.02462L5.66353 5.548C5.76493 5.53317 5.81564 5.52576 5.8598 5.50523C5.89889 5.48705 5.93409 5.46145 5.96344 5.42986C5.99659 5.39419 6.01927 5.34824 6.06463 5.25634L7.52242 2.30302Z"
+                  fill="#FCC82C"
+                  stroke="#FCC82C"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M7.52242 2.30302C7.67608 1.99173 7.7529 1.83609 7.8572 1.78636C7.94795 1.74309 8.05338 1.74309 8.14412 1.78636C8.24842 1.83609 8.32525 1.99173 8.47891 2.30302L9.93669 5.25634C9.98205 5.34824 10.0047 5.39419 10.0379 5.42986C10.0672 5.46145 10.1024 5.48705 10.1415 5.50523C10.1857 5.52576 10.2364 5.53317 10.3378 5.548L13.5986 6.02462C13.942 6.07481 14.1137 6.0999 14.1932 6.18377C14.2623 6.25674 14.2948 6.35701 14.2817 6.45666C14.2665 6.5712 14.1422 6.69227 13.8936 6.9344L11.535 9.23176C11.4614 9.30338 11.4247 9.33918 11.4009 9.38179C11.3799 9.41951 11.3665 9.46096 11.3613 9.50382C11.3554 9.55223 11.3641 9.60281 11.3814 9.70397L11.938 12.9489C11.9967 13.2911 12.026 13.4623 11.9708 13.5638C11.9229 13.6522 11.8376 13.7141 11.7387 13.7325C11.6251 13.7535 11.4714 13.6727 11.1641 13.5111L8.2489 11.978C8.15807 11.9303 8.11266 11.9064 8.06481 11.897C8.02245 11.8887 7.97888 11.8887 7.93651 11.897C7.88867 11.9064 7.84325 11.9303 7.75242 11.978L4.83727 13.5111C4.52993 13.6727 4.37626 13.7535 4.26263 13.7325C4.16377 13.7141 4.07847 13.6522 4.03048 13.5638C3.97532 13.4623 4.00467 13.2911 4.06337 12.9489L4.61991 9.70397C4.63726 9.60281 4.64593 9.55223 4.64006 9.50382C4.63487 9.46096 4.62139 9.41951 4.60039 9.38179C4.57667 9.33918 4.5399 9.30337 4.46637 9.23176L2.10769 6.9344C1.85909 6.69227 1.73479 6.5712 1.71967 6.45666C1.70651 6.35701 1.73902 6.25674 1.80815 6.18377C1.88761 6.0999 2.0593 6.07481 2.40268 6.02462L5.66353 5.548C5.76493 5.53317 5.81564 5.52576 5.8598 5.50523C5.89889 5.48705 5.93409 5.46145 5.96344 5.42986C5.99659 5.39419 6.01927 5.34824 6.06463 5.25634L7.52242 2.30302Z"
+                  fill="#FCC82C"
+                  stroke="#FCC82C"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M7.52242 2.30302C7.67608 1.99173 7.7529 1.83609 7.8572 1.78636C7.94795 1.74309 8.05338 1.74309 8.14412 1.78636C8.24842 1.83609 8.32525 1.99173 8.47891 2.30302L9.93669 5.25634C9.98205 5.34824 10.0047 5.39419 10.0379 5.42986C10.0672 5.46145 10.1024 5.48705 10.1415 5.50523C10.1857 5.52576 10.2364 5.53317 10.3378 5.548L13.5986 6.02462C13.942 6.07481 14.1137 6.0999 14.1932 6.18377C14.2623 6.25674 14.2948 6.35701 14.2817 6.45666C14.2665 6.5712 14.1422 6.69227 13.8936 6.9344L11.535 9.23176C11.4614 9.30338 11.4247 9.33918 11.4009 9.38179C11.3799 9.41951 11.3665 9.46096 11.3613 9.50382C11.3554 9.55223 11.3641 9.60281 11.3814 9.70397L11.938 12.9489C11.9967 13.2911 12.026 13.4623 11.9708 13.5638C11.9229 13.6522 11.8376 13.7141 11.7387 13.7325C11.6251 13.7535 11.4714 13.6727 11.1641 13.5111L8.2489 11.978C8.15807 11.9303 8.11266 11.9064 8.06481 11.897C8.02245 11.8887 7.97888 11.8887 7.93651 11.897C7.88867 11.9064 7.84325 11.9303 7.75242 11.978L4.83727 13.5111C4.52993 13.6727 4.37626 13.7535 4.26263 13.7325C4.16377 13.7141 4.07847 13.6522 4.03048 13.5638C3.97532 13.4623 4.00467 13.2911 4.06337 12.9489L4.61991 9.70397C4.63726 9.60281 4.64593 9.55223 4.64006 9.50382C4.63487 9.46096 4.62139 9.41951 4.60039 9.38179C4.57667 9.33918 4.5399 9.30337 4.46637 9.23176L2.10769 6.9344C1.85909 6.69227 1.73479 6.5712 1.71967 6.45666C1.70651 6.35701 1.73902 6.25674 1.80815 6.18377C1.88761 6.0999 2.0593 6.07481 2.40268 6.02462L5.66353 5.548C5.76493 5.53317 5.81564 5.52576 5.8598 5.50523C5.89889 5.48705 5.93409 5.46145 5.96344 5.42986C5.99659 5.39419 6.01927 5.34824 6.06463 5.25634L7.52242 2.30302Z"
+                  fill="#FCC82C"
+                  stroke="#FCC82C"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <p class="text-muted-foreground tracking-[-0.5px] text-[12px] not-italic font-medium leading-[150%] font-inter-tight">Trusted by 10,889 customers.</p>
+          </div>
+        </div>
+
+        <div class="hero-image relative xl:h-[581px] lg:h-[396px] md:h-[312px] xsm:h-[188px] h-[131px]">
+          <!-- photo rounded svg -->
+          <img class="z-[3] absolute xl:bottom-[371px] xl:left-[calc(50%-86px)] xl:max-w-[unset] lg:max-w-[77px] lg:bottom-[271px] lg:left-[calc(50%-58px)] md:max-w-[63px] md:bottom-[227px] md:left-[calc(50%-46px)] xsm:max-w-[40px] xsm:bottom-[119px] xsm:left-[calc(50%-30px)] max-w-[28px] bottom-[82px] left-[calc(50%-21px)]" src="imgs/Vector4.svg" alt="Notification icon" />
+          <!-- photo rounded svg -->
+          <img
+            class="z-[3] absolute xl:bottom-[352px] xl:left-[calc(50%-468px)] xl:max-w-[unset] lg:max-w-[50px] lg:bottom-[241px] lg:left-[calc(50%-316px)] md:max-w-[40px] md:bottom-[218px] md:left-[calc(50%-251px)] xsm:max-w-[24px] xsm:bottom-[114px] xsm:left-[calc(50%-151px)] max-w-[24px] bottom-[80px] left-[calc(50%-106px)]"
+            src="imgs/Vector3.svg"
+            alt="Notification icon"
+          />
+
+          <img
+            class="z-[3] absolute xl:bottom-[290px] xl:left-[calc(50%+338px)] xl:max-w-[unset] lg:max-w-[50px] lg:bottom-[200px] lg:left-[calc(50%+224px)] md:max-w-[40px] md:bottom-[184px] md:left-[calc(50%+181px)] xsm:max-w-[24px] xsm:bottom-[94px] xsm:left-[calc(50%+108px)] max-w-[17px] bottom-[64px] left-[calc(50%+76px)] rotate-[10deg]"
+            src="imgs/Vector5.svg"
+            alt="Notification icon"
+          />
+
+          <img
+            class="z-[3] absolute xl:bottom-[372px] xl:left-[calc(50%+115px)] xl:max-w-[unset] lg:max-w-[197px] lg:bottom-[258px] lg:left-[calc(50%+78px)] md:max-w-[158px] md:bottom-[229px] md:left-[calc(50%+62px)] xsm:max-w-[96px] xsm:bottom-[122px] xsm:left-[calc(50%+37px)] max-w-[65px] bottom-[83px] left-[calc(50%+26px)]"
+            src="imgs/call-notification.svg"
+            alt="Call notification"
+          />
+          <img
+            class="z-[3] absolute xl:bottom-[222px] xl:left-[calc(50%-440px)] xl:max-w-[unset] lg:max-w-[278px] lg:bottom-[151px] lg:left-[calc(50%-297px)] md:max-w-[221px] md:bottom-[147px] md:left-[calc(50%-236px)] xsm:max-w-[133px] xsm:bottom-[71px] xsm:left-[calc(50%-142px)] max-w-[94px] bottom-[50px] left-[calc(50%-99px)]"
+            src="imgs/voolt-notification.svg"
+            alt="Voolt notificaiton"
+          />
+          <img
+            class="z-[3] absolute xl:bottom-[127px] xl:left-[calc(50%-33px)] xl:max-w-[unset] lg:max-w-[298px] lg:bottom-[91px] lg:left-[calc(50%-22px)] md:max-w-[238px] md:bottom-[96px] md:left-[calc(50%-18px)] xsm:max-w-[141px] xsm:bottom-[41px] xsm:left-[calc(50%-10px)] max-w-[99px] bottom-[29px] left-[calc(50%-7px)]"
+            src="imgs/gmail-notification.svg"
+            alt="Gmail notification"
+          />
+          <!-- photo rounded svg -->
+          <img class="z-[3] absolute xl:bottom-[89px] xl:left-[calc(50%+116px)] xl:max-w-[unset] lg:max-w-[35px] lg:bottom-[66px] lg:left-[calc(50%+80px)] md:max-w-[30px] md:bottom-[76px] md:left-[calc(50%+62px)] xsm:max-w-[20px] xsm:bottom-[28px] xsm:left-[calc(50%+37px)] max-w-[13px] bottom-[20px] left-[calc(50%+26px)]" src="imgs/Vector2.svg" alt="Notification icon" />
+
+          <!-- photo rounded svg -->
+          <img
+            class="z-[3] absolute xl:bottom-[93px] xl:left-[calc(50%-234px)] xl:max-w-[unset] lg:max-w-[76px] lg:bottom-[66px] lg:left-[calc(50%-157px)] md:max-w-[60px] md:bottom-[78px] md:left-[calc(50%-126px)] xsm:max-w-[34px] xsm:bottom-[32px] xsm:left-[calc(50%-75px)] max-w-[25px] bottom-[21px] left-[calc(50%-53px)] rotate-[-10deg]"
+            src="imgs/Vector1.svg"
+            alt="Notification icon"
+          />
+          <!-- blue light svg -->
+          <svg class="absolute xl:bottom-[35px] lg:bottom-[26px] md:bottom-[21px] left-[50%] translate-x-[-50%] xl:max-w-[unset] lg:max-w-[864px] md:max-w-[688px] xsm:max-w-[416px] max-w-[288px] h-fit opacity-[0.8] z-[2]" xmlns="http://www.w3.org/2000/svg" width="1280" height="542" viewBox="0 0 1280 542" fill="none">
+            <g style="mix-blend-mode: hard-light">
+              <path d="M266.127 527.427L0 -1H1280L1013.87 526.793C1011.52 540.733 992.179 541.879 986.201 542L292.622 541.366C268.482 538.832 267.305 530.595 266.127 527.427Z" fill="url(#paint0_linear_258_8263)" fill-opacity="0.6" />
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_258_8263" x1="640" y1="-1" x2="640" y2="542" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#05356C" stop-opacity="0" />
+                <stop offset="1" stop-color="#0967D2" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <!-- phone svg -->
+          <svg alt="A smartphone with new leads notifications from Voolt Marketing." class="absolute bottom-[0px] left-[50%] xl:max-w-[100%] lg:max-w-[514px] md:max-w-[409px] xsm:max-w-[247px] max-w-[171px] translate-x-[-50%] z-[1] h-fit" xmlns="http://www.w3.org/2000/svg" width="763" height="125" viewBox="0 0 763 125" fill="none">
+            <path d="M638.529 32.5536H125.371C110.836 32.5536 96.6601 37.8167 84.7861 47.6176L4.11502 108.2C0.0517864 111.161 1.96186 125.213 25.2299 124.28L739.639 124.323C752.732 124.323 760.318 122.367 760.536 104.368L678.52 47.4098C666.823 37.7409 652.849 32.5503 638.526 32.5503L638.529 32.5536Z" fill="#231F20" />
+            <path
+              d="M759.807 82.092H2.44492C2.44492 82.092 -2.8496 96.6713 2.44492 112.715C3.25946 115.785 7.95096 118.403 10.1641 119.093C12.3773 119.782 15.5407 120.402 17.4729 120.402H744.779C746.711 120.402 749.878 119.782 752.088 119.093C754.301 118.403 758.992 115.785 759.804 112.715C765.098 96.668 759.804 82.092 759.804 82.092H759.807Z"
+              fill="url(#paint0_linear_258_8259)"
+            />
+            <path
+              d="M755.147 74.4445C755.113 74.4148 755.078 74.3852 755.043 74.3588L678.524 15.8439C666.826 6.175 652.853 0.984375 638.529 0.984375H125.371C110.836 0.984375 96.6605 6.24755 84.7865 16.0484L6.01916 78.2831L5.34984 78.8107C4.54162 79.467 3.23772 80.6014 2.79257 81.3961C0.162673 86.1679 4.01438 93.5581 25.2303 92.7106L739.639 92.7535C747.513 92.7535 769.31 87.2496 755.147 74.4412V74.4445Z"
+              fill="#231F20"
+            />
+            <path
+              d="M21.6279 84.7433C18.6822 84.7433 17.8109 84.6245 15.9198 84.4662C12.6774 84.1958 13.0657 81.406 14.2717 80.4529L87.6625 21.2488C101.835 9.45287 115.243 4.71074 125.668 4.71074H638.178C658.274 6.13206 663.284 10.8379 674.785 19.2834L748.473 78.438C748.571 78.527 748.729 78.6688 748.827 78.7546C749.445 79.4075 750.519 80.4661 749.471 81.894C747.636 84.3871 743.074 84.7202 739.292 84.7202L24.6745 84.6773C23.6295 84.7235 22.6034 84.7433 21.6279 84.7433Z"
+              fill="url(#paint1_linear_258_8259)"
+            />
+            <path
+              d="M759.826 82.1382C759.81 81.6699 759.732 81.2247 759.64 80.8554C757.992 87.1309 745.266 89.9406 739.643 89.9406L25.2335 89.8977C9.59936 90.5243 3.39559 86.6726 2.26533 82.6955C0.967752 87.3948 5.85815 93.489 25.2335 92.714L739.643 92.7569C745.717 92.7569 759.801 89.6801 759.823 82.2404C759.823 82.2206 759.823 82.1811 759.823 82.1382H759.826Z"
+              fill="#D1D3D4"
+            />
+            <path d="M101.639 103.181H69.2592C67.5522 103.181 66.1684 104.626 66.1684 106.409V108.609C66.1684 110.392 67.5522 111.837 69.2592 111.837H101.639C103.346 111.837 104.73 110.392 104.73 108.609V106.409C104.73 104.626 103.346 103.181 101.639 103.181Z" fill="#58595B" />
+            <path d="M101.213 101.77H68.8332C67.1261 101.77 65.7423 103.215 65.7423 104.998V107.198C65.7423 108.981 67.1261 110.426 68.8332 110.426H101.213C102.92 110.426 104.304 108.981 104.304 107.198V104.998C104.304 103.215 102.92 101.77 101.213 101.77Z" fill="#A7A9AC" />
+            <path d="M65.8181 106.126C65.8181 104.19 67.0936 102.624 68.6658 102.624H101.532C103.574 102.624 104.234 103.87 104.304 105.344V105.275C104.304 103.339 103.028 101.773 101.456 101.773H68.5901C67.0178 101.773 65.7423 103.342 65.7423 105.275V106.924C65.7423 107.194 65.7707 107.455 65.8149 107.709V106.129L65.8181 106.126Z" fill="white" />
+            <path d="M693.438 108.813C694.076 107.192 693.336 105.339 691.785 104.672C690.233 104.005 688.459 104.779 687.82 106.399C687.182 108.019 687.923 109.873 689.474 110.54C691.025 111.206 692.8 110.433 693.438 108.813Z" fill="#58595B" />
+            <path d="M692.639 109.655C693.825 108.416 693.825 106.408 692.639 105.169C691.453 103.93 689.53 103.93 688.344 105.169C687.158 106.408 687.158 108.416 688.344 109.655C689.53 110.894 691.453 110.894 692.639 109.655Z" fill="#BCBEC0" />
+            <path d="M690.492 110.126C691.927 110.126 693.091 108.911 693.091 107.412C693.091 105.913 691.927 104.698 690.492 104.698C689.057 104.698 687.894 105.913 687.894 107.412C687.894 108.911 689.057 110.126 690.492 110.126Z" fill="#231F20" />
+            <path d="M702.592 108.879C703.263 107.273 702.56 105.403 701.023 104.703C699.486 104.002 697.695 104.736 697.025 106.342C696.354 107.948 697.057 109.818 698.594 110.518C700.131 111.219 701.922 110.485 702.592 108.879Z" fill="#58595B" />
+            <path d="M700.152 110.539C701.808 110.259 702.933 108.63 702.665 106.901C702.397 105.171 700.838 103.996 699.182 104.276C697.526 104.556 696.401 106.185 696.669 107.914C696.937 109.644 698.496 110.819 700.152 110.539Z" fill="#BCBEC0" />
+            <path d="M699.667 110.126C701.102 110.126 702.265 108.911 702.265 107.412C702.265 105.913 701.102 104.698 699.667 104.698C698.232 104.698 697.069 105.913 697.069 107.412C697.069 108.911 698.232 110.126 699.667 110.126Z" fill="#231F20" />
+            <path d="M711.787 108.813C712.425 107.192 711.685 105.338 710.134 104.672C708.582 104.005 706.808 104.779 706.169 106.399C705.531 108.019 706.272 109.873 707.823 110.54C709.374 111.206 711.149 110.433 711.787 108.813Z" fill="#58595B" />
+            <path d="M709.354 110.538C711.007 110.242 712.118 108.603 711.835 106.876C711.553 105.149 709.983 103.988 708.33 104.284C706.676 104.579 705.565 106.219 705.848 107.946C706.131 109.673 707.701 110.833 709.354 110.538Z" fill="#BCBEC0" />
+            <path d="M708.841 110.126C710.276 110.126 711.44 108.911 711.44 107.412C711.44 105.913 710.276 104.698 708.841 104.698C707.406 104.698 706.243 105.913 706.243 107.412C706.243 108.911 707.406 110.126 708.841 110.126Z" fill="#231F20" />
+            <defs>
+              <linearGradient id="paint0_linear_258_8259" x1="0.0928493" y1="62.6596" x2="762.162" y2="62.6596" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#808285" />
+                <stop offset="0.02" stop-color="#D1D3D4" />
+                <stop offset="0.09" stop-color="#A2A4A7" />
+                <stop offset="0.92" stop-color="#808285" />
+                <stop offset="0.97" stop-color="#808285" />
+                <stop offset="1" stop-color="#58595B" />
+              </linearGradient>
+              <linearGradient id="paint1_linear_258_8259" x1="381.124" y1="124.324" x2="381.124" y2="0.984375" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white" />
+                <stop offset="1" stop-color="#E6E6E6" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper max-w-[1440px] m-auto lg:p-[80px] md:py-[80px] md:px-[40px] xsm:py-[40px] xsm:px-[32px] py-[32px] px-[16px] flex flex-col gap-[40px]">
+        <div class="flex flex-col gap-[24px]">
+          <h2 class="font-inter-tight text-center font-bold xl:text-[48px] xl:leading-[120%] md:text-[47px] md:leading-[120%] xsm:text-[32px] xsm:leading-[125px] text-[32px] leading-[125px]">Save time to do what makes you money</h2>
+          <p class="font-inter-tight text-center text-muted-foreground xsm:text-[22px] font-semibold xsm:leading-[135%] text-[16px] leading-[150%]">Meanwhile, see new potential clients popping up on your phone.</p>
+        </div>
+        <div class="flex flex-col gap-[40px]">
+          <div class="overflow-auto">
+            <div class="tabs flex justify-between items-center rounded-[24px] border-[#E4E4E7] bg-[#F4F4F5] p-[12px] max-md:bg-transparent">
+              <a href="" data-tab="1" class="tab active-tab-type1 w-full text-center text-[#71717A] text-[16px] not-italic font-semibold leading-[24px] p-[12px] flex items-center justify-center rounded-[16px] hover:text-[#058BEB] transition-all duration-300 whitespace-nowrap max-lg:text-[12px] max-lg:leading-[150%] max-md:w-min">Website Builder</a>
+              <a href="" data-tab="2" class="tab w-full text-center text-[#71717A] text-[16px] font-semibold leading-[24px] p-[12px] flex items-center justify-center rounded-[16px] hover:text-[#058BEB] transition-all duration-300 whitespace-nowrap max-lg:text-[12px] max-lg:leading-[150%] max-md:w-min">High Ranking on Google</a>
+              <a href="" data-tab="3" class="tab w-full text-center text-[#71717A] text-[16px] font-semibold leading-[24px] p-[12px] flex items-center justify-center rounded-[16px] hover:text-[#058BEB] transition-all duration-300 whitespace-nowrap max-lg:text-[12px] max-lg:leading-[150%] max-md:w-min">Google and Facebook Ads</a>
+              <a href="" data-tab="4" class="tab w-full text-center text-[#71717A] text-[16px] font-semibold leading-[24px] p-[12px] flex items-center justify-center rounded-[16px] hover:text-[#058BEB] transition-all duration-300 whitespace-nowrap max-lg:text-[12px] max-lg:leading-[150%] max-md:w-min">Custom Domain</a>
+            </div>
+          </div>
+          <div id="tab-1" class="tab-content active-content justify-center gap-[40px] flex lg:flex-row flex-col">
+            <div class="bg-light-background p-[32px] border-border rounded-[24px] lg:max-w-[calc(50%-20px)] max-w-[100%] w-full">
+              <div class="mb-[24px] bg-white p-[6px] max-w-fit rounded-[12px] border-[1px] border-ring [box-shadow:0px_32px_9px_0px_rgba(0,_0,_0,_0.00),_0px_20px_8px_0px_rgba(0,_0,_0,_0.01),_0px_11px_7px_0px_rgba(0,_0,_0,_0.03),_0px_5px_5px_0px_rgba(0,_0,_0,_0.04),_0px_1px_3px_0px_rgba(0,_0,_0,_0.05)]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                  <path
+                    d="M3.99935 21.6572V9.92389C3.99935 8.43042 3.99935 7.68368 4.29 7.11325C4.54566 6.61149 4.95361 6.20354 5.45537 5.94788C6.02581 5.65723 6.77254 5.65723 8.26602 5.65723H23.7327C25.2262 5.65723 25.9729 5.65723 26.5433 5.94788C27.0451 6.20354 27.453 6.61149 27.7087 7.11325C27.9993 7.68368 27.9993 8.43042 27.9993 9.92389V21.6572H20.883C20.5569 21.6572 20.3938 21.6572 20.2404 21.6941C20.1043 21.7267 19.9743 21.7806 19.855 21.8537C19.7204 21.9362 19.6051 22.0515 19.3745 22.2821L19.2909 22.3657C19.0603 22.5963 18.945 22.7116 18.8104 22.7941C18.6911 22.8672 18.561 22.9211 18.425 22.9537C18.2715 22.9906 18.1085 22.9906 17.7824 22.9906H14.2163C13.8902 22.9906 13.7272 22.9906 13.5737 22.9537C13.4377 22.9211 13.3076 22.8672 13.1883 22.7941C13.0537 22.7116 12.9384 22.5963 12.7078 22.3657L12.6242 22.2821C12.3936 22.0515 12.2783 21.9362 12.1437 21.8537C12.0244 21.7806 11.8944 21.7267 11.7583 21.6941C11.6049 21.6572 11.4418 21.6572 11.1157 21.6572H3.99935ZM3.99935 21.6572C3.26297 21.6572 2.66602 22.2542 2.66602 22.9906V23.435C2.66602 24.2616 2.66602 24.675 2.75688 25.0141C3.00346 25.9343 3.72225 26.6531 4.6425 26.8997C4.98161 26.9906 5.39493 26.9906 6.22157 26.9906H25.7771C26.6038 26.9906 27.0171 26.9906 27.3562 26.8997C28.2764 26.6531 28.9952 25.9343 29.2418 25.0141C29.3327 24.675 29.3327 24.2616 29.3327 23.435C29.3327 23.0217 29.3327 22.815 29.2873 22.6455C29.164 22.1853 28.8046 21.8259 28.3444 21.7027C28.1749 21.6572 27.9682 21.6572 27.5549 21.6572H26.666"
+                    stroke="url(#paint0_linear_269_10454)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient id="paint0_linear_269_10454" x1="14.9995" y1="-17.925" x2="15.7001" y2="26.9952" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white" />
+                      <stop offset="1" stop-color="#0095FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="mb-[24px] max-w-[354px] w-full font-inter-tight text-foreground xl:text-[32px] lg:text-[31px] font-bold leading-[125%]">Create a fully-optimized website in 60 seconds</h3>
+              <ul class="flex flex-col gap-[12px] mb-[32px]">
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">14-day free trial.</p>
+                </li>
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">Showcase your work to potential clients.</p>
+                </li>
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">Get indexed on Google, Bing, and Yahoo.</p>
+                </li>
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">No tech skills needed.</p>
+                </li>
+              </ul>
+
+              <a href="" class="mb-[32px] inline-flex items-center gap-[4px] hover:opacity-90 hover:gap-[8px] transition-all duration-300 text-[#058BEB] text-[18px] not-italic font-semibold leading-[140%] max-xsm:text-[16px] max-xsm:leading-[150%]">
+                Try It for Free
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M9 18.8936L15 12.8936L9 6.89355" stroke="#058BEB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <p class="text-muted-foreground text-[12px] font-medium leading-[150%]">No credit card required.</p>
+            </div>
+            <div class="rounded-[24px] overflow-hidden lg:max-w-[calc(50%-20px)] max-w-[100%] w-full max-h-[483px]">
+              <img class="w-full h-full object-cover" src="imgs/features1.png" alt="Features" />
+            </div>
+          </div>
+          <div id="tab-2" class="tab-content justify-center gap-[40px] flex lg:flex-row flex-col">
+            <div class="bg-light-background p-[32px] border-border rounded-[24px] lg:max-w-[calc(50%-20px)] max-w-[100%] w-full">
+              <div class="mb-[24px] bg-white p-[6px] max-w-fit rounded-[12px] border-[1px] border-ring [box-shadow:0px_32px_9px_0px_rgba(0,_0,_0,_0.00),_0px_20px_8px_0px_rgba(0,_0,_0,_0.01),_0px_11px_7px_0px_rgba(0,_0,_0,_0.03),_0px_5px_5px_0px_rgba(0,_0,_0,_0.04),_0px_1px_3px_0px_rgba(0,_0,_0,_0.05)]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M28 28H6.13333C5.3866 28 5.01323 28 4.72801 27.8547C4.47713 27.7268 4.27316 27.5229 4.14532 27.272C4 26.9868 4 26.6134 4 25.8667V4M28 9.33333L20.7542 16.5791C20.4902 16.8431 20.3582 16.9751 20.206 17.0246C20.0721 17.0681 19.9279 17.0681 19.794 17.0246C19.6418 16.9751 19.5098 16.8431 19.2458 16.5791L16.7542 14.0876C16.4902 13.8236 16.3582 13.6916 16.206 13.6421C16.0721 13.5986 15.9279 13.5986 15.794 13.6421C15.6418 13.6916 15.5098 13.8236 15.2458 14.0876L9.33333 20M28 9.33333H22.6667M28 9.33333V14.6667"
+                    stroke="url(#paint0_linear_269_10800)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient id="paint0_linear_269_10800" x1="15.1001" y1="-22.53" x2="16.0852" y2="27.9983" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white" />
+                      <stop offset="1" stop-color="#0095FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="mb-[24px] font-inter-tight text-foreground text-[32px] font-bold leading-[125%]">Climb up search results with a fully-optimized website</h3>
+              <ul class="flex flex-col gap-[12px] mb-[32px]">
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">Stand out on search engines.</p>
+                </li>
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">Attract more local clients.</p>
+                </li>
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">Boost your online visibility.</p>
+                </li>
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">AI-powered automation.</p>
+                </li>
+              </ul>
+
+              <a href="" class="inline-flex items-center gap-[4px] hover:opacity-90 hover:gap-[8px] transition-all duration-300 text-[#058BEB] text-[18px] not-italic font-semibold leading-[140%] max-xsm:text-[16px] max-xsm:leading-[150%]">
+                Be Found by New Clients
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M9 18.8936L15 12.8936L9 6.89355" stroke="#058BEB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="rounded-[24px] overflow-hidden lg:max-w-[calc(50%-20px)] max-w-[100%] w-full max-h-[433px]">
+              <img class="w-full h-full object-cover" src="imgs/features2.png" alt="Features" />
+            </div>
+          </div>
+          <div id="tab-3" class="tab-content justify-center gap-[40px] flex lg:flex-row flex-col">
+            <div class="bg-light-background p-[32px] border-border rounded-[24px] lg:max-w-[calc(50%-20px)] max-w-[100%] w-full">
+              <div class="mb-[24px] bg-white p-[6px] max-w-fit rounded-[12px] border-[1px] border-ring [box-shadow:0px_32px_9px_0px_rgba(0,_0,_0,_0.00),_0px_20px_8px_0px_rgba(0,_0,_0,_0.01),_0px_11px_7px_0px_rgba(0,_0,_0,_0.03),_0px_5px_5px_0px_rgba(0,_0,_0,_0.04),_0px_1px_3px_0px_rgba(0,_0,_0,_0.05)]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path d="M16.0007 17.3337C18.2098 17.3337 20.0007 15.5428 20.0007 13.3337C20.0007 11.1245 18.2098 9.33366 16.0007 9.33366C13.7915 9.33366 12.0007 11.1245 12.0007 13.3337C12.0007 15.5428 13.7915 17.3337 16.0007 17.3337Z" stroke="url(#paint0_linear_269_10960)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.0007 29.3337C21.334 24.0003 26.6673 19.2247 26.6673 13.3337C26.6673 7.44262 21.8917 2.66699 16.0007 2.66699C10.1096 2.66699 5.33398 7.44262 5.33398 13.3337C5.33398 19.2247 10.6673 24.0003 16.0007 29.3337Z" stroke="url(#paint1_linear_269_10960)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <defs>
+                    <linearGradient id="paint0_linear_269_10960" x1="15.2008" y1="-26.8108" x2="16.5686" y2="29.3198" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white" />
+                      <stop offset="1" stop-color="#0095FF" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_269_10960" x1="15.2008" y1="-26.8108" x2="16.5686" y2="29.3198" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white" />
+                      <stop offset="1" stop-color="#0095FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="mb-[24px] font-inter-tight text-foreground text-[32px] font-bold leading-[125%]">Reach local clients with targeted ads</h3>
+              <ul class="flex flex-col gap-[12px] mb-[32px]">
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">Automated ad setup.</p>
+                </li>
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">Attract clients seeking your services.</p>
+                </li>
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">No ad experience required.</p>
+                </li>
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">Optimization with tested strategies.</p>
+                </li>
+              </ul>
+
+              <a href="" class="inline-flex items-center gap-[4px] hover:opacity-90 hover:gap-[8px] transition-all duration-300 text-[#058BEB] text-[18px] not-italic font-semibold leading-[140%] max-xsm:text-[16px] max-xsm:leading-[150%]">
+                Get Local Leads Now
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M9 18.8936L15 12.8936L9 6.89355" stroke="#058BEB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="rounded-[24px] overflow-hidden lg:max-w-[calc(50%-20px)] max-w-[100%] w-full max-h-[433px]">
+              <img class="w-full h-full object-cover" src="imgs/features3.png" alt="Features" />
+            </div>
+          </div>
+          <div id="tab-4" class="tab-content justify-center gap-[40px] flex lg:flex-row flex-col">
+            <div class="bg-light-background p-[32px] border-border rounded-[24px] lg:max-w-[calc(50%-20px)] max-w-[100%] w-full">
+              <div class="mb-[24px] bg-white p-[6px] max-w-fit rounded-[12px] border-[1px] border-ring [box-shadow:0px_32px_9px_0px_rgba(0,_0,_0,_0.00),_0px_20px_8px_0px_rgba(0,_0,_0,_0.01),_0px_11px_7px_0px_rgba(0,_0,_0,_0.03),_0px_5px_5px_0px_rgba(0,_0,_0,_0.04),_0px_1px_3px_0px_rgba(0,_0,_0,_0.05)]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.9993 2.66699C19.3344 6.31813 21.2297 11.0564 21.3327 16.0003C21.2297 20.9443 19.3344 25.6825 15.9993 29.3337M15.9993 2.66699C12.6643 6.31813 10.769 11.0564 10.666 16.0003C10.769 20.9443 12.6643 25.6825 15.9993 29.3337M15.9993 2.66699C8.63555 2.66699 2.66602 8.63653 2.66602 16.0003C2.66602 23.3641 8.63555 29.3337 15.9993 29.3337M15.9993 2.66699C23.3631 2.66699 29.3327 8.63653 29.3327 16.0003C29.3327 23.3641 23.3631 29.3337 15.9993 29.3337M3.33271 12.0003H28.666M3.33268 20.0003H28.666"
+                    stroke="url(#paint0_linear_269_11009)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient id="paint0_linear_269_11009" x1="14.9995" y1="-26.8108" x2="16.094" y2="29.3318" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white" />
+                      <stop offset="1" stop-color="#0095FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="mb-[24px] font-inter-tight text-foreground text-[32px] font-bold leading-[125%]">Build trust with a personalized website address</h3>
+              <ul class="flex flex-col gap-[12px] mb-[32px]">
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">Get a brand-matching domain.</p>
+                </li>
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">Choose your own address.</p>
+                </li>
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">Be easily remembered.</p>
+                </li>
+                <li class="flex gap-[12px] items-start">
+                  <img src="imgs/checkmark.svg" alt="checkmark" />
+                  <p class="text-[#71717A] text-[18px] not-italic font-semibold leading-[140%] max-md:text-[16px] max-md:leading-[150%] max-xsm:text-[14px]">Hassle-free setup.</p>
+                </li>
+              </ul>
+
+              <a href="" class="inline-flex items-center gap-[4px] hover:opacity-90 hover:gap-[8px] transition-all duration-300 text-[#058BEB] text-[18px] not-italic font-semibold leading-[140%] max-xsm:text-[16px] max-xsm:leading-[150%]">
+                Secure Your Professional Domain
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path d="M9 18.8936L15 12.8936L9 6.89355" stroke="#058BEB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="rounded-[24px] overflow-hidden lg:max-w-[calc(50%-20px)] max-w-[100%] w-full max-h-[433px]">
+              <img class="w-full h-full object-cover" src="imgs/features4.png" alt="Features" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- swiper slider start  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper slider end  -->
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".testimonial-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
+        },
+      });
+
+      // HOW IT WORKS SECTION
+
+      var swiperHow;
+
+      // Function to initialize Swiper if the screen is less than 1024px
+      function initSwiper() {
+        var screenWidth = window.innerWidth;
+
+        if (screenWidth < 1024 && !swiperHow) {
+          // Initialize Swiper if it is not initialized and screen is less than 1024px
+          swiper = new Swiper(".how-it-works-swiper", {
+            slidesPerView: 1.2,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+              769: {
+                slidesPerView: 1.5,
+              },
+            },
+          });
+        } else if (screenWidth >= 1024 && swiperHow) {
+          // Destroy Swiper if screen is greater than or equal to 1024px
+          swiperHow.destroy(true, true);
+          swiperHow = undefined;
+        }
+      }
+
+      // Initialize Swiper on page load
+      window.addEventListener("load", initSwiper);
+
+      // Reinitialize Swiper on window resize
+      window.addEventListener("resize", initSwiper);
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
