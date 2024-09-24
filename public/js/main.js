@@ -103,9 +103,18 @@ horizontaltabs.forEach((horizontaltab) => {
     const tabId = horizontaltab.getAttribute("data-tab");
 
     // Hide all contents by removing active-content class
-    horizontalcontents.forEach((horizontalcontent) => horizontalcontent.classList.remove("active-horizontal"));
+    horizontalcontents.forEach((horizontalcontent) =>
+      horizontalcontent.classList.remove("active-horizontal")
+    );
 
     // Show the content that matches the clicked tab by adding active-content class
-    document.getElementById(`h-tab-${tabId}`).classList.add("active-horizontal");
+    document
+      .getElementById(`h-tab-${tabId}`)
+      .classList.add("active-horizontal");
   });
+});
+
+$(".playvideo").click(function () {
+  $("#60secvideo")[0].play();
+  $("#60secvideo").parent().addClass("videoplayed");
 });
