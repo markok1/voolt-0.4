@@ -83,6 +83,16 @@
 }
 .active-horizontal-tab .tab-text p:last-child {
   color: #09090b;
+  display: block;
+}
+.active-horizontal-tab .stop-color {
+  stop-color: #0094ff;
+}
+.active-horizontal-tab .stroke-color {
+  stroke: #0094ff;
+}
+.active-horizontal-tab {
+  align-items: start;
 }
 
 .custom-bg {
