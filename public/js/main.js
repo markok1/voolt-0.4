@@ -135,7 +135,7 @@ document.querySelectorAll(".playvideo").forEach(function (element) {
   });
 });
 document.addEventListener("DOMContentLoaded", function () {
-  if (document.querySelector(".slider-js")) {
+  if (document.querySelector(".home")) {
     // Testimonial Swiper
     var swiper = new Swiper(".testimonial-swiper", {
       slidesPerView: 1,
