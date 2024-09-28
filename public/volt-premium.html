@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voolt 4.0</title>
+    <link rel="icon" href="imgs/logo.svg" sizes="any" />
+    <meta name="description" content="Build stunning websites and automate your marketing with Voolt. Our AI-driven platform offers easy website creation and marketing solutions for small ..." />
+
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <!-- swiper slider start  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- swiper slider end  -->
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- ############### navbar ############### -->
     <nav class="fixed left-0 top-0 right-0 bg-[#fff] z-10">
       <div class="wrapper max-w-[1440px] m-auto px-[80px] py-[20px] flex flex-col max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px]">
         <div class="flex justify-between items-center">
@@ -21,13 +21,13 @@
           </div>
           <ul class="mobile-nav-list flex gap-[32px] items-center justify-center max-lg:fixed max-lg:right-[0] max-lg:bottom-[0] max-lg:bg-[#fff] max-lg:top-[85px] max-lg:w-[0] max-lg:overflow-hidden max-lg:flex-col max-lg:gap-[20px] max-lg:items-start transition-all duration-300 max-xsm:top-[70px] max-lg:justify-start max-lg:py-[20px] max-lg:gap-[32px]">
             <li class="max-lg:w-[320px]">
-              <a href="" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Home</a>
+              <a href="index.html" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Home</a>
             </li>
             <li class="max-lg:w-[320px]">
-              <a href="" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Who We Serve</a>
+              <a href="who-we-serve.html" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Who We Serve</a>
             </li>
             <li class="max-lg:w-[320px] group/item">
-              <a href="" class="dropdown-tag px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] lg:group-hover/item:text-[#058BEB] transition-all duration-300"
+              <a href="#" class="dropdown-tag px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] lg:group-hover/item:text-[#058BEB] transition-all duration-300"
                 >Features
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none" class="transition-all duration-300 lg:group-hover/item:rotate-180">
                   <path
@@ -44,7 +44,7 @@
                 <h2 class="mb-[40px] font-inter-tight text-[#09090B] tracking-[-0.11px] text-[22px] not-italic font-semibold leading-[135%] max-lg:hidden">Features</h2>
                 <ul class="flex flex-col gap-[16px]">
                   <li class="">
-                    <a href="" class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] lg:hover:bg-[#F4F4F5] transition-all duration-300 max-lg:p-0">
+                    <a href="feature.html" class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] lg:hover:bg-[#F4F4F5] transition-all duration-300 max-lg:p-0">
                       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                         <path
                           d="M3.00003 14.2214V6.39913C3.00003 5.40348 3.00003 4.90566 3.1938 4.52537C3.36424 4.19086 3.63621 3.9189 3.97072 3.74845C4.35101 3.55469 4.84883 3.55469 5.84448 3.55469H16.1556C17.1512 3.55469 17.6491 3.55469 18.0294 3.74845C18.3639 3.9189 18.6358 4.19086 18.8063 4.52537C19 4.90566 19 5.40348 19 6.39913V14.2214H14.2558C14.0384 14.2214 13.9297 14.2214 13.8274 14.2459C13.7367 14.2677 13.65 14.3036 13.5704 14.3523C13.4807 14.4073 13.4039 14.4842 13.2501 14.6379L13.1944 14.6937C13.0406 14.8474 12.9638 14.9243 12.8741 14.9793C12.7945 15.028 12.7078 15.0639 12.6171 15.0857C12.5148 15.1102 12.4061 15.1102 12.1887 15.1102H9.81136C9.59395 15.1102 9.48524 15.1102 9.38294 15.0857C9.29224 15.0639 9.20553 15.028 9.126 14.9793C9.0363 14.9243 8.95943 14.8474 8.8057 14.6937L8.74993 14.6379C8.59619 14.4842 8.51932 14.4073 8.42962 14.3523C8.35009 14.3036 8.26338 14.2677 8.17269 14.2459C8.07038 14.2214 7.96168 14.2214 7.74426 14.2214H3.00003ZM3.00003 14.2214C2.50911 14.2214 2.11115 14.6193 2.11115 15.1102V15.4065C2.11115 15.9576 2.11115 16.2332 2.17172 16.4593C2.33611 17.0728 2.8153 17.5519 3.4288 17.7163C3.65487 17.7769 3.93042 17.7769 4.48152 17.7769H17.5186C18.0696 17.7769 18.3452 17.7769 18.5713 17.7163C19.1848 17.5519 19.664 17.0728 19.8283 16.4593C19.8889 16.2332 19.8889 15.9576 19.8889 15.4065C19.8889 15.131 19.8889 14.9932 19.8586 14.8802C19.7764 14.5734 19.5368 14.3338 19.2301 14.2516C19.1171 14.2214 18.9793 14.2214 18.7037 14.2214H18.1111"
@@ -67,7 +67,7 @@
                     </a>
                   </li>
                   <li class="">
-                    <a href="" class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] lg:hover:bg-[#F4F4F5] transition-all duration-300 max-lg:p-0">
+                    <a href="volt-premium.html" class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] lg:hover:bg-[#F4F4F5] transition-all duration-300 max-lg:p-0">
                       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                         <path
                           d="M6.5556 13.4131V19.5551L10.7359 17.883C10.8335 17.844 10.8823 17.8244 10.9327 17.8167C10.9773 17.8099 11.0228 17.8099 11.0674 17.8167C11.1178 17.8244 11.1666 17.844 11.2641 17.883L15.4445 19.5551V13.4131M17.6667 8.44401C17.6667 12.1259 14.6819 15.1107 11 15.1107C7.31814 15.1107 4.33337 12.1259 4.33337 8.44401C4.33337 4.76211 7.31814 1.77734 11 1.77734C14.6819 1.77734 17.6667 4.76211 17.6667 8.44401Z"
@@ -90,7 +90,7 @@
                     </a>
                   </li>
                   <li class="">
-                    <a href="" class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] lg:hover:bg-[#F4F4F5] transition-all duration-300 max-lg:p-0">
+                    <a href="feature3-voolt-marketing.html" class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] lg:hover:bg-[#F4F4F5] transition-all duration-300 max-lg:p-0">
                       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                         <path
                           d="M3.88893 12.4431L5.28861 18.0418C5.32797 18.1993 5.34766 18.278 5.37094 18.3467C5.59841 19.0183 6.20316 19.4905 6.90983 19.5483C6.98217 19.5542 7.06332 19.5542 7.22563 19.5542C7.42887 19.5542 7.53049 19.5542 7.6161 19.5459C8.46225 19.4638 9.13189 18.7942 9.21396 17.948C9.22226 17.8624 9.22226 17.7608 9.22226 17.5575V4.88751M16.7778 11.9986C18.496 11.9986 19.8889 10.6057 19.8889 8.88751C19.8889 7.16929 18.496 5.7764 16.7778 5.7764M9.44448 4.88751H6.11114C3.90201 4.88751 2.11114 6.67837 2.11115 8.88751C2.11115 11.0966 3.90201 12.8875 6.11114 12.8875H9.44448C11.0146 12.8875 12.9354 13.7292 14.4172 14.537C15.2817 15.0082 15.7139 15.2438 15.997 15.2092C16.2595 15.177 16.458 15.0592 16.6119 14.8441C16.7778 14.6121 16.7778 14.148 16.7778 13.2197V4.55532C16.7778 3.62706 16.7778 3.16293 16.6119 2.93097C16.458 2.71586 16.2595 2.598 15.997 2.56585C15.7139 2.53117 15.2817 2.7668 14.4172 3.23805C12.9354 4.04583 11.0146 4.88751 9.44448 4.88751Z"
@@ -113,7 +113,7 @@
                     </a>
                   </li>
                   <li class="">
-                    <a href="" class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] lg:hover:bg-[#F4F4F5] transition-all duration-300 max-lg:p-0">
+                    <a href="feature4-custom-domain.html" class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] lg:hover:bg-[#F4F4F5] transition-all duration-300 max-lg:p-0">
                       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                         <path
                           d="M2.72159 13.9063L4.41776 12.9272C4.50964 12.8741 4.61745 12.8557 4.72173 12.8752L8.05906 13.4998C8.33333 13.5511 8.5865 13.34 8.58526 13.061L8.57227 10.1369C8.57191 10.0574 8.59286 9.97932 8.63293 9.91072L10.3171 7.02731C10.4048 6.87725 10.3969 6.68986 10.297 6.54766L7.4613 2.51128M17.2225 4.31872C12.3336 6.66627 15.0001 9.77738 15.8891 10.2218C17.5576 11.0559 19.8779 11.1107 19.8779 11.1107C19.8852 10.9634 19.8889 10.8153 19.8889 10.6662C19.8889 5.75704 15.9092 1.77734 11 1.77734C6.09084 1.77734 2.11115 5.75704 2.11115 10.6662C2.11115 15.5754 6.09084 19.5551 11 19.5551C11.1491 19.5551 11.2972 19.5515 11.4445 19.5442M15.2292 19.5016L12.4143 12.0805L19.8354 14.8954L16.5446 16.2108L15.2292 19.5016Z"
@@ -139,19 +139,23 @@
               </div>
             </li>
             <li class="max-lg:w-[320px]">
-              <a href="" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Pricing</a>
+              <a href="pricing.html" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Pricing</a>
             </li>
             <li class="max-lg:w-[320px]">
-              <a href="" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Support</a>
+              <a href="#" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Support</a>
             </li>
             <li class="max-lg:w-[320px]">
-              <a href="" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Blog</a>
+              <a href="#" class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300">Blog</a>
             </li>
           </ul>
           <div class="flex gap-[12px] items-center max-md:gap-[8px]">
-            <a href="" class="flex px-[16px] py-[6px] justify-center items-center gap-[8px] border-[1px] border-[solid] border-[#E4E4E7] rounded-[6px] bg-[#fff] text-[#27272A] font-inter-tight text-[14px] not-italic font-medium leading-[20px] hover:bg-muted transition-all duration-300 max-xsm:text-[12px] max-xsm:leading-[150%] max-xsm:px-[12px] max-xsm:py-[5px]">Login </a>
-            <a href="" class="flex px-[16px] py-[8px] justify-center items-center gap-[8px] rounded-[6px] bg-[#FCC82C] text-[#27272A] font-inter-tight text-[14px] not-italic font-medium leading-[20px] hover:bg-primary/90 transition-all duration-300 max-xsm:text-[12px] max-xsm:leading-[150%] max-xsm:px-[12px] max-xsm:py-[6px]">Sign Up </a>
-            <a href="" class="lg:hidden hover:opacity-90 nav-hamb">
+            <a
+              href="https://app.voolt.com/login"
+              class="flex px-[16px] py-[6px] justify-center items-center gap-[8px] border-[1px] border-[solid] border-[#E4E4E7] rounded-[6px] bg-[#fff] text-[#27272A] font-inter-tight text-[14px] not-italic font-medium leading-[20px] hover:bg-muted transition-all duration-300 max-xsm:text-[12px] max-xsm:leading-[150%] max-xsm:px-[12px] max-xsm:py-[5px]"
+              >Login
+            </a>
+            <a href="https://app.voolt.com/flow/01/1/" class="flex px-[16px] py-[8px] justify-center items-center gap-[8px] rounded-[6px] bg-[#FCC82C] text-[#27272A] font-inter-tight text-[14px] not-italic font-medium leading-[20px] hover:bg-primary/90 transition-all duration-300 max-xsm:text-[12px] max-xsm:leading-[150%] max-xsm:px-[12px] max-xsm:py-[6px]">Sign Up </a>
+            <a aria-label="Hamburger menu, click it to open" href="#" class="lg:hidden hover:opacity-90 nav-hamb">
               <div class="p-[2px] flex flex-col gap-[6px] max-xsm:p-[1px] max-xsm:gap-[4px]">
                 <div class="bg-[#09090B] w-[28px] h-[2px] rounded-[5px] transition-all duration-300 max-xsm:w-[22px]"></div>
                 <div class="bg-[#09090B] w-[19px] h-[2px] rounded-[5px] transition-all duration-300 max-xsm:w-[15px]"></div>
@@ -162,6 +166,7 @@
         </div>
       </div>
     </nav>
+    <!-- ############### navbar end ############### -->
     <section class="mt-[85px] voolt-in-numbers bg-background relative overflow-hidden">
       <div class="max-sm:py-[20px] wrapper relative max-w-[1440px] m-auto lg:p-[80px] lg:pb-[150px] lg:pt-[140px] md:py-[80px] md:px-[40px] xsm:py-[40px] xsm:px-[32px] py-[32px] px-[16px] flex flex-col">
         <div class="max-lg:flex-col flex justify-between items-center">
@@ -182,10 +187,10 @@
 
             <div class="max-sm:mt-[20px] inline-flex items-center gap-[8px] mt-[15px] max-lg:mb-[10px]">
               <div class="flex items-center pl-[12px]">
-                <img class="ml-[-12px]" src="imgs/Avatar.png" alt="" />
-                <img class="ml-[-12px]" src="imgs/Avatar.png" alt="" />
-                <img class="ml-[-12px]" src="imgs/Avatar.png" alt="" />
-                <img class="ml-[-12px]" src="imgs/Avatar.png" alt="" />
+                <img class="ml-[-12px]" src="imgs/hero-avatar1.png" alt="Customers picture" />
+                <img class="ml-[-12px]" src="imgs/hero-avatar2.png" alt="Customers picture" />
+                <img class="ml-[-12px]" src="imgs/hero-avatar3.png" alt="Customers picture" />
+                <img class="ml-[-12px]" src="imgs/hero-avatar4.png" alt="Customers picture" />
               </div>
               <div class="flex flex-col justify-center items-start gap-[8px]">
                 <div class="flex">
@@ -245,7 +250,7 @@
             </div>
           </div>
           <div class="max-lg:mt-[25px] max-lg:w-full max-lg:mr-[unset] max-xl:mr-[-340px]">
-            <img class="max-lg:w-full" src="imgs/banner.png" alt="" />
+            <img class="max-lg:w-full" src="imgs/banner.webp" alt="Smartphone and search engine results showing a lawn care business ad and a housekeeping service website with appointment booking." />
           </div>
         </div>
       </div>
@@ -266,7 +271,7 @@
             </a>
           </div>
           <div class="max-lg:w-full">
-            <img class="max-lg:mt-[40px] max-lg:max-w-[100%] max-xl:max-w-[410px] max-lg:w-full" src="imgs/INDEXED.png" alt="" />
+            <img class="max-lg:mt-[40px] max-lg:max-w-[100%] max-xl:max-w-[410px] max-lg:w-full" loading="lazy" src="imgs/INDEXED.webp" alt="Search engine result for a handyman business ad with contact information, displayed alongside Google, Bing, and Yahoo logos." />
           </div>
         </div>
       </div>
@@ -276,7 +281,7 @@
       <div class="wrapper max-w-[1440px] m-auto lg:pb-[78px] lg:px-[80px] md:pb-[80px] md:px-[40px] xsm:pb-[40px] xsm:px-[32px] pb-[32px] px-[16px] flex flex-col md:gap-[40px] gap-[24px]">
         <h5 class="tracking-[0.18px] m-auto text-center font-inter-tight text-foreground text-[18px] font-semibold leading-[28px]">“I get my own leads, with no one competing for them. I finally have a reliable source of potential customers.”</h5>
         <div class="flex justify-center items-center gap-[16px]">
-          <img src="imgs/helen.png" alt="Avatar" />
+          <img loading="lazy" src="imgs/helen.png" alt="Avatar" />
           <div>
             <p class="font-inter-tight text-foreground text-[18px] font-medium leading-[140%]">Helen B.</p>
             <p class="tracking-[0.16px] font-inter-tight text-muted-foreground text-[18px] font-medium leading-[140%]">Usylpier Road Emergency</p>
@@ -299,7 +304,7 @@
             </a>
           </div>
           <div class="max-lg:order-2 max-lg:w-full">
-            <img class="max-lg:mt-[40px] max-lg:max-w-[100%] max-xl:max-w-[410px] max-lg:w-full" src="imgs/map.png" alt="" />
+            <img class="max-lg:mt-[40px] max-lg:max-w-[100%] max-xl:max-w-[410px] max-lg:w-full" loading="lazy" src="imgs/map.webp" alt="Map with location pins indicating multiple service points." />
           </div>
         </div>
       </div>
@@ -309,7 +314,7 @@
       <div class="wrapper max-w-[1440px] m-auto lg:pb-[78px] lg:px-[80px] md:pb-[80px] md:px-[40px] xsm:pb-[40px] xsm:px-[32px] pb-[32px] px-[16px] flex flex-col md:gap-[40px] gap-[24px]">
         <h5 class="max-w-[800px] tracking-[0.18px] m-auto text-center font-inter-tight text-foreground text-[18px] font-semibold leading-[28px]">"Clients come directly from local Google search results to my website. I get their messages on my phone, without middleman."</h5>
         <div class="flex justify-center items-center gap-[16px]">
-          <img src="imgs/anderson.png" alt="Avatar" />
+          <img loading="lazy" src="imgs/anderson.png" alt="Avatar" />
           <div>
             <p class="font-inter-tight text-foreground text-[18px] font-medium leading-[140%]">Anderson M.</p>
             <p class="tracking-[0.16px] font-inter-tight text-muted-foreground text-[18px] font-medium leading-[140%]">M’s Plumbing Co.</p>
@@ -320,7 +325,7 @@
 
     <section class="max-sm:mt-[50px] mt-[76px]">
       <div class="wrapper max-w-[1440px] m-auto lg:pb-[78px] lg:px-[80px] md:pb-[80px] md:px-[40px] xsm:pb-[40px] xsm:px-[32px] pb-[32px] px-[16px] flex flex-col md:gap-[40px] gap-[24px]">
-        <div class="max-xsm:py-[32px] max-xsm:px-[24px] max-md:py-[40px] max-md:px-[32px] max-xl:min-h-[unset] max-xl:py-[79px] px-[80px] py-[94px] min-h-[398px] rounded-[24px] overflow-hidden border-[1px] border-[solid] border-[#E4E4E7] bg-[url(imgs/have-question.png)] bg-right-top bg-cover">
+        <div class="max-xsm:py-[32px] max-xsm:px-[24px] max-md:py-[40px] max-md:px-[32px] max-xl:min-h-[unset] max-xl:py-[79px] px-[80px] py-[94px] min-h-[398px] rounded-[24px] overflow-hidden border-[1px] border-[solid] border-[#E4E4E7] bg-[url(imgs/have-question.webp)] bg-right-top bg-cover">
           <h2 class="max-sm:text-[24px] font-inter-tight text-[#FFF] tracking-[0.48px] text-[48px] not-italic font-bold leading-[120%]">Still have questions?</h2>
           <p class="max-sm:text-[16px] mt-[24px] font-inter-tight text-[#FFF] tracking-[-0.11px] text-[22px] not-italic font-semibold leading-[135%]">Our team is available to help 24/7.</p>
           <a href="" class="block mt-[36px] rounded-[6px] border-[4px] border-[solid] border-[rgba(252,200,44,0.20)] w-min max-sm:mt-[29px]">
@@ -339,13 +344,13 @@
       <div class="wrapper max-w-[1440px] m-auto px-[80px] py-[80px] flex flex-col max-lg:px-[40px] max-md:px-[32px] max-sm:py-[40px] max-xsm:px-[16px]">
         <div class="flex justify-between max-md:flex-col">
           <div class="w-[33%] pr-[15px] max-md:w-[100%] max-md:pr-[0]">
-            <a href="">
-              <img src="imgs/logo-white.png" alt="" />
+            <a href="index.html" aria-label="Voolt logo">
+              <img loading="lazy" src="imgs/logo-white.png" alt="" />
             </a>
             <p class="text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight tracking-[0.14px] mt-[23px]">Voolt empowers tradespeople and home service pros to attract local clients with automated tools that enable them to manage their own marketing.</p>
             <div class="flex gap-[20px] mt-[24px] pr-[15px] max-lg:flex-col max-md:flex-row max-md:pr-[0] max-md:inline-flex max-xsm:gap-12px">
-              <a href=""><img src="imgs/google-partner.svg" alt="" /></a>
-              <a href=""><img src="imgs/trustpilot.svg" alt="" /></a>
+              <a aria-label="Google logo" href="#"><img loading="lazy" src="imgs/google-partner.svg" alt="" /></a>
+              <a aria-label="Trustpilot reviews" href="https://www.trustpilot.com/review/voolt.com"><img loading="lazy" src="imgs/trustpilot.svg" alt="" /></a>
             </div>
           </div>
           <div class="w-[33%] flex justify-start pl-[11px] gap-[40px] max-lg:flex-wrap max-md:w-[100%] max-md:justify-between max-md:mt-[40px] max-md:pl-[0] max-md:order-3 max-sm:order-1 max-xsm:flex-col max-xsm:gap-[16px]">
@@ -358,22 +363,22 @@
               </h3>
               <ul class="flex flex-col gap-[9px] max-xsm:h-0 max-xsm:overflow-hidden transition-all duration-300">
                 <li>
-                  <a href="" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Who We Serve</a>
+                  <a href="who-we-serve.html" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Who We Serve</a>
                 </li>
                 <li>
-                  <a href="" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Website Builder</a>
+                  <a href="feature.html" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Website Builder</a>
                 </li>
                 <li>
-                  <a href="" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Voolt Premium</a>
+                  <a href="volt-premium.html" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Voolt Premium</a>
                 </li>
                 <li>
-                  <a href="" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Voolt Marketing</a>
+                  <a href="feature3-voolt-marketing.html" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Voolt Marketing</a>
                 </li>
                 <li>
-                  <a href="" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Custom Domain</a>
+                  <a href="feature4-custom-domain.html" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Custom Domain</a>
                 </li>
                 <li>
-                  <a href="" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Pricing</a>
+                  <a href="pricing.html" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Pricing</a>
                 </li>
               </ul>
             </div>
@@ -386,10 +391,10 @@
               </h3>
               <ul class="flex flex-col gap-[9px] max-xsm:h-0 max-xsm:overflow-hidden transition-all duration-300">
                 <li>
-                  <a href="" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">About Us</a>
+                  <a href="#" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">About Us</a>
                 </li>
                 <li>
-                  <a href="" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Blog</a>
+                  <a href="#" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Blog</a>
                 </li>
               </ul>
             </div>
@@ -402,16 +407,16 @@
               </h3>
               <ul class="flex flex-col gap-[9px] max-xsm:h-0 max-xsm:overflow-hidden transition-all duration-300">
                 <li>
-                  <a href="" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Help & Support</a>
+                  <a href="#" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Help & Support</a>
                 </li>
                 <li>
-                  <a href="" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Terms of Use</a>
+                  <a href="#" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Terms of Use</a>
                 </li>
                 <li>
-                  <a href="" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Privacy Policy</a>
+                  <a href="#" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Legal Notice</a>
+                  <a href="#" class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300">Legal Notice</a>
                 </li>
               </ul>
             </div>
@@ -420,9 +425,9 @@
             <h3 class="tracking-[0.14px] text-white font-inter-tight text-[14px] not-italic font-semibold leading-[20px] mb-[17px] max-md:uppercase">Newsletter</h3>
             <div class="flex justify-between">
               <label class="w-[calc(100%-110px)] relative block max-fullcursor-pointer max-xsm:w-[calc(100%-90px)]">
-                <input class="tracking-[0.14px] w-full placeholder:text-muted-foreground bg-white w-full border border-border rounded-[6px] py-[8px] pl-[13px] pr-[12px] focus:outline-[0px] focus:border-ring hover:border-ring transition-all duration-300 text-[14px] font-inter-tight font-normal leading-[150%]" placeholder="Email address" type="email" name="industry" required />
+                <input class="tracking-[0.14px] w-full placeholder:text-muted-foreground bg-white border border-border rounded-[6px] py-[8px] pl-[13px] pr-[12px] focus:outline-[0px] focus:border-ring hover:border-ring transition-all duration-300 text-[14px] font-inter-tight font-normal leading-[150%]" placeholder="Email address" type="email" name="industry" required />
               </label>
-              <a href="" class="inline-flex px-[20px] py-[8px] justify-center items-center gap-[8px] rounded-[6px] bg-[#FCC82C] text-[#27272A] font-inter-tight text-[14px] not-italic font-medium leading-[20px] hover:bg-primary/90 transition-all duration-300 max-xsm:text-[12px] max-xsm:leading-[150%] max-xsm:px-[12px] max-xsm:py-[6px]">Subscribe </a>
+              <a href="#" class="inline-flex px-[20px] py-[8px] justify-center items-center gap-[8px] rounded-[6px] bg-[#FCC82C] text-[#27272A] font-inter-tight text-[14px] not-italic font-medium leading-[20px] hover:bg-primary/90 transition-all duration-300 max-xsm:text-[12px] max-xsm:leading-[150%] max-xsm:px-[12px] max-xsm:py-[6px]">Subscribe </a>
             </div>
           </div>
         </div>
@@ -430,7 +435,7 @@
           <p class="text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight tracking-[0.14px]">Voolt Company. 2023. All rights reserved</p>
           <ul class="flex gap-[12px]">
             <li>
-              <a href="" class="transition-all duration-300 hover:opacity-70"
+              <a aria-label="Facebook logo" href="https://www.facebook.com/getvoolt" class="transition-all duration-300 hover:opacity-70"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
                   <g clip-path="url(#clip0_916_17901)">
                     <path d="M17.5791 27.915C17.5359 27.9264 17.4926 27.9379 17.4492 27.9488C17.4926 27.9379 17.5359 27.9266 17.5791 27.915Z" fill="white" />
@@ -448,7 +453,7 @@
               </a>
             </li>
             <li>
-              <a href="" class="transition-all duration-300 hover:opacity-70"
+              <a aria-label="Linkedin logo" href="https://www.linkedin.com/company/voolt/?originalSubdomain=ca" class="transition-all duration-300 hover:opacity-70"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
                   <g clip-path="url(#clip0_916_17915)">
                     <path
@@ -465,7 +470,7 @@
               </a>
             </li>
             <li>
-              <a href="" class="transition-all duration-300 hover:opacity-70"
+              <a aria-label="Instagram logo" href="https://www.instagram.com/getvoolt/" class="transition-all duration-300 hover:opacity-70"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
                   <g clip-path="url(#clip0_916_17917)">
                     <path d="M16.6797 14.3774C16.6797 15.8574 15.48 17.0571 14 17.0571C12.52 17.0571 11.3203 15.8574 11.3203 14.3774C11.3203 12.8975 12.52 11.6978 14 11.6978C15.48 11.6978 16.6797 12.8975 16.6797 14.3774Z" fill="white" />
@@ -487,7 +492,7 @@
               </a>
             </li>
             <li>
-              <a href="" class="transition-all duration-300 hover:opacity-70"
+              <a aria-label="Tiktok logo" href="https://www.tiktok.com/@getvoolt" class="transition-all duration-300 hover:opacity-70"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
                   <circle cx="14" cy="14.3774" r="14" fill="white" />
                   <path
@@ -498,7 +503,7 @@
               </a>
             </li>
             <li>
-              <a href="" class="transition-all duration-300 hover:opacity-70"
+              <a aria-label="Youtube logo" href="https://www.youtube.com/@getvoolt" class="transition-all duration-300 hover:opacity-70"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
                   <circle cx="14" cy="14.3774" r="14" fill="white" />
                   <path
@@ -513,63 +518,6 @@
       </div>
     </footer>
 
-    <!-- swiper slider start  -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- swiper slider end  -->
-
-    <!-- Initialize Swiper -->
-    <script>
-      function initializeSwiper() {
-        if (window.innerWidth < 1024) {
-          new Swiper(".swiper-service-experts", {
-            slidesPerView: "auto", // Enables variable width for slides
-            spaceBetween: 16, // Space between slides
-            loop: true, // Loop through slides
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            breakpoints: {
-              480: {
-                spaceBetween: 32,
-              },
-            },
-          });
-        }
-
-        if (window.innerWidth < 1280) {
-          new Swiper(".blog-holder", {
-            slidesPerView: "auto", // Enables variable width for slides
-            spaceBetween: 16, // Space between slides
-            loop: true, // Loop through slides
-            breakpoints: {
-              480: {
-                spaceBetween: 32,
-              },
-            },
-          });
-        }
-      }
-
-      // Initialize Swiper on page load
-      initializeSwiper();
-
-      // Optionally, reinitialize Swiper on window resize
-      window.addEventListener("resize", function () {
-        // Destroy and reinitialize Swiper to adjust to screen size changes
-        const swiperEl = document.querySelector(".swiper-service-experts");
-        if (swiperEl && swiperEl.swiper) {
-          swiperEl.swiper.destroy(true, true);
-        }
-
-        const swiperEl2 = document.querySelector(".blog-holder");
-        if (swiperEl2 && swiperEl2.swiper) {
-          swiperEl2.swiper.destroy(true, true);
-        }
-
-        initializeSwiper();
-      });
-    </script>
-    <script src="js/main.js"></script>
+    <script defer src="js/main-mini.js"></script>
   </body>
 </html>
