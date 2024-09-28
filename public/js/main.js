@@ -134,130 +134,177 @@ document.querySelectorAll(".playvideo").forEach(function (element) {
     video.parentNode.classList.add("videoplayed");
   });
 });
-
 document.addEventListener("DOMContentLoaded", function () {
-  // Function to initialize Swiper for specific sections
-  function initializeSwiper(container, config) {
-    if (container && !container.swiper) {
-      return new Swiper(container, config);
-    }
-  }
-
-  // Function to destroy Swiper if initialized
-  function destroySwiper(swiperInstance) {
-    if (swiperInstance && swiperInstance.destroy) {
-      swiperInstance.destroy(true, true);
-      swiperInstance = undefined;
-    }
-  }
-
-  // Swiper configurations
-  const defaultSwiperConfig = {
-    slidesPerView: 1.2,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 1.8,
-      },
-    },
-  };
-
-  const testimonialSwiperConfig = {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    navigation: {
-      nextEl: ".custom-next",
-      prevEl: ".custom-prev",
-    },
-  };
-
-  const serviceSwiperConfig = {
-    slidesPerView: "auto",
-    spaceBetween: 16,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      480: {
-        spaceBetween: 32,
-      },
-    },
-  };
-
-  const blogSwiperConfig = {
-    slidesPerView: "auto",
-    spaceBetween: 16,
-    loop: true,
-    breakpoints: {
-      480: {
-        spaceBetween: 32,
-      },
-    },
-  };
-
-  // Helper function to handle screen width-based Swiper initialization and destruction
-  function handleResponsiveSwiper(container, swiperInstance, config, breakpoint = 1024) {
-    const screenWidth = window.innerWidth;
-    if (screenWidth < breakpoint && !swiperInstance) {
-      swiperInstance = initializeSwiper(container, config);
-    } else if (screenWidth >= breakpoint) {
-      destroySwiper(swiperInstance);
-    }
-  }
-
-  // Testimonial Swiper Initialization
   if (document.querySelector(".home")) {
-    const testimonialSwiper = initializeSwiper(".testimonial-swiper", testimonialSwiperConfig);
+    // Testimonial Swiper
+    var swiper = new Swiper(".testimonial-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
+      },
+    });
 
-    let howItWorksSwiper;
-    function initHowItWorksSwiper() {
-      handleResponsiveSwiper(document.querySelector(".how-it-works-swiper"), howItWorksSwiper, defaultSwiperConfig);
+    // HOW IT WORKS SECTION
+    var swiperHow;
+
+    // Function to initialize Swiper if the screen is less than 1024px
+    function initSwiper() {
+      var screenWidth = window.innerWidth;
+
+      if (screenWidth < 1024 && !swiperHow) {
+        // Initialize Swiper if not initialized and screen width < 1024px
+        swiperHow = new Swiper(".how-it-works-swiper", {
+          slidesPerView: 1.2,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 1.8,
+            },
+          },
+        });
+      } else if (screenWidth >= 1024 && swiperHow) {
+        // Destroy Swiper if the screen width >= 1024px
+        swiperHow.destroy(true, true);
+        swiperHow = undefined;
+      }
     }
 
-    window.addEventListener("load", initHowItWorksSwiper);
-    window.addEventListener("resize", initHowItWorksSwiper);
-  }
+    // Initialize Swiper on page load
+    window.addEventListener("load", initSwiper);
 
-  // Who We Serve Swiper Initialization
+    // Reinitialize Swiper on window resize
+    window.addEventListener("resize", initSwiper);
+  }
   if (document.querySelector(".who-we-serve")) {
-    let serviceSwiper, blogSwiper;
+    function initializeSwiper() {
+      if (window.innerWidth < 1024) {
+        new Swiper(".swiper-service-experts", {
+          slidesPerView: "auto", // Enables variable width for slides
+          spaceBetween: 16, // Space between slides
+          loop: true, // Loop through slides
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            480: {
+              spaceBetween: 32,
+            },
+          },
+        });
+      }
 
-    function initWhoWeServeSwipers() {
-      handleResponsiveSwiper(document.querySelector(".swiper-service-experts"), serviceSwiper, serviceSwiperConfig);
-      handleResponsiveSwiper(document.querySelector(".blog-holder"), blogSwiper, blogSwiperConfig, 1280);
+      if (window.innerWidth < 1280) {
+        new Swiper(".blog-holder", {
+          slidesPerView: "auto", // Enables variable width for slides
+          spaceBetween: 16, // Space between slides
+          loop: true, // Loop through slides
+          breakpoints: {
+            480: {
+              spaceBetween: 32,
+            },
+          },
+        });
+      }
     }
 
-    initWhoWeServeSwipers();
-    window.addEventListener("resize", initWhoWeServeSwipers);
-  }
+    // Initialize Swiper on page load
+    initializeSwiper();
 
-  // Industry Swiper Initialization
+    // Optionally, reinitialize Swiper on window resize
+    window.addEventListener("resize", function () {
+      // Destroy and reinitialize Swiper to adjust to screen size changes
+      const swiperEl = document.querySelector(".swiper-service-experts");
+      if (swiperEl && swiperEl.swiper) {
+        swiperEl.swiper.destroy(true, true);
+      }
+
+      const swiperEl2 = document.querySelector(".blog-holder");
+      if (swiperEl2 && swiperEl2.swiper) {
+        swiperEl2.swiper.destroy(true, true);
+      }
+
+      initializeSwiper();
+    });
+  }
   if (document.querySelector(".industry")) {
-    let industrySwiper;
-    function initIndustrySwiper() {
-      handleResponsiveSwiper(document.querySelector(".how-it-works-swiper"), industrySwiper, defaultSwiperConfig);
+    var swiperHow;
+
+    // Function to initialize Swiper if the screen is less than 1024px
+    function initSwiper() {
+      var screenWidth = window.innerWidth;
+
+      if (screenWidth < 1024 && !swiperHow) {
+        // Initialize Swiper if it is not initialized and screen is less than 1024px
+        swiper = new Swiper(".how-it-works-swiper", {
+          slidesPerView: 1.2,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 1.8,
+            },
+          },
+        });
+      } else if (screenWidth >= 1024 && swiperHow) {
+        // Destroy Swiper if screen is greater than or equal to 1024px
+        swiperHow.destroy(true, true);
+        swiperHow = undefined;
+      }
     }
 
-    window.addEventListener("load", initIndustrySwiper);
-    window.addEventListener("resize", initIndustrySwiper);
+    // Initialize Swiper on page load
+    window.addEventListener("load", initSwiper);
+
+    // Reinitialize Swiper on window resize
+    window.addEventListener("resize", initSwiper);
   }
-
-  // Feature3 Voolt Marketing Swiper Initialization
   if (document.querySelector(".feature3-voolt-marketing")) {
-    let marketingSwiper;
-    function initMarketingSwiper() {
-      handleResponsiveSwiper(document.querySelector(".how-it-works-swiper"), marketingSwiper, defaultSwiperConfig);
+    var swiperHow;
+
+    // Function to initialize Swiper if the screen is less than 1024px
+    function initSwiper() {
+      var screenWidth = window.innerWidth;
+
+      if (screenWidth < 1024 && !swiperHow) {
+        // Initialize Swiper if it is not initialized and screen is less than 1024px
+        swiper = new Swiper(".how-it-works-swiper", {
+          slidesPerView: 1.2,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 1.8,
+            },
+          },
+        });
+      } else if (screenWidth >= 1024 && swiperHow) {
+        // Destroy Swiper if screen is greater than or equal to 1024px
+        swiperHow.destroy(true, true);
+        swiperHow = undefined;
+      }
     }
 
-    window.addEventListener("load", initMarketingSwiper);
-    window.addEventListener("resize", initMarketingSwiper);
+    // Initialize Swiper on page load
+    window.addEventListener("load", initSwiper);
+
+    // Reinitialize Swiper on window resize
+    window.addEventListener("resize", initSwiper);
   }
 });
