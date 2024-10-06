@@ -3,6 +3,7 @@ document.querySelector(".nav-hamb").addEventListener("click", function (event) {
 
   var navHamb = this;
   var mobileNavList = document.querySelector(".mobile-nav-list");
+  var scrollednav = document.querySelector(".scrolled-nav");
   var body = document.body;
 
   if (navHamb.classList.contains("active-nav")) {
@@ -13,6 +14,17 @@ document.querySelector(".nav-hamb").addEventListener("click", function (event) {
     navHamb.classList.add("active-nav");
     mobileNavList.classList.add("active-nav-list");
     body.classList.add("disable_scroll");
+    scrollednav.classList.remove("scrolled-nav");
+  }
+});
+
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+
+  if (window.scrollY > 0) {
+    navbar.classList.add("scrolled-nav");
+  } else {
+    navbar.classList.remove("scrolled-nav");
   }
 });
 
@@ -68,6 +80,25 @@ document.querySelectorAll(".dropdown-tag").forEach(function (element) {
         parentElement.classList.add("active-dd-tab");
       }
     }
+  });
+});
+// scroll tab into view
+document.querySelectorAll(".tab").forEach(function (tab) {
+  tab.addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent default anchor click behavior
+
+    // Scroll the clicked tab into view
+    tab.scrollIntoView({
+      behavior: "smooth", // Smooth scroll effect
+      block: "nearest", // Aligns the tab to the nearest edge
+      inline: "center", // Scrolls horizontally to center the tab
+    });
+
+    // Optional: Add active class to the clicked tab and remove from others
+    document.querySelectorAll(".tab").forEach(function (t) {
+      t.classList.remove("active-tab-type1"); // Remove active class from all tabs
+    });
+    tab.classList.add("active-tab-type1"); // Add active class to the clicked tab
   });
 });
 
@@ -149,6 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // HOW IT WORKS SECTION
     var swiperHow;
+    var blog;
 
     // Function to initialize Swiper if the screen is less than 1024px
     function initSwiper() {
@@ -175,6 +207,31 @@ document.addEventListener("DOMContentLoaded", function () {
         swiperHow.destroy(true, true);
         swiperHow = undefined;
       }
+
+      if (window.innerWidth < 1280 && !blog) {
+        // Initialize Swiper if not initialized and screen width < 1024px
+        blog = new Swiper(".blog-holder", {
+          slidesPerView: 1.1,
+          spaceBetween: 16,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            480: {
+              slidesPerView: 1.3,
+            },
+            768: {
+              slidesPerView: 2.1,
+              spaceBetween: 32,
+            },
+          },
+        });
+      } else if (screenWidth >= 1280 && blog) {
+        // Destroy Swiper if the screen width >= 1024px
+        blog.destroy(true, true);
+        blog = undefined;
+      }
     }
 
     // Initialize Swiper on page load
@@ -182,6 +239,78 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Reinitialize Swiper on window resize
     window.addEventListener("resize", initSwiper);
+    function setTestimonialHeight() {
+      var maxHeight = 0;
+      var testimonials = document.querySelectorAll(".testimonial");
+
+      testimonials.forEach(function (testimonial) {
+        maxHeight = Math.max(maxHeight, testimonial.offsetHeight);
+      });
+
+      testimonials.forEach(function (testimonial) {
+        testimonial.style.height = maxHeight + "px";
+      });
+    }
+
+    // Initial setup
+    setTestimonialHeight();
+
+    // Resize event handler
+    window.addEventListener("resize", function () {
+      setTestimonialHeight();
+    });
+
+    // blogs
+
+    // var blogswiper;
+
+    // if (window.innerWidth < 1280 && !swiperHow) {
+    //   blogswiper = new Swiper(".blog-holder", {
+    //     slidesPerView: 1.1, // Enables variable width for slides
+    //     spaceBetween: 16, // Space between slides
+    //     loop: true, // Loop through slides
+    //     pagination: {
+    //       el: ".swiper-pagination",
+    //       clickable: true,
+    //     },
+    //     breakpoints: {
+    //       480: {
+    //         slidesPerView: "auto",
+    //         spaceBetween: 32,
+    //       },
+    //     },
+    //   });
+    // }
+
+    // Function to equalize the height of all .blog-box elements
+    function equalizeBlogBoxHeight() {
+      const blogBoxes = document.querySelectorAll(".blog-box");
+      let maxHeight = 0;
+
+      // Reset the heights to 'auto' before calculating the new tallest height
+      blogBoxes.forEach((box) => {
+        box.style.height = "auto";
+      });
+
+      // Find the tallest blog-box element
+      blogBoxes.forEach((box) => {
+        const boxHeight = box.offsetHeight;
+        if (boxHeight > maxHeight) {
+          maxHeight = boxHeight;
+        }
+      });
+
+      // Set all blog-box elements to the height of the tallest one
+      blogBoxes.forEach((box) => {
+        box.style.height = `${maxHeight}px`;
+      });
+    }
+
+    // Call the function on page load
+    window.onload = equalizeBlogBoxHeight;
+
+    // Recalculate heights when the window is resized
+    window.onresize = equalizeBlogBoxHeight;
   }
   if (document.querySelector(".who-we-serve")) {
     function initializeSwiper() {
