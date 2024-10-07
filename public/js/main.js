@@ -221,7 +221,10 @@ document.addEventListener("DOMContentLoaded", function () {
             480: {
               slidesPerView: 1.3,
             },
-            768: {
+            600: {
+              slidesPerView: 1.6,
+            },
+            800: {
               slidesPerView: 2.1,
               spaceBetween: 32,
             },
@@ -239,6 +242,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Reinitialize Swiper on window resize
     window.addEventListener("resize", initSwiper);
+
     function setTestimonialHeight() {
       var maxHeight = 0;
       var testimonials = document.querySelectorAll(".testimonial");
@@ -259,28 +263,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", function () {
       setTestimonialHeight();
     });
-
-    // blogs
-
-    // var blogswiper;
-
-    // if (window.innerWidth < 1280 && !swiperHow) {
-    //   blogswiper = new Swiper(".blog-holder", {
-    //     slidesPerView: 1.1, // Enables variable width for slides
-    //     spaceBetween: 16, // Space between slides
-    //     loop: true, // Loop through slides
-    //     pagination: {
-    //       el: ".swiper-pagination",
-    //       clickable: true,
-    //     },
-    //     breakpoints: {
-    //       480: {
-    //         slidesPerView: "auto",
-    //         spaceBetween: 32,
-    //       },
-    //     },
-    //   });
-    // }
 
     // Function to equalize the height of all .blog-box elements
     function equalizeBlogBoxHeight() {
@@ -363,6 +345,78 @@ document.addEventListener("DOMContentLoaded", function () {
 
       initializeSwiper();
     });
+  }
+  if (document.querySelector(".website-builder")) {
+    var blog;
+
+    // Function to initialize Swiper if the screen is less than 1024px
+    function initSwiper() {
+      var screenWidth = window.innerWidth;
+
+      if (window.innerWidth < 1280 && !blog) {
+        // Initialize Swiper if not initialized and screen width < 1024px
+        blog = new Swiper(".blog-holder", {
+          slidesPerView: 1.1,
+          spaceBetween: 16,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            480: {
+              slidesPerView: 1.3,
+            },
+            600: {
+              slidesPerView: 1.6,
+            },
+            800: {
+              slidesPerView: 2.1,
+              spaceBetween: 32,
+            },
+          },
+        });
+      } else if (screenWidth >= 1280 && blog) {
+        // Destroy Swiper if the screen width >= 1024px
+        blog.destroy(true, true);
+        blog = undefined;
+      }
+    }
+
+    // Initialize Swiper on page load
+    window.addEventListener("load", initSwiper);
+
+    // Reinitialize Swiper on window resize
+    window.addEventListener("resize", initSwiper);
+
+    // Function to equalize the height of all .blog-box elements
+    function equalizeBlogBoxHeight() {
+      const blogBoxes = document.querySelectorAll(".blog-box");
+      let maxHeight = 0;
+
+      // Reset the heights to 'auto' before calculating the new tallest height
+      blogBoxes.forEach((box) => {
+        box.style.height = "auto";
+      });
+
+      // Find the tallest blog-box element
+      blogBoxes.forEach((box) => {
+        const boxHeight = box.offsetHeight;
+        if (boxHeight > maxHeight) {
+          maxHeight = boxHeight;
+        }
+      });
+
+      // Set all blog-box elements to the height of the tallest one
+      blogBoxes.forEach((box) => {
+        box.style.height = `${maxHeight}px`;
+      });
+    }
+
+    // Call the function on page load
+    window.onload = equalizeBlogBoxHeight;
+
+    // Recalculate heights when the window is resized
+    window.onresize = equalizeBlogBoxHeight;
   }
   if (document.querySelector(".industry")) {
     var swiperHow;
