@@ -102,7 +102,7 @@
 }
 
 .custom-bg {
-  background: radial-gradient(421.15% 95.62% at -22.08% 75.58%, rgba(255, 210, 10, 0.1) 0%, rgba(255, 210, 10, 0) 100%), radial-gradient(421.3% 73.41% at -6.23% -29.87%, rgba(128, 0, 255, 0.14) 0%, rgba(128, 0, 255, 0) 100%), radial-gradient(460.8% 118.31% at 102.31% 106.71%, rgba(0, 148, 255, 0.11) 0%, rgba(0, 148, 255, 0) 100%), #f3f4f6;
+  background: radial-gradient(62.11% 176.91% at -14.46% -43.21%, rgba(128, 0, 255, 0.1) 0%, rgba(128, 0, 255, 0) 100%), radial-gradient(69.76% 205.18% at -20.51% 7.5%, rgba(255, 210, 10, 0.1) 0%, rgba(255, 210, 10, 0) 100%), radial-gradient(70% 147.54% at 112.26% 137.93%, rgba(0, 148, 255, 0.08) 0%, rgba(0, 148, 255, 0) 100%), #f9fafb;
 }
 .active-tab ul {
   height: unset;

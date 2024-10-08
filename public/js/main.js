@@ -455,6 +455,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   if (document.querySelector(".feature3-voolt-marketing")) {
     var swiperHow;
+    var swiperCharge;
 
     // Function to initialize Swiper if the screen is less than 1024px
     function initSwiper() {
@@ -488,5 +489,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Reinitialize Swiper on window resize
     window.addEventListener("resize", initSwiper);
+
+    function initChargeSwiper() {
+      var screenWidth = window.innerWidth;
+
+      if (screenWidth < 1024 && !swiperCharge) {
+        // Initialize Swiper if it is not initialized and screen is less than 1024px
+        swiperCharge = new Swiper(".charged-swiper", {
+          slidesPerView: 1.1,
+          spaceBetween: 16,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: "auto",
+              spaceBetween: 32,
+            },
+          },
+        });
+      } else if (screenWidth >= 1024 && swiperCharge) {
+        // Destroy Swiper if screen is greater than or equal to 1024px
+        swiperCharge.destroy(true, true);
+        swiperCharge = undefined;
+      }
+    }
+
+    // Initialize Swiper on page load
+    window.addEventListener("load", initChargeSwiper);
+
+    // Reinitialize Swiper on window resize
+    window.addEventListener("resize", initChargeSwiper);
   }
 });
