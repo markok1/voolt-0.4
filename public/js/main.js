@@ -496,7 +496,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (screenWidth < 1024 && !swiperCharge) {
         // Initialize Swiper if it is not initialized and screen is less than 1024px
         swiperCharge = new Swiper(".charged-swiper", {
-          slidesPerView: 1.1,
+          slidesPerView: "auto",
           spaceBetween: 16,
           pagination: {
             el: ".swiper-pagination",
@@ -504,7 +504,6 @@ document.addEventListener("DOMContentLoaded", function () {
           },
           breakpoints: {
             768: {
-              slidesPerView: "auto",
               spaceBetween: 32,
             },
           },
