@@ -297,22 +297,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   if (document.querySelector(".who-we-serve")) {
     function initializeSwiper() {
-      if (window.innerWidth < 1024) {
-        new Swiper(".swiper-service-experts", {
-          slidesPerView: "auto", // Enables variable width for slides
-          spaceBetween: 16, // Space between slides
-          loop: true, // Loop through slides
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+      new Swiper(".swiper-service-experts", {
+        slidesPerView: "auto", // Enables variable width for slides
+        spaceBetween: 16, // Space between slides
+        loop: true, // Loop through slides
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          480: {
+            spaceBetween: 40,
           },
-          breakpoints: {
-            480: {
-              spaceBetween: 32,
-            },
-          },
-        });
-      }
+        },
+      });
 
       if (window.innerWidth < 1280) {
         new Swiper(".blog-holder", {
