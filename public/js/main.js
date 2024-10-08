@@ -189,8 +189,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (screenWidth < 1024 && !swiperHow) {
         // Initialize Swiper if not initialized and screen width < 1024px
         swiperHow = new Swiper(".how-it-works-swiper", {
-          slidesPerView: 1.2,
-          spaceBetween: 30,
+          slidesPerView: 1.1,
+          spaceBetween: 16,
           loop: true,
           pagination: {
             el: ".swiper-pagination",
@@ -199,6 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
           breakpoints: {
             768: {
               slidesPerView: 1.8,
+              spaceBetween: 30,
             },
           },
         });
