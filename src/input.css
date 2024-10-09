@@ -123,18 +123,16 @@
     ),
     #f9fafb;
 }
-.active-tab ul {
-  height: unset;
-  padding-top: 0px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-}
-footer .active-tab ul {
-  padding-left: 0;
-  padding-bottom: 0;
-}
-.active-tab h3 svg {
-  transform: rotate(180deg);
+@media (max-width: 479px) {
+  .active-tab ul {
+    height: unset;
+    padding-top: 0px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+  }
+  .active-tab h3 svg {
+    transform: rotate(180deg);
+  }
 }
 .tab-content {
   display: none;
