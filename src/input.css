@@ -124,14 +124,22 @@
     #f9fafb;
 }
 @media (max-width: 479px) {
-  .active-tab ul {
-    height: unset;
-    padding-top: 0px;
-    padding-bottom: 12px;
-    padding-left: 12px;
+  .line-down {
+    position: relative;
   }
-  .active-tab h3 svg {
-    transform: rotate(180deg);
+  .line-down:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 80px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(0, 212, 255, 0) 100%
+    );
   }
 }
 .tab-content {
