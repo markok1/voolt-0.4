@@ -53,7 +53,9 @@
 .active-tab-type1 {
   background: #fff;
   color: #058beb;
-  box-shadow: 0px 39px 11px 0px rgba(0, 0, 0, 0), 0px 25px 10px 0px rgba(0, 0, 0, 0.01), 0px 14px 8px 0px rgba(0, 0, 0, 0.03), 0px 6px 6px 0px rgba(0, 0, 0, 0.04), 0px 2px 3px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 39px 11px 0px rgba(0, 0, 0, 0),
+    0px 25px 10px 0px rgba(0, 0, 0, 0.01), 0px 14px 8px 0px rgba(0, 0, 0, 0.03),
+    0px 6px 6px 0px rgba(0, 0, 0, 0.04), 0px 2px 3px 0px rgba(0, 0, 0, 0.05);
 }
 @media (max-width: 767px) {
   .active-tab-type1 {
@@ -74,7 +76,9 @@
 .active-horizontal-tab {
   border: 1px solid #fff;
   background: #eff7ff;
-  box-shadow: 0px 32px 9px 0px rgba(0, 0, 0, 0), 0px 20px 8px 0px rgba(0, 0, 0, 0.01), 0px 11px 7px 0px rgba(0, 0, 0, 0.03), 0px 5px 5px 0px rgba(0, 0, 0, 0.04), 0px 1px 3px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 32px 9px 0px rgba(0, 0, 0, 0),
+    0px 20px 8px 0px rgba(0, 0, 0, 0.01), 0px 11px 7px 0px rgba(0, 0, 0, 0.03),
+    0px 5px 5px 0px rgba(0, 0, 0, 0.04), 0px 1px 3px 0px rgba(0, 0, 0, 0.05);
   opacity: 1;
 }
 .active-horizontal-tab .tab-number {
@@ -106,7 +110,22 @@
 }
 
 .custom-bg {
-  background: radial-gradient(62.11% 176.91% at -14.46% -43.21%, rgba(128, 0, 255, 0.1) 0%, rgba(128, 0, 255, 0) 100%), radial-gradient(69.76% 205.18% at -20.51% 7.5%, rgba(255, 210, 10, 0.1) 0%, rgba(255, 210, 10, 0) 100%), radial-gradient(70% 147.54% at 112.26% 137.93%, rgba(0, 148, 255, 0.08) 0%, rgba(0, 148, 255, 0) 100%), #f9fafb;
+  background: radial-gradient(
+      62.11% 176.91% at -14.46% -43.21%,
+      rgba(128, 0, 255, 0.1) 0%,
+      rgba(128, 0, 255, 0) 100%
+    ),
+    radial-gradient(
+      69.76% 205.18% at -20.51% 7.5%,
+      rgba(255, 210, 10, 0.1) 0%,
+      rgba(255, 210, 10, 0) 100%
+    ),
+    radial-gradient(
+      70% 147.54% at 112.26% 137.93%,
+      rgba(0, 148, 255, 0.08) 0%,
+      rgba(0, 148, 255, 0) 100%
+    ),
+    #f9fafb;
 }
 @media (max-width: 479px) {
   .line-down {
@@ -120,7 +139,11 @@
     height: 1px;
     width: 80px;
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 212, 255, 0) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(0, 212, 255, 0) 100%
+    );
   }
 }
 .tab-content {
@@ -161,4 +184,27 @@
 }
 .videoplayed .playvideo {
   opacity: 0;
+}
+
+.industry-option {
+  display: flex;
+  padding: 6px 8px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 6px;
+  transition: all ease 0.3s;
+}
+.industry-option:hover {
+  background: #f4f4f5;
+}
+
+#industry-search-results:not(:empty),
+#address-search-results:not(:empty) {
+  display: block;
+}
+#industry-search-results,
+#address-search-results {
+  display: none;
 }
