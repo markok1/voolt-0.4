@@ -1066,6 +1066,22 @@ video {
   margin-top: 85px;
 }
 
+.mb-\[42px\] {
+  margin-bottom: 42px;
+}
+
+.mb-\[44px\] {
+  margin-bottom: 44px;
+}
+
+.mb-\[23px\] {
+  margin-bottom: 23px;
+}
+
+.mb-\[24px\] {
+  margin-bottom: 24px;
+}
+
 .block {
   display: block;
 }
@@ -1187,6 +1203,10 @@ video {
   height: 100%;
 }
 
+.h-\[608px\] {
+  height: 608px;
+}
+
 .max-h-\[208px\] {
   max-height: 208px;
 }
@@ -1302,6 +1322,10 @@ video {
 .w-min {
   width: -moz-min-content;
   width: min-content;
+}
+
+.w-\[608px\] {
+  width: 608px;
 }
 
 .min-w-\[24px\] {
@@ -1568,6 +1592,21 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-translate-x-\[1200px\] {
+  --tw-translate-x: -1200px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[900px\] {
+  --tw-translate-x: -900px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[300px\] {
+  --tw-translate-x: 300px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .rotate-\[-10deg\] {
   --tw-rotate: -10deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1588,6 +1627,10 @@ video {
 
 .resize {
   resize: both;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .flex-col {
@@ -1693,6 +1736,10 @@ video {
 
 .gap-y-\[80px\] {
   row-gap: 80px;
+}
+
+.self-stretch {
+  align-self: stretch;
 }
 
 .overflow-auto {
@@ -1991,6 +2038,14 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[rgba\(128\2c _0\2c _255\2c _0\.08\)\] {
+  background-color: rgba(128, 0, 255, 0.08);
+}
+
+.bg-\[rgba\(0\2c _148\2c _255\2c _0\.08\)\] {
+  background-color: rgba(0, 148, 255, 0.08);
 }
 
 .bg-opacity-75 {
@@ -2573,6 +2628,10 @@ video {
   letter-spacing: 0.48px;
 }
 
+.tracking-\[-1\.6px\] {
+  letter-spacing: -1.6px;
+}
+
 .text-Color-Blue-500---primary {
   --tw-text-opacity: 1;
   color: rgb(5 139 235 / var(--tw-text-opacity));
@@ -2694,6 +2753,16 @@ video {
 
 .blur-\[83px\] {
   --tw-blur: blur(83px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[273\.5999755859375px\] {
+  --tw-blur: blur(273.5999755859375px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur {
+  --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -3592,6 +3661,14 @@ video {
     font-size: 32px;
   }
 
+  .max-lg\:text-\[22px\] {
+    font-size: 22px;
+  }
+
+  .max-lg\:text-\[80px\] {
+    font-size: 80px;
+  }
+
   .max-lg\:font-medium {
     font-weight: 500;
   }
@@ -3885,6 +3962,22 @@ video {
 
   .max-md\:pt-\[46px\] {
     padding-top: 46px;
+  }
+
+  .max-md\:pt-\[120px\] {
+    padding-top: 120px;
+  }
+
+  .max-md\:pb-\[80\] {
+    padding-bottom: 80;
+  }
+
+  .max-md\:pb-\[40\] {
+    padding-bottom: 40;
+  }
+
+  .max-md\:pb-\[40px\] {
+    padding-bottom: 40px;
   }
 
   .max-md\:text-center {
@@ -4224,6 +4317,10 @@ video {
     margin-top: 8px;
   }
 
+  .max-xsm\:mb-\[30px\] {
+    margin-bottom: 30px;
+  }
+
   .max-xsm\:flex {
     display: flex;
   }
@@ -4326,6 +4423,10 @@ video {
 
   .max-xsm\:gap-\[4px\] {
     gap: 4px;
+  }
+
+  .max-xsm\:gap-\[24px\] {
+    gap: 24px;
   }
 
   .max-xsm\:overflow-hidden {
@@ -4438,6 +4539,14 @@ video {
 
   .max-xsm\:pt-\[9px\] {
     padding-top: 9px;
+  }
+
+  .max-xsm\:pt-\[112px\] {
+    padding-top: 112px;
+  }
+
+  .max-xsm\:pt-\[100px\] {
+    padding-top: 100px;
   }
 
   .max-xsm\:text-left {

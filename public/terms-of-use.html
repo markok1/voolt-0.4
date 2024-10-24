@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voolt 4.0</title>
+    <link rel="icon" href="imgs/favicon.png" sizes="any" />
+    <meta
+      name="description"
+      content="Build stunning websites and automate your marketing with Voolt. Our AI-driven platform offers easy website creation and marketing solutions for small ..."
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ############### navbar ############### -->
+    <nav class="navbar fixed left-0 top-0 right-0 bg-[#fff] z-[20]">
+      <div
+        class="wrapper max-w-[1440px] m-auto px-[80px] py-[20px] flex flex-col max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px]"
+      >
+        <div class="flex justify-between items-center">
+          <a href="https://app.voolt.com/flow/01/1/" class="">
+            <img
+              class="w-[133px] max-xsm:w-[80px]"
+              src="imgs/logo.svg"
+              alt=""
+            />
+          </a>
+          <ul
+            class="mobile-nav-list flex gap-[32px] items-center justify-center max-lg:fixed max-lg:right-[0] max-lg:bottom-[0] max-lg:bg-[#fff] max-lg:top-[85px] max-lg:w-[0] max-lg:overflow-hidden max-lg:flex-col max-lg:gap-[20px] max-lg:items-start transition-all duration-300 max-xsm:top-[70px] max-lg:justify-start max-lg:py-[20px] max-lg:gap-[32px]"
+          >
+            <li class="max-lg:w-[320px]">
+              <a
+                href="index.html"
+                class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300"
+                >Home</a
+              >
+            </li>
+            <li class="max-lg:w-[320px]">
+              <a
+                href="who-we-serve.html"
+                class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300"
+                >Who We Serve</a
+              >
+            </li>
+            <li class="max-lg:w-[320px] group/item">
+              <a
+                href="#"
+                class="dropdown-tag px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] lg:group-hover/item:text-[#058BEB] transition-all duration-300"
+                >Features
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="7"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  class="transition-all duration-300 lg:group-hover/item:rotate-180"
+                >
+                  <path
+                    d="M5.00002 6.20866C4.88377 6.20866 4.76741 6.16454 4.67866 6.0764L0.13321 1.56254C-0.0444033 1.38616 -0.0444033 1.10054 0.13321 0.924277C0.310823 0.74801 0.598436 0.747897 0.775936 0.924277L5.00002 5.11901L9.22411 0.924277C9.40172 0.747897 9.68933 0.747897 9.86683 0.924277C10.0443 1.10066 10.0444 1.38627 9.86683 1.56254L5.32138 6.0764C5.23263 6.16454 5.11627 6.20866 5.00002 6.20866Z"
+                    fill="#09090B"
+                    class="lg:group-hover/item:fill-[#058BEB] transition-all duration-300"
+                  />
+                </svg>
+              </a>
+              <div
+                class="dropdown top-[50px] absolute flex px-[40px] py-[20px] pb-[12px] flex-col items-start rounded-tl-none rounded-br-[12px] rounded-tr-none rounded-bl-[12px] border-[1px] border-[solid] border-[#E4E4E7] bg-[#FAFAFA] opacity-0 invisible group-hover/item:visible transition-all duration-300 max-lg:hidden"
+              ></div>
+              <div
+                class="dropdown top-[85px] absolute flex px-[40px] py-[20px] flex-col items-start rounded-tl-none rounded-br-[12px] rounded-tr-none rounded-bl-[12px] border-[1px] border-[solid] border-[#E4E4E7] bg-[#FAFAFA] opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-lg:relative max-lg:hidden max-lg:opacity-100 max-lg:visible max-lg:bg-white max-lg:border-[0px] max-lg:top-0 max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px]"
+              >
+                <h2
+                  class="mb-[40px] font-inter-tight text-[#09090B] tracking-[-0.11px] text-[22px] not-italic font-semibold leading-[135%] max-lg:hidden"
+                >
+                  Features
+                </h2>
+                <ul class="flex flex-col gap-[16px]">
+                  <li class="">
+                    <a
+                      href="feature.html"
+                      class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] lg:hover:bg-[#F4F4F5] transition-all duration-300 max-lg:p-0"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M3.00003 14.2214V6.39913C3.00003 5.40348 3.00003 4.90566 3.1938 4.52537C3.36424 4.19086 3.63621 3.9189 3.97072 3.74845C4.35101 3.55469 4.84883 3.55469 5.84448 3.55469H16.1556C17.1512 3.55469 17.6491 3.55469 18.0294 3.74845C18.3639 3.9189 18.6358 4.19086 18.8063 4.52537C19 4.90566 19 5.40348 19 6.39913V14.2214H14.2558C14.0384 14.2214 13.9297 14.2214 13.8274 14.2459C13.7367 14.2677 13.65 14.3036 13.5704 14.3523C13.4807 14.4073 13.4039 14.4842 13.2501 14.6379L13.1944 14.6937C13.0406 14.8474 12.9638 14.9243 12.8741 14.9793C12.7945 15.028 12.7078 15.0639 12.6171 15.0857C12.5148 15.1102 12.4061 15.1102 12.1887 15.1102H9.81136C9.59395 15.1102 9.48524 15.1102 9.38294 15.0857C9.29224 15.0639 9.20553 15.028 9.126 14.9793C9.0363 14.9243 8.95943 14.8474 8.8057 14.6937L8.74993 14.6379C8.59619 14.4842 8.51932 14.4073 8.42962 14.3523C8.35009 14.3036 8.26338 14.2677 8.17269 14.2459C8.07038 14.2214 7.96168 14.2214 7.74426 14.2214H3.00003ZM3.00003 14.2214C2.50911 14.2214 2.11115 14.6193 2.11115 15.1102V15.4065C2.11115 15.9576 2.11115 16.2332 2.17172 16.4593C2.33611 17.0728 2.8153 17.5519 3.4288 17.7163C3.65487 17.7769 3.93042 17.7769 4.48152 17.7769H17.5186C18.0696 17.7769 18.3452 17.7769 18.5713 17.7163C19.1848 17.5519 19.664 17.0728 19.8283 16.4593C19.8889 16.2332 19.8889 15.9576 19.8889 15.4065C19.8889 15.131 19.8889 14.9932 19.8586 14.8802C19.7764 14.5734 19.5368 14.3338 19.2301 14.2516C19.1171 14.2214 18.9793 14.2214 18.7037 14.2214H18.1111"
+                          stroke="url(#paint0_linear_906_25768)"
+                          stroke-width="1.33333"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_906_25768"
+                            x1="10.3335"
+                            y1="-12.1668"
+                            x2="10.8005"
+                            y2="17.78"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="#0095FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div>
+                        <h3
+                          class="font-inter-tight tracking-[0.16px] text-[#09090B] text-[16px] not-italic font-semibold leading-[24px] max-lg:font-medium"
+                        >
+                          Website Builder
+                        </h3>
+                        <p
+                          class="font-inter-tight tracking-[0.12px] text-[#71717A] text-[12px] not-italic font-medium leading-[150%]"
+                        >
+                          Create a website in 60 seconds.
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href="volt-premium.html"
+                      class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] lg:hover:bg-[#F4F4F5] transition-all duration-300 max-lg:p-0"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.5556 13.4131V19.5551L10.7359 17.883C10.8335 17.844 10.8823 17.8244 10.9327 17.8167C10.9773 17.8099 11.0228 17.8099 11.0674 17.8167C11.1178 17.8244 11.1666 17.844 11.2641 17.883L15.4445 19.5551V13.4131M17.6667 8.44401C17.6667 12.1259 14.6819 15.1107 11 15.1107C7.31814 15.1107 4.33337 12.1259 4.33337 8.44401C4.33337 4.76211 7.31814 1.77734 11 1.77734C14.6819 1.77734 17.6667 4.76211 17.6667 8.44401Z"
+                          stroke="url(#paint0_linear_906_25772)"
+                          stroke-width="1.33333"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_906_25772"
+                            x1="10.5001"
+                            y1="-17.8745"
+                            x2="11.4727"
+                            y2="19.5428"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="#0095FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div>
+                        <h3
+                          class="font-inter-tight tracking-[0.16px] text-[#09090B] text-[16px] not-italic font-semibold leading-[24px] max-lg:font-medium"
+                        >
+                          Voolt Premium
+                        </h3>
+                        <p
+                          class="font-inter-tight tracking-[0.12px] text-[#71717A] text-[12px] not-italic font-medium leading-[150%]"
+                        >
+                          Rank higher on serch results.
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href="feature3-voolt-marketing.html"
+                      class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] lg:hover:bg-[#F4F4F5] transition-all duration-300 max-lg:p-0"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M3.88893 12.4431L5.28861 18.0418C5.32797 18.1993 5.34766 18.278 5.37094 18.3467C5.59841 19.0183 6.20316 19.4905 6.90983 19.5483C6.98217 19.5542 7.06332 19.5542 7.22563 19.5542C7.42887 19.5542 7.53049 19.5542 7.6161 19.5459C8.46225 19.4638 9.13189 18.7942 9.21396 17.948C9.22226 17.8624 9.22226 17.7608 9.22226 17.5575V4.88751M16.7778 11.9986C18.496 11.9986 19.8889 10.6057 19.8889 8.88751C19.8889 7.16929 18.496 5.7764 16.7778 5.7764M9.44448 4.88751H6.11114C3.90201 4.88751 2.11114 6.67837 2.11115 8.88751C2.11115 11.0966 3.90201 12.8875 6.11114 12.8875H9.44448C11.0146 12.8875 12.9354 13.7292 14.4172 14.537C15.2817 15.0082 15.7139 15.2438 15.997 15.2092C16.2595 15.177 16.458 15.0592 16.6119 14.8441C16.7778 14.6121 16.7778 14.148 16.7778 13.2197V4.55532C16.7778 3.62706 16.7778 3.16293 16.6119 2.93097C16.458 2.71586 16.2595 2.598 15.997 2.56585C15.7139 2.53117 15.2817 2.7668 14.4172 3.23805C12.9354 4.04583 11.0146 4.88751 9.44448 4.88751Z"
+                          stroke="url(#paint0_linear_906_25790)"
+                          stroke-width="1.33333"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_906_25790"
+                            x1="10.3335"
+                            y1="-16.2204"
+                            x2="11"
+                            y2="19.5542"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="#0095FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div>
+                        <h3
+                          class="font-inter-tight tracking-[0.16px] text-[#09090B] text-[16px] not-italic font-semibold leading-[24px] max-lg:font-medium"
+                        >
+                          Voolt Marketing
+                        </h3>
+                        <p
+                          class="font-inter-tight tracking-[0.12px] text-[#71717A] text-[12px] not-italic font-medium leading-[150%]"
+                        >
+                          Get found by local clients.
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      href="feature4-custom-domain.html"
+                      class="min-w-[264px] flex p-[16px] justify-start items-start gap-[10px] hover:rounded-[16px] lg:hover:bg-[#F4F4F5] transition-all duration-300 max-lg:p-0"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M2.72159 13.9063L4.41776 12.9272C4.50964 12.8741 4.61745 12.8557 4.72173 12.8752L8.05906 13.4998C8.33333 13.5511 8.5865 13.34 8.58526 13.061L8.57227 10.1369C8.57191 10.0574 8.59286 9.97932 8.63293 9.91072L10.3171 7.02731C10.4048 6.87725 10.3969 6.68986 10.297 6.54766L7.4613 2.51128M17.2225 4.31872C12.3336 6.66627 15.0001 9.77738 15.8891 10.2218C17.5576 11.0559 19.8779 11.1107 19.8779 11.1107C19.8852 10.9634 19.8889 10.8153 19.8889 10.6662C19.8889 5.75704 15.9092 1.77734 11 1.77734C6.09084 1.77734 2.11115 5.75704 2.11115 10.6662C2.11115 15.5754 6.09084 19.5551 11 19.5551C11.1491 19.5551 11.2972 19.5515 11.4445 19.5442M15.2292 19.5016L12.4143 12.0805L19.8354 14.8954L16.5446 16.2108L15.2292 19.5016Z"
+                          stroke="url(#paint0_linear_906_25797)"
+                          stroke-width="1.33333"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_906_25797"
+                            x1="10.3335"
+                            y1="-17.8745"
+                            x2="11.0631"
+                            y2="19.5539"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="#0095FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div>
+                        <h3
+                          class="font-inter-tight tracking-[0.16px] text-[#09090B] text-[16px] not-italic font-semibold leading-[24px] max-lg:font-medium"
+                        >
+                          Custom Domain
+                        </h3>
+                        <p
+                          class="font-inter-tight tracking-[0.12px] text-[#71717A] text-[12px] not-italic font-medium leading-[150%]"
+                        >
+                          Build trust among your customers.
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="max-lg:w-[320px]">
+              <a
+                href="pricing.html"
+                class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300"
+                >Pricing</a
+              >
+            </li>
+            <li class="max-lg:w-[320px]">
+              <a
+                href="https://help.voolt.com/"
+                class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300"
+                >Support</a
+              >
+            </li>
+            <li class="max-lg:w-[320px]">
+              <a
+                href="https://blog.voolt.com/"
+                class="px-[1px] flex gap-[6px] items-center justify-center font-inter-tight text-[#09090B] text-[14px] not-italic font-medium leading-[20px] max-lg:justify-start max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px] hover:text-[#058BEB] transition-all duration-300"
+                >Blog</a
+              >
+            </li>
+          </ul>
+          <div class="flex gap-[12px] items-center max-md:gap-[8px]">
+            <a
+              href="https://app.voolt.com/login"
+              class="flex px-[16px] py-[6px] justify-center items-center gap-[8px] border-[1px] border-[solid] border-[#E4E4E7] rounded-[6px] bg-[#fff] text-[#27272A] font-inter-tight text-[14px] not-italic font-medium leading-[20px] hover:bg-muted transition-all duration-300 max-xsm:text-[12px] max-xsm:leading-[150%] max-xsm:px-[12px] max-xsm:py-[5px]"
+              >Login
+            </a>
+            <a
+              href="https://app.voolt.com/flow/01/1/"
+              class="flex px-[16px] py-[8px] justify-center items-center gap-[8px] rounded-[6px] bg-[#FCC82C] text-[#27272A] font-inter-tight text-[14px] not-italic font-medium leading-[20px] hover:bg-primary/90 transition-all duration-300 max-xsm:text-[12px] max-xsm:leading-[150%] max-xsm:px-[12px] max-xsm:py-[6px]"
+              >Sign Up
+            </a>
+            <a
+              aria-label="Hamburger menu, click it to open"
+              href="#"
+              class="lg:hidden hover:opacity-90 nav-hamb"
+            >
+              <div
+                class="p-[2px] flex flex-col gap-[6px] max-xsm:p-[1px] max-xsm:gap-[4px]"
+              >
+                <div
+                  class="bg-[#09090B] w-[28px] h-[2px] rounded-[5px] transition-all duration-300 max-xsm:w-[22px]"
+                ></div>
+                <div
+                  class="bg-[#09090B] w-[19px] h-[2px] rounded-[5px] transition-all duration-300 max-xsm:w-[15px]"
+                ></div>
+                <div
+                  class="bg-[#09090B] w-[28px] h-[2px] rounded-[5px] transition-all duration-300 max-xsm:w-[22px]"
+                ></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ############### navbar end ############### -->
+    <section
+      class="relative overflow-hidden pb-[58px] pt-[145px] max-md:pt-[120px] max-md:pb-[40px] max-xsm:pt-[100px]"
+    >
+      <div
+        class="z-1 top-[85px] absolute left-2/4 -translate-x-1/2 w-[608px] h-[608px] rounded-tl-[var(--Radius-rounded-none,] rounded-br-[var(--Radius-rounded-none,] rounded-tr-[608px)] rounded-bl-[608px)] bg-[rgba(128,_0,_255,_0.08)] filter blur-[273.5999755859375px]"
+      ></div>
+      <div
+        class="z-1 top-[85px] absolute left-2/4 -translate-x-[900px] w-[608px] h-[608px] rounded-tl-[var(--Radius-rounded-none,] rounded-br-[var(--Radius-rounded-none,] rounded-tr-[608px)] rounded-bl-[608px)] bg-[rgba(0,_148,_255,_0.08)] filter blur-[273.5999755859375px]"
+      ></div>
+      <div
+        class="z-1 top-[85px] absolute left-2/4 translate-x-[300px] w-[608px] h-[608px] border-radius: var(--Radius-rounded-none, 608px); background: rgba(252, 200, 44, 0.08); filter: blur(273.5999755859375px);"
+      ></div>
+      <div
+        class="relative z-10 wrapper max-w-[1440px] m-auto px-[80px] py-[20px] flex flex-col max-lg:px-[40px] max-md:px-[32px] max-xsm:px-[16px]"
+      >
+        <h1
+          class="max-xsm:mb-[30px] max-xsm:text-[32px] max-md:text-[48px] mb-[44px] font-inter-tight text-[#09090B] tracking-[-1.6px] text-[80px] not-italic font-extrabold leading-[120%]"
+        >
+          Terms of Service
+        </h1>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          By using any of the Services and the Website, You expressly agree to
+          be bound by these terms and all applicable laws and regulations
+          governing the Website and the Services. The terms form a legally
+          binding agreement between you and www.voolt.com" in relation to your
+          use of the Website and/ or the Services and apply to all users of the
+          Services, whether registered or not, on the Website.
+          <br /><br />
+          As used in this Agreement, “www.voolt.com,” "we," "us," and "our"
+          shall mean Voolt and its subsidiaries and affiliates. By accessing or
+          using the services available through our Website (the "Services"), you
+          agree to be bound by these Terms of Service and our Privacy Policy
+          currently found at and incorporated herein by reference. These Terms
+          do not alter in any way the terms or conditions of any other agreement
+          you may have with Voolt for products, services, or otherwise. If you
+          are using the Services on behalf of any entity, you represent that you
+          are authorized to do so.
+          <br /><br />
+          We may, at our sole discretion, modify or revise these Terms of
+          Service and policies at any time by giving notice on our Website
+          and/or through the Services, and you agree to be bound by such
+          modifications or revisions. Although Voolt may attempt to notify you
+          when major changes are made to these Terms of Service, you should
+          periodically click on our Terms of Service to review any updates. All
+          changes shall be effective immediately when we post them and shall
+          apply to all access to and use of our Website thereafter. Nothing in
+          these Terms of Service shall be deemed to confer any third-party
+          rights or benefits hereunder.
+          <br /><br />
+          Voolt may review and delete any User Content that, in its sole
+          judgment, violates these Terms of Service, applicable law, rule, or
+          regulation, is offensive or illegal, or violates the rights of, harms,
+          or threatens the safety of Users of Voolt. The Company reserves the
+          right to expel Users and prevent their further access to Voolt for
+          violating the Terms of Service or applicable law, rule, or regulation
+          and the right to remove User Content which is in violation of the
+          Terms of Service, abusive, illegal, or disruptive.
+          <br /><br />
+          <b class="font-bold text-[#09090B]">Ad Credits</b> mean credits that
+          can be purchased in advance to be utilized for the payment of the ads
+          to Google, Meta, and any other ad platform that Voolt may use to
+          advertise for the User. <br /><br />
+          <b class="font-bold text-[#09090B]">Policies</b> mean advertising
+          criteria or specifications made conspicuously available, including
+          content limitations, technical specifications, privacy policies,
+          policies of google, user experience policies, policies regarding
+          consistency with Parties’ public image, and community standards
+          regarding obscenity or indecency (taking into consideration the
+          portion(s) of the Site on which the Ads are to appear), other
+          editorial or advertising policies. <br /><br />
+          <b class="font-bold text-[#09090B]">Site or Sites</b> means
+          www.voolt.com <br /><br />
+          <b class="font-bold text-[#09090B]">Pay Service</b> means certain of
+          the Services made available on a Voolt platform on a payment-of-fee
+          basis. <br /><br />
+          <b class="font-bold text-[#09090B]">User</b> means a company or person
+          who completes Voolt’s account registration process. <br /><br />
+          <b class="font-bold text-[#09090B]">Premium User</b> means a company
+          or person who subscribes to Voolt's premium plan, after the
+          registration process. <br /><br />
+          <b class="font-bold text-[#09090B]">Voolt Marketing User</b> means a
+          company or a person who starts an ad account with Voolt, being a
+          Premium User or not. <br /><br />
+          <b class="font-bold text-[#09090B]">Representative</b> means an entity
+          and its affiliate(s), any director, officer, employee, consultant,
+          contractor, agent, and attorney associated with the Company.
+          <br /><br />
+          <b class="font-bold text-[#09090B]">Commencement Date</b> means the
+          date on which this Agreement takes effect, as expressly stated in the
+          media plan report. <br /><br />
+          <b class="font-bold text-[#09090B]">Collective Content</b> means User
+          Content and Voolt Content. <br /><br />
+          <b class="font-bold text-[#09090B]">Content</b> means report text,
+          graphics, images, music, software, audio, video, information or other
+          materials. <br /><br />
+          <b class="font-bold text-[#09090B]">Voolt Content</b> means all
+          Content that Voolt makes available through the Website, Application,
+          Services, or its related promotional campaigns and official social
+          media channels, including any Content licensed from a third party but
+          excluding User Content.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Ambit of Service
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          The Website is a Software-as-a-service platform on which users can 1)
+          Create and host a website, 2) Customize the Domain name by subscribing
+          to a new one, or point domains from other sources, and 3) Create and
+          manage ad campaigns.
+          <br /><br />
+          By creating one account and starting to use the services, the User
+          authorizes Voolt to use automated tools to create the websites, and
+          landing pages, format Ads, and publish them on Google Adwords, Meta
+          Ads, or any type of ad platform on their behalf. The Voolt and its
+          affiliates may make available to the User certain optional Program
+          features to assist the User with the selection of keywords and
+          generation of Targets. However, the User shall solely be responsible
+          for the Target audience and reach of the Ads. User is provided certain
+          tools with the help of which they can track the performance of their
+          Ads.
+          <br /><br />
+          The Voolt or Partners may reject or remove a specific website, Ad or
+          Target at any time if it’s in conflict with our or Google’s and Meta's
+          Terms of Service. The Voolt and its affiliates reserve the right to
+          modify or cancel Programs at any time. The User acknowledges that The
+          Voolt or its affiliates may participate in Program auctions in support
+          of its own services and products.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Products/Subscription/Fee-Based Services/Top-Up.
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          <b class="font-bold text-[#09090B]">1. Voolt Website Builder</b>
+          <br />
+          Creating a website with Voolt is free of charge, any User can create a
+          single website and it will remain active for 14 days (also called a
+          14-day free trial), after the free trial the website will be
+          deactivated. You can reactivate your website at any time by
+          subscribing to the Premium plan.
+          <br /><br />
+          <b class="font-bold text-[#09090B]">2. Voolt Premium Subscription</b>
+          <br />
+          If you decide to subscribe to Premium Services, you will pay a monthly
+          fee of $14. Voolt can offer discounts for an annual or semi-annual
+          plan by its own decision. With a subscription, as Premium Users you
+          will receive the following benefits: a) Automated SEO (Search Engine
+          Optimization) for the Website, b) Indexation on Google and other
+          search engines, c) the possibility to customize the Domain Name by
+          subscribing to a new one or point the existing domain from other
+          providers and, d) Access to Voolt Marketing for Ads. Voolt can add or
+          remove benefits at any time, by its own decision and without the need
+          for written communication. 
+          <br /><br />
+          Premium Subscriptions cannot be refunded. If you decide to cancel the
+          Subscription, the access will be granted until the last day of the
+          payment cycle, whether it's monthly, annual, or semi-annual. 
+          <br /><br />
+          <b class="font-bold text-[#09090B]">3. Domain Registrations</b> <br />
+          When creating the website with Voolt, you will be granted a domain
+          ending with ".voolt.com" (i.e. mybusiness.voolt.com), and Premium
+          Users have the opportunity to customize the Domain name: a) by
+          purchasing a new one or, b) pointing an existing Domain for other
+          providers. 
+          <br /><br />
+          a) If you decide to purchase a new one with Voolt, the amount
+          described on your dashboard will be paid to Voolt, and we will make
+          the purchase with the domain provider. <br />
+          The payment is a yearly subscription, and to maintain the domain
+          active, you agree to be charged once a year on the renewal date. You
+          also agree that Voolt will share your personal information, such as
+          your full name, billing address, and payment method, with third-party
+          apps.   <br /><br />
+          b) When pointing an existing Domain to a Voolt Website, you may need
+          to make changes to the Domain settings to allow access. 
+          <br /><br />
+          <b class="font-bold text-[#09090B]">4. Voolt Marketing for Ads. </b>
+          <br />
+          A website with Voolt is not required to use Voolt Marketing Services.
+          Premium and new users can create and manage ads on Voolt Dashboard.
+          You will select an Advertising Initial Budget and Top-Up the account
+          with the selected balance (or Ad Credits).  The Initial Budget is not
+          static and can vary depending on the Service you want to advertise and
+          the average Cost Per Click of this service. Voolt may change the price
+          range based on its own criteria. 
+          <br /><br />
+          You can Top-Up your Ad Credits in two ways i.e. “Manual Top-Up” and
+          “Auto Top-Up”.
+          <br /><br />
+          Manual Top-Up: You may choose to Top-Up your Ad Credits manually at
+          your convenience however, the minimum amount to be deposited may vary
+          depending service you choose to advertise. 
+          <br /><br />
+          Auto Top-Up: If you select the Auto Top-Up option then the same amount
+          as the previous payment shall be topped up in Ad Credits account when
+          the Ad Credits is lower than $50.
+          <br /><br />
+          Pay Services are offered by Voolt on a prepaid usage basis.
+          Advertising credits (“Ad Credits”) may be purchased and used to run
+          advertisements on Google Search, Google Search Partner Websites, Meta
+          Ads, and other Meta Ads Partners. 
+          <br /><br />
+          Voolt charges a fixed Service Fee for the allocation of Ad credits.
+          The allocation of Ad Credits may be subject to change without notice.
+          Ad Credit costs, including cost-per-click reporting and more, are
+          reflected through the per-click prices determined by Google and Meta.
+          Ad Credits are subject to the Terms of Service of Google and Meta.
+          <br /><br />
+          With Voolt Marketing, Voolt is not responsible for the information
+          provided by the person interested in your services. Voolt will create
+          and run ads for the audience selected by you during the creation of
+          the campaigns and Voolt doesn't have control over the information that
+          the potential customers submit, including phone numbers and email
+          addresses. 
+          <br /><br />
+          Ad Credits can be refunded however, a 30% administration fee shall be
+          applicable to the refunded Ad Credits. If you cancel your recurring Ad
+          Credit Service, your Ad Credits on file will remain in your account
+          for one month; thereafter, these shall be forfeited next month.
+          Adjustments, reinstatements or refunds relating to the positioning or
+          placement of any Ad are at our sole discretion.
+          <br /><br />
+          Charges are solely based on The Voolt’s measurements for the Programs
+          and the applicable billing metrics e.g., clicks or impressions. The
+          Voolt is not obligated to deliver any Ads in excess of any credit
+          limit. Voolt shall not be liable in the event, it does not deliver Ads
+          to the selected Targets. 
+          <br /><br />
+          Please note that we shall pause the Service in the event your Ad
+          Credit balance goes to zero or if there are not enough Ad credits in
+          your account to pay for the next click. You are required to add double
+          the amount of Ad credits you intend to utilize for the continuation of
+          the Service. You may terminate the Service anytime; however, please
+          keep in mind that you shall lose access to the Service with immediate
+          effect, including but not limited to the landing page provided to you
+          by Voolt.
+          <br /><br />
+          YOU UNDERSTAND AND ACKNOWLEDGE THAT ALL FEES MUST BE PAID IN ADVANCE
+          AND THAT YOUR SERVICES MAY BE PAUSED OR TERMINATED IF TIMELY PAYMENT
+          IS NOT RECEIVED OR IF A PAST PAYMENT HAS BEEN DISPUTED.
+          <br /><br />
+          You agree to pay all the fees applicable for such Pay Service you
+          incur through your Pay Service Account, including any fees associated
+          with the use of such Pay Service, together with all applicable taxes
+          (the “Fees”). Unless otherwise indicated on the relevant Pay Service
+          description page, the Fees for Ad Credits purchased through your Pay
+          Service Account are chargeable immediately to the credit card you
+          designated for the particular Pay Service Account or through such
+          other billing process as applicable. All Fees are non-refundable.
+          Voolt reserves the right to change the amount of, or basis for
+          determining, any Fees for a Pay Service and to institute new Fees or
+          terms at any time effective upon notice to you, which notice may for
+          certainty include the posting of any such changes on the relevant
+          pages related to the use of the Pay Service.
+          <br /><br />
+          By registering for a Pay Service, you warrant that: (a) you are of the
+          age of majority in the jurisdiction in which you reside, (b) all
+          information you submit is true and correct (including without
+          limitation all credit card information), and (c) you are the
+          cardholder of the credit card you designated for your Pay Service
+          Account. In consideration of the availability, and your use, of a Pay
+          Service, you acknowledge and agree: (a) to these Terms of Service,
+          including without limitation the disclaimers, limitation of liability,
+          and provisions related to prohibited conduct set out herein as well as
+          any Terms of Service which may be set out in the relevant Pay Service
+          Description, (b) that you are solely responsible for all acts or
+          omissions that occur through your Pay Service Account, and (c) that
+          Voolt reserves the right to suspend or terminate your Pay Service
+          Account and your use of a Pay Service at any time, including without
+          limitation, where Voolt has determined, in its sole discretion, that
+          your use of the Pay Service is, or was, in breach of these Terms of
+          Service. Any such termination by Voolt shall be in addition to and
+          without prejudice to such rights and remedies as may be available to
+          Voolt, including injunction and other equitable remedies. Your ability
+          to use the Pay Service is also subject to any limits established by
+          Voolt or by your credit card issuer. If Fees cannot be charged to your
+          credit card or your charge is returned for any reason, including
+          chargeback, Voolt reserves the right to either suspend or terminate
+          your Pay Service Account and your access to the Pay Service.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Obligations Of Users
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          In addition to making all required payments and complying with the
+          terms of this Agreement, User shall (a) cooperate with Voolt and its
+          partners in all matters relating to the Services; (b) respond promptly
+          to questions and any reasonable request to provide direction,
+          information, approvals, authorizations or decisions that are
+          reasonably necessary for Voolt and its partners to perform the
+          Services in accordance with the requirements of this Terms of Service;
+          and (c) provide such materials and/or information as Voolt and its
+          partners may reasonably request in connection with the Services,
+          including any User Material. Voolt is not responsible or liable for
+          any delay or failure of performance caused in whole or in part by
+          User’s delay in performing, or failure to perform, any of its
+          obligations under this Agreement. Voolt cannot guarantee that any
+          Voolt Material, including any Ads, shall “go live” or be completed by
+          any set timeline. We will, however, strive to minimize our response
+          times to Users wherever possible.
+          <br /><br />
+          To access and use certain features of the Services, you are required
+          to register for an account. By creating an account, you agree to (i)
+          provide accurate, current, and complete account information; (ii)
+          maintain the security of your password, not share your password with
+          any other person, and accept all risks of unauthorized access to your
+          account; and (iii) promptly provide notice support@voolt.com if you
+          discover or otherwise suspect any security breaches related to the
+          Services.
+          <br /><br />
+          You acknowledge and agree that you are responsible and shall bear all
+          risks associated with the use of any Content and that under no
+          circumstances will Voolt be liable in any way for the Content or for
+          any loss or damage of any kind incurred as a result of using our
+          Service. ANY CONTENT POSTED ON THE LANDING PAGE CREATED FOR THE USER
+          BY VOOLT SHALL BE THE RESPONSIBILITY OF THE USER. VOOLT IS NOT LIABLE
+          FOR TYPOGRAPHICAL ERRORS OR RELIABILITY AND ACCURACY OF THE CONTENT.
+          <br /><br />
+          In order to avail of our Marketing Services, you have to upload some
+          content to our Website and servers. You acknowledge and agree not to
+          upload, post, transmit, publish, or distribute any material or
+          information that is unlawful or that may potentially be perceived as
+          being harmful, threatening, libelous, ethnically, or otherwise
+          objectionable. You acknowledge and agree that you are solely
+          responsible for your own Content posted on, transmitted through, or
+          linked from the Service and the consequences of posting, transmitting,
+          linking, or publishing it. More specifically, you are solely
+          responsible for all Content that you upload or otherwise make
+          available via the Service. In connection with such Content posted on,
+          transmitted through, or linked from the Service by you, you affirm,
+          acknowledge, represent, warrant, and covenant that: (i) you own or
+          have the necessary licenses, rights, consents, and permissions to use
+          such Content on the Service and Website.
+          <br /><br />
+          By posting any Content on the Website, you hereby grant the Company a
+          perpetual, worldwide, irrevocable, unrestricted, non-exclusive,
+          royalty-free license to use, copy, license, sublicense, adapt,
+          distribute, display, publicly perform, reproduce, transmit, modify,
+          and edit any such Content which you may provide to be used and shared
+          on Google platform on your behave. By submitting Content, you
+          represent to the Company that such Content is original, you are its
+          rightful owner or that you have first obtained permission from the
+          rightful owner to submit it, and that you have the authority to assign
+          and license to the Company all rights, title, and interest as set
+          forth herein in and to such Content. You acknowledge that the Company
+          has relied upon this representation. Accordingly, you further agree to
+          defend, hold harmless, and indemnify the Company from and against any
+          and all claims of alleged or actual infringements of any intellectual
+          property rights, proprietary rights, rights of privacy and publicity,
+          moral rights, and rights of attribution raised by third parties
+          against the Company in connection with such Content.
+          <br /><br />
+          You agree to release Voolt, its parents, partners, contractors, and
+          affiliates, together with their respective employees, agents,
+          officers, directors, and shareholders, from any and all liability and
+          obligations whatsoever in connection with or arising from your use of
+          our Services. If at any time you are not happy with the Websites or
+          the Services or object to any Content, your sole remedy is to cease
+          using them.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Electronic Communications
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          When you send an email or chat electronically with Voolt, you are
+          communicating with us electronically. You consent to receive
+          communications from us electronically. We will communicate with you by
+          email. You agree that all agreements, notices, disclosures and other
+          communications that Voolt provides to you electronically satisfy legal
+          requirements that such communications be in writing.
+          <br /><br />
+          By registering for a Voolt account, you agree to receive transactional
+          communications necessary for the regular functioning of our services,
+          including but not limited to account verification, billing
+          confirmations, and technical notices.
+          <br /><br />
+          If you opt-in during registration or later through your account
+          settings, you also consent to receive marketing communications such as
+          product updates, promotional offers, and educational materials. You
+          can withdraw your consent and unsubscribe from such emails at any time
+          by clicking the unsubscribe link at the bottom of such communications
+          or by managing your preferences in your account settings.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Suspension And Termination Of Account And Service
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          Generally, a User Account will be considered active until we receive a
+          user request to deactivate or delete it. We do not guarantee that the
+          Website or any content contained on the Website will always be
+          available or be uninterrupted. We reserve the right to limit, suspend,
+          terminate, modify, or delete the User Account we provide to you or
+          your access to our Services or portions thereof (including any Content
+          you or other users submit) for any reason, with or without notice and
+          at any time, including, without limitation, if you are, or we suspect
+          that you are, improperly using the Services, violating any applicable
+          laws or failing to comply with this Terms of Service. We also reserve
+          the right to stop offering and/or supporting the Services or any part
+          of the Services at any time, either permanently or temporarily, for
+          any reason, with or without notice to you, at which point your use of
+          the Services or any part thereof will be automatically terminated or
+          suspended.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Use Of The Services
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          Except as otherwise agreed upon, we hereby grant you a limited,
+          nonexclusive, non-sublicensable license to access and use the Platform
+          which is conditioned with the compliance with these Terms. You will
+          not use, copy, adapt, modify, decompile, reverse engineer,
+          disassemble, decrypt, attempt to derive the source code, prepare
+          derivative works based upon, distribute, license, sell, rent,
+          transfer, publicly display, publicly perform, transmit, stream,
+          broadcast or otherwise exploit the Platform and Content, except as
+          expressly permitted by Voolt or as permitted under applicable law. Any
+          unauthorized use of the Services is strictly prohibited and will
+          terminate the license granted in these Terms. No licenses or rights
+          are granted to you by implication or otherwise, except for the
+          licenses and rights expressly granted to you.
+          <br /><br />
+          Voolt will not be liable on account of any inaccuracy of information
+          on this Website. It is the responsibility of the visitor to further
+          research the information on the Website. The User undertakes not to
+          duplicate, download, publish, modify and distribute the material on
+          Voolt unless specifically authorized by Voolt in this regard.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Third-Party Website Links, Content, And Services
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          The Service and Content available through the Website may integrate
+          with other third-party service providers such as third-party payment
+          processor Services, e.g. Stripe. If you link to Third Party Websites,
+          you may be subjected to those Third-Party Websites' Terms of Service
+          and other policies. Voolt makes no representation or guarantee as to
+          the accuracy or authenticity of the information contained in any such
+          Third-Party Website; data protection and your linking to any other
+          Website is completely at your own risk, and Voolt disclaims all
+          liability thereto.
+          <br /><br />
+          Any and all content and services (including advertising) within Voolt
+          that are not owned by Voolt are "third-party content and services."
+          Voolt acts merely as an intermediary user and accepts no
+          responsibility or liability for third-party content and services. In
+          addition, and without limiting the generality of the foregoing, Voolt
+          may include links to Websites operated by third parties, including
+          advertisers and other content providers. Those Websites may collect
+          data or solicit personal information from you. Voolt does not control
+          such Websites and is not responsible for their Content, policies, or
+          collection, use, or disclosure of any information; those Websites may
+          collect
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Ownership and Intellectual Property
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          This Website and all Content forming part of the Website, including,
+          without limitation, all photographs, ideas, images, designs,
+          information, interfaces, text, graphics, brand names, logos and
+          trademarks, are protected by copyright, trademark and other
+          intellectual property laws of Canada.
+          <br /><br />
+          You acknowledge and agree that Voolt owns, controls or is licensed all
+          legal rights, titles, and interests in and related to the Website,
+          including all intellectual property rights. You may not:
+        </p>
+        <ul class="list-disc pl-[36px]">
+          <li
+            class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+          >
+            modify or copy the idea of trade, layout or appearance of the
+            Website or any computer software or code contained in the Website;
+            and/or
+          </li>
+          <li
+            class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+          >
+            decompile or disassemble, reverse engineer or otherwise attempt to
+            discover or access any source code related to the Website.
+          </li>
+        </ul>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          If you believe that anything on or available through the Services
+          infringes upon any copyright that you own or control, you may contact
+          us at support@voolt.com
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Data Ownership
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          We respect your right to ownership of Content created or stored by
+          you. You own the Content created or stored by you. Unless specifically
+          permitted by you, your use of the Services does not grant Voolt the
+          license to use, reproduce, adapt, modify, publish or distribute the
+          Content created by you or stored landing page or in Ad’s account for
+          Voolt’s commercial, marketing or any similar purpose. But you grant
+          Voolt permission to access, copy, distribute, store, transmit, and
+          reformat the Content of your user account solely as required for the
+          purpose of providing the Services to you.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Indemnification
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          The User agrees and undertake to indemnify and to hold harmless Voolt
+          and other parties determined by Voolt, Voolt affiliates, successors,
+          agents, assigns, and each of their directors, officers, employees,
+          associates, agents, and representatives from and against any data
+          loss, financial losses, damages, liability, claims, costs, penalty and
+          expenses (including, without limitation, reasonable attorneys’ fees)
+          incurred by reason of (i) any breach or alleged breach by the User of
+          the User’s obligations, responsibilities, representations, or
+          warranties under the Subscription Agreement and/or User T&amp;C; (ii)
+          any infringement or unauthorized use of intellectual property rights
+          of Voolt including but not limited to infringement of intellectual
+          property rights of Voolt in the Website (iii) any breach of the
+          confidentiality obligations of the User under this Agreement or User
+          T&amp;C; (iv) any violation of Voolt policies by the User; (v) any
+          harm to the reputation and goodwill of Voolt directly attributable to
+          the User; and (vi) damage, unauthorized use or loss of the Website.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Reliance on Information Posted
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          The information presented on or through the Website is made available
+          solely for general/ recommendation purposes. We do not warrant the
+          accuracy, completeness or usefulness of this information. Any reliance
+          you place on such information is strictly at your own risk and
+          responsibility. We disclaim all liability and responsibility arising
+          from any reliance placed on such materials by you or any other visitor
+          to the Website or by anyone who may be informed of any of its
+          contents.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Limitation of Liability
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          IN NO EVENT SHALL VOOLT, ITS OFFICERS, DIRECTORS, EMPLOYEES, OR
+          AGENTS, BE LIABLE TO YOU FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+          SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES WHATSOEVER RESULTING FROM
+          ANY (I) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT, (II) PERSONAL
+          INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM
+          YOUR ACCESS TO AND USE OF OUR SERVICES, (III) ANY UNAUTHORIZED ACCESS
+          TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL
+          INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (IV) ANY
+          INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM OUR SERVICES, (V)
+          ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE, WHICH MAY BE
+          TRANSMITTED TO OR THROUGH OUR SERVICES BY ANY THIRD PARTY, AND/OR (VI)
+          ANY ERRORS OR OMISSIONS IN ANY CONTENT OR FOR ANY LOSS OR DAMAGE OF
+          ANY KIND (INCLUDING LOSS OR DAMAGE TO CONTENT), IN EACH CASE WHETHER
+          BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER LEGAL THEORY, AND
+          WHETHER OR NOT VOOLT. IS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+          YOU SPECIFICALLY ACKNOWLEDGE THAT VOOLT. SHALL NOT BE LIABLE FOR
+          CONTENT OR THE DEFAMATORY, OFFENSIVE, OR ILLEGAL CONDUCT OF ANY THIRD
+          PARTY AND THAT THE RISK OF HARM OR DAMAGE FROM THE FOREGOING RESTS
+          ENTIRELY WITH YOU. BECAUSE SOME JURISDICTIONS DO NOT ALLOW THE
+          EXCLUSION OR THE LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR
+          INCIDENTAL DAMAGES, IN SUCH JURISDICTIONS, THE ABOVE LIMITATIONS AND
+          EXCLUSIONS MAY NOT APPLY TO YOU. IN SUCH JURISDICTIONS, OUR LIABILITY
+          IS LIMITED TO THE EXTENT PERMITTED BY LAW, THEREBY MINIMIZING OUR
+          LIABILITY TO YOU TO THE LOWEST AMOUNT PERMITTED BY APPLICABLE LAW. THE
+          SERVICES ARE CONTROLLED AND OFFERED BY VOOLT. FROM ITS FACILITIES IN
+          CANADA. VOOLT. MAKES NO REPRESENTATIONS THAT THE SERVICES ARE
+          APPROPRIATE OR AVAILABLE FOR USE IN OTHER LOCATIONS. THOSE WHO ACCESS
+          OR USE THE SERVICES FROM OTHER JURISDICTIONS DO SO AT THEIR OWN
+          VOLITION AND ARE RESPONSIBLE FOR COMPLIANCE WITH LOCAL LAW.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Disclaimer of Warranties
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          YOUR USE OF THE WEBSITE, ITS CONTENT AND ANY SERVICES OR ITEMS
+          OBTAINED THROUGH THE WEBSITE IS AT YOUR OWN RISK. THE WEBSITE, ITS
+          CONTENT AND ANY SERVICES OBTAINED THROUGH THE WEBSITE ARE PROVIDED ON
+          AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY
+          KIND, EITHER EXPRESS OR IMPLIED. NEITHER THE COMPANY NOR ANY PERSON
+          ASSOCIATED WITH THE COMPANY MAKES ANY WARRANTY OR REPRESENTATION WITH
+          RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY
+          OR AVAILABILITY OF THE WEBSITE. WE SHALL NOT BE LIABLE TO YOU FOR ANY
+          LOSS SUFFERED IN RELATION TO YOUR USE OR INABILITY TO USE THE WEBSITE
+          WITHOUT LIMITING THE FOREGOING; NEITHER THE COMPANY NOR ANYONE
+          ASSOCIATED WITH THE COMPANY REPRESENTS OR WARRANTS THAT THE WEBSITE,
+          ITS CONTENT OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE WILL
+          BE ACCURATE, RELIABLE, ERROR-FREE OR UNINTERRUPTED, THAT DEFECTS WILL
+          BE CORRECTED, THAT OUR WEBSITE OR THE SERVER THAT MAKES IT AVAILABLE
+          ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS OR THAT THE WEBSITE OR
+          ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE WILL OTHERWISE MEET
+          YOUR NEEDS OR EXPECTATIONS. WE MAKE EVERY EFFORT TO VERIFY STATEMENTS
+          AND INFORMATION SUBMITTED BY THE THIRD PARTIES AND OUR MEMBERS, THE
+          INFORMATION COMPILED BY US IS BASED ON INFORMATION SUPPLIED BY VARIOUS
+          INDIVIDUALS AND BUSINESSES; IT DOES NOT REPRESENT THE VIEWS OF VOOLT.
+          AND VOOLT CANNOT BE HELD RESPONSIBLE FOR ANY OMISSIONS OR INACCURATE
+          CLAIMS THAT MAY APPEAR.
+          <br /><br />
+          THE COMPANY HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER
+          EXPRESS OR IMPLIED, STATUTORY OR OTHERWISE, INCLUDING BUT NOT LIMITED
+          TO ANY WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR
+          A PARTICULAR PURPOSE.
+          <br /><br />
+          THE FOREGOING DOES NOT AFFECT ANY WARRANTIES THAT CANNOT BE EXCLUDED
+          OR LIMITED UNDER APPLICABLE LAW.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Entire Agreement/ Severability
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          These Terms of Service incorporate our Privacy Policy which together
+          constitutes the entire Agreement between You and Voolt in relation to
+          Your use of the Website and/ or the Services and supersedes any prior
+          representations, inducements or agreements relating to its subject
+          matter. You agree that these Terms of Service are not intended to
+          confer and do not confer any rights or remedies upon any third party.
+          If any part of these Terms of Service are held invalid or
+          unenforceable, that portion shall be construed in a manner consistent
+          with applicable law to reflect, as nearly as possible, the original
+          intentions of the parties, and the remaining portions shall remain in
+          full force and effect. These Terms of Service, including all terms and
+          policies referenced herein, contain the entire understanding and
+          supersede all prior agreements between you and Voolt relating to this
+          subject matter and cannot be changed or terminated orally.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Assignment
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          You may not assign these Terms or any of the rights granted hereunder
+          without the prior written consent of Voolt, and any attempted
+          assignment without such consent shall be void. Subject to the
+          foregoing restriction, these Terms will be fully binding upon, inure
+          to the benefit of, and be enforceable by us and our respective
+          successors and assigns.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Non-waiver
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          Failure by either Voolt or You to exercise or enforce any right
+          conferred shall not be deemed to be a waiver of any such right nor
+          operate so as to bar that exercise or enforcement thereof or of any
+          other right on any later occasion.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Force Majeure
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          Voolt shall not be liable for any delay or failure to perform
+          resulting from causes outside its reasonable control; including,
+          without limitation, any failure to perform hereunder due to unforeseen
+          circumstances or causes beyond its control such as acts of God,
+          pandemics, war, terrorism, riots, embargoes, acts of civil or military
+          authorities, fire, floods, accidents, strikes, or shortages of
+          transportation facilities, fuel, energy, labor or materials.
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Governing Law And Arbitration
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          The Agreement shall be governed by and construed in accordance with
+          the laws of the Province of Ontario and the laws of Canada applicable
+          therein. If any dispute arises between the Parties relating to the
+          application, interpretation, implementation or validity of this
+          Agreement, the Parties agree to resolve the dispute by arbitration at
+          ADR Chambers using the ADR Chambers Expedited Arbitration Rules (<a
+            href="https://adrchambers.com/expedited-arbitration/"
+            class="[text-decoration-line:underline]"
+            >https://adrchambers.com/expedited-arbitration/</a
+          >). The Parties agree that the ADR Chambers Expedited Arbitration
+          Rules give the Parties a fair opportunity to present their case and
+          respond to the case of the other side. The arbitration shall be held
+          in Toronto and shall proceed in accordance with the provisions of the
+          Arbitration Act (Ontario). Judgment upon the award rendered by the
+          arbitrator may be entered in any court having jurisdiction. There will
+          be no appeal from the decision of the arbitrator on questions of fact,
+          law, or mixed fact and law
+        </p>
+        <h2
+          class="max-xsm:text-[22px] mb-[23px] mt-[42px] font-inter-tight [text-decoration-line:underline] text-[32px] not-italic font-bold leading-[125%]"
+        >
+          Contact Us
+        </h2>
+        <p
+          class="max-xsm:text-[16px] font-inter-tight text-[#71717A] text-[22px] tracking-[-0.11px] not-italic font-semibold leading-[136%]"
+        >
+          If you have any questions or concerns regarding these Terms or our
+          Services, please contact us through the support portal at
+          <a
+            href="mailto:support@voolt.com"
+            class="text-[#058BEB] [text-decoration-line:underline]"
+            >support@voolt.com</a
+          >
+        </p>
+      </div>
+    </section>
+    <footer class="bg-[#091A3F]">
+      <div
+        class="wrapper max-w-[1440px] m-auto px-[80px] py-[80px] flex flex-col max-lg:px-[40px] max-md:px-[32px] max-sm:py-[40px] max-xsm:px-[16px]"
+      >
+        <div class="flex justify-between max-md:flex-col">
+          <div class="w-[33%] pr-[15px] max-md:w-[100%] max-md:pr-[0]">
+            <a href="index.html" aria-label="Voolt logo">
+              <img loading="lazy" src="imgs/logo-white.png" alt="" />
+            </a>
+            <p
+              class="text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight tracking-[0.14px] mt-[23px]"
+            >
+              Voolt empowers tradespeople and home service pros to attract local
+              clients with automated tools that enable them to manage their own
+              marketing.
+            </p>
+            <div
+              class="flex gap-[20px] mt-[24px] pr-[15px] max-lg:flex-col max-md:flex-row max-md:pr-[0] max-md:inline-flex max-xsm:gap-12px"
+            >
+              <a aria-label="Google logo" href="#"
+                ><img loading="lazy" src="imgs/google-partner.svg" alt=""
+              /></a>
+              <a
+                aria-label="Trustpilot reviews"
+                href="https://www.trustpilot.com/review/voolt.com"
+                ><img loading="lazy" src="imgs/trustpilot.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div
+            class="w-[33%] flex justify-start pl-[11px] gap-[40px] max-lg:flex-wrap max-md:w-[100%] max-md:justify-between max-md:mt-[40px] max-md:pl-[0] max-md:order-3 max-sm:order-1 max-xsm:flex-col max-xsm:gap-[16px]"
+          >
+            <div
+              class="max-xsm:rounded-[8px] max-xsm:border-[1px] max-xsm:border-[#E4E4E7]"
+            >
+              <h3
+                class="xsm-tab tracking-[0.14px] text-white font-inter-tight text-[14px] not-italic font-semibold leading-[20px] mb-[15px] max-xsm:p-[12px] max-xsm:justify-between max-xsm:items-center max-xsm:flex max-xsm:mb-0"
+              >
+                Product
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="xsm:hidden transition-all duration-300"
+                >
+                  <path
+                    d="M6 9.44043L12 15.4404L18 9.44043"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </h3>
+              <ul
+                class="flex flex-col gap-[9px] max-xsm:h-0 max-xsm:overflow-hidden transition-all duration-300"
+              >
+                <li>
+                  <a
+                    href="who-we-serve.html"
+                    class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300"
+                    >Who We Serve</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="feature.html"
+                    class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300"
+                    >Website Builder</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="volt-premium.html"
+                    class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300"
+                    >Voolt Premium</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="feature3-voolt-marketing.html"
+                    class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300"
+                    >Voolt Marketing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="feature4-custom-domain.html"
+                    class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300"
+                    >Custom Domain</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300"
+                    >Pricing</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="max-xsm:rounded-[8px] max-xsm:border-[1px] max-xsm:border-[#E4E4E7]"
+            >
+              <h3
+                class="xsm-tab tracking-[0.14px] text-white font-inter-tight text-[14px] not-italic font-semibold leading-[20px] mb-[15px] max-xsm:p-[12px] max-xsm:justify-between max-xsm:items-center max-xsm:flex max-xsm:mb-0"
+              >
+                Company
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="xsm:hidden transition-all duration-300"
+                >
+                  <path
+                    d="M6 9.44043L12 15.4404L18 9.44043"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </h3>
+              <ul
+                class="flex flex-col gap-[9px] max-xsm:h-0 max-xsm:overflow-hidden transition-all duration-300"
+              >
+                <li>
+                  <a
+                    href="about-us.html"
+                    class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://blog.voolt.com/"
+                    class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="max-xsm:rounded-[8px] max-xsm:border-[1px] max-xsm:border-[#E4E4E7]"
+            >
+              <h3
+                class="xsm-tab tracking-[0.14px] text-white font-inter-tight text-[14px] not-italic font-semibold leading-[20px] mb-[15px] max-xsm:p-[12px] max-xsm:justify-between max-xsm:items-center max-xsm:flex max-xsm:mb-0"
+              >
+                Resources
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  class="xsm:hidden transition-all duration-300"
+                >
+                  <path
+                    d="M6 9.44043L12 15.4404L18 9.44043"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </h3>
+              <ul
+                class="flex flex-col gap-[9px] max-xsm:h-0 max-xsm:overflow-hidden transition-all duration-300"
+              >
+                <li>
+                  <a
+                    href="https://help.voolt.com/hc/en-us"
+                    class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300"
+                    >Help & Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.voolt.com/terms-of-use"
+                    class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300"
+                    >Terms of Use</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.voolt.com/privacy-policy"
+                    class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://voolt.com/legal-notice"
+                    class="tracking-[0.14px] text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight hover:text-[#FFD20A] transition-all duration-300"
+                    >Legal Notice</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="w-[33%] pl-[23px] flex flex-col justify-start max-md:pl-[0] max-md:order-1 max-md:w-auto max-md:mt-[-82px] max-md:pl-[320px] max-sm:mt-[40px] max-sm:p-0"
+          >
+            <h3
+              class="tracking-[0.14px] text-white font-inter-tight text-[14px] not-italic font-semibold leading-[20px] mb-[17px] max-md:uppercase"
+            >
+              Newsletter
+            </h3>
+            <div class="flex justify-between">
+              <label
+                class="w-[calc(100%-110px)] relative block max-fullcursor-pointer max-xsm:w-[calc(100%-90px)]"
+              >
+                <input
+                  class="tracking-[0.14px] w-full placeholder:text-muted-foreground bg-white border border-border rounded-[6px] py-[8px] pl-[13px] pr-[12px] focus:outline-[0px] focus:border-ring hover:border-ring transition-all duration-300 text-[14px] font-inter-tight font-normal leading-[150%]"
+                  placeholder="Email address"
+                  type="email"
+                  name="industry"
+                  required
+                />
+              </label>
+              <a
+                href="#"
+                class="inline-flex px-[20px] py-[8px] justify-center items-center gap-[8px] rounded-[6px] bg-[#FCC82C] text-[#27272A] font-inter-tight text-[14px] not-italic font-medium leading-[20px] hover:bg-primary/90 transition-all duration-300 max-xsm:text-[12px] max-xsm:leading-[150%] max-xsm:px-[12px] max-xsm:py-[6px]"
+                >Subscribe
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-[40px] flex justify-between items-center max-sm:flex-col max-sm:justify-start max-sm:items-start max-sm:gap-[10px]"
+        >
+          <p
+            class="text-[14px] not-italic font-normal leading-[150%] text-white font-inter-tight tracking-[0.14px]"
+          >
+            Voolt Technologies Limited. 2024. All rights reserved.
+          </p>
+          <ul class="flex gap-[12px]">
+            <li>
+              <a
+                aria-label="Facebook logo"
+                target="_blank"
+                href="https://www.facebook.com/getvoolt"
+                class="transition-all duration-300 hover:opacity-70"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_916_17901)">
+                    <path
+                      d="M17.5791 27.915C17.5359 27.9264 17.4926 27.9379 17.4492 27.9488C17.4926 27.9379 17.5359 27.9266 17.5791 27.915Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M28 14.3774C28 6.64665 21.7308 0.377441 14 0.377441C6.26921 0.377441 0 6.64665 0 14.3774C0 22.1082 6.26921 28.3774 14 28.3774C14.0822 28.3774 14.1641 28.3757 14.2461 28.3742V17.4758H11.2383V13.9705H14.2461V11.391C14.2461 8.39942 16.0724 6.77118 18.7409 6.77118C20.0188 6.77118 21.1173 6.86646 21.4375 6.90897V10.0356H19.5974C18.1456 10.0356 17.8644 10.7256 17.8644 11.7379V13.9705H21.3358L20.8834 17.4758H17.8644V27.8365C23.7162 26.159 28 20.7677 28 14.3774Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_916_17901">
+                      <rect
+                        width="28"
+                        height="28"
+                        fill="white"
+                        transform="translate(0 0.377441)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Linkedin logo"
+                target="_blank"
+                href="https://www.linkedin.com/company/voolt/?originalSubdomain=ca"
+                class="transition-all duration-300 hover:opacity-70"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_916_17915)">
+                    <path
+                      d="M14 0.377441C6.26921 0.377441 0 6.64665 0 14.3774C0 22.1082 6.26921 28.3774 14 28.3774C21.7308 28.3774 28 22.1082 28 14.3774C28 6.64665 21.7308 0.377441 14 0.377441ZM9.93176 21.5415H6.52212V11.2836H9.93176V21.5415ZM8.22705 9.88278H8.20483C7.06067 9.88278 6.32068 9.09516 6.32068 8.11078C6.32068 7.1042 7.08331 6.33835 8.24969 6.33835C9.41607 6.33835 10.1338 7.10419 10.1561 8.11078C10.1561 9.09516 9.41608 9.88278 8.22705 9.88278ZM22.2262 21.5415H18.817V16.0537C18.817 14.6746 18.3233 13.734 17.0896 13.734C16.1477 13.734 15.5868 14.3685 15.3403 14.9809C15.2501 15.2001 15.2281 15.5064 15.2281 15.813V21.5415H11.8187C11.8187 21.5415 11.8633 12.2459 11.8187 11.2835H15.2281V12.736C15.6812 12.037 16.4919 11.0428 18.3009 11.0428C20.5441 11.0428 22.2262 12.5089 22.2262 15.6596V21.5415Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_916_17915">
+                      <rect
+                        width="28"
+                        height="28"
+                        fill="white"
+                        transform="translate(0 0.377441)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Instagram logo"
+                target="_blank"
+                href="https://www.instagram.com/getvoolt/"
+                class="transition-all duration-300 hover:opacity-70"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_916_17917)">
+                    <path
+                      d="M16.6797 14.3774C16.6797 15.8574 15.48 17.0571 14 17.0571C12.52 17.0571 11.3203 15.8574 11.3203 14.3774C11.3203 12.8975 12.52 11.6978 14 11.6978C15.48 11.6978 16.6797 12.8975 16.6797 14.3774Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M20.2677 9.63595C20.1389 9.28689 19.9334 8.97094 19.6663 8.71161C19.407 8.44458 19.0913 8.23908 18.742 8.11026C18.4587 8.00024 18.0332 7.86929 17.2494 7.83362C16.4015 7.79495 16.1473 7.78662 14.0009 7.78662C11.8542 7.78662 11.5999 7.79474 10.7523 7.8334C9.96851 7.86929 9.54275 8.00024 9.2597 8.11026C8.91043 8.23907 8.59448 8.44458 8.33536 8.71161C8.06833 8.97095 7.86282 9.28668 7.73379 9.63595C7.62378 9.91922 7.49283 10.345 7.45715 11.1288C7.41849 11.9764 7.41016 12.2306 7.41016 14.3773C7.41016 16.5238 7.41849 16.778 7.45715 17.6259C7.49283 18.4097 7.62378 18.8352 7.73379 19.1185C7.86282 19.4677 8.06811 19.7835 8.33514 20.0428C8.59448 20.3098 8.91022 20.5153 9.25949 20.6442C9.54275 20.7544 9.9685 20.8853 10.7523 20.921C11.5999 20.9597 11.8539 20.9678 14.0006 20.9678C16.1475 20.9678 16.4018 20.9597 17.2492 20.921C18.033 20.8853 18.4587 20.7544 18.742 20.6442C19.4431 20.3737 19.9972 19.8196 20.2677 19.1185C20.3777 18.8352 20.5087 18.4097 20.5445 17.6259C20.5832 16.778 20.5913 16.5238 20.5913 14.3773C20.5913 12.2306 20.5832 11.9764 20.5445 11.1288C20.5089 10.345 20.3779 9.91922 20.2677 9.63595ZM14.0008 18.5052C11.7208 18.5052 9.87257 16.6571 9.87257 14.3771C9.87257 12.0971 11.7208 10.2491 14.0008 10.2491C16.2806 10.2491 18.1289 12.0971 18.1289 14.3771C18.1289 16.6571 16.2806 18.5052 14.0008 18.5052ZM18.2921 11.0506C17.7593 11.0506 17.3274 10.6187 17.3274 10.0859C17.3274 9.55311 17.7593 9.12117 18.2921 9.12117C18.8249 9.12117 19.2568 9.55312 19.2568 10.0859C19.2566 10.6187 18.8249 11.0506 18.2921 11.0506Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M14 0.377441C6.26921 0.377441 0 6.64665 0 14.3774C0 22.1082 6.26921 28.3774 14 28.3774C21.7308 28.3774 28 22.1082 28 14.3774C28 6.64665 21.7308 0.377441 14 0.377441ZM21.9906 17.6918C21.9517 18.5476 21.8156 19.1318 21.6169 19.6432C21.1993 20.7231 20.3457 21.5767 19.2658 21.9944C18.7546 22.193 18.1701 22.3289 17.3146 22.368C16.4573 22.4071 16.1834 22.4165 14.0002 22.4165C11.8168 22.4165 11.5431 22.4071 10.6856 22.368C9.83006 22.3289 9.24559 22.193 8.73439 21.9944C8.19776 21.7925 7.71199 21.4761 7.31037 21.067C6.9015 20.6656 6.58512 20.1796 6.38325 19.6432C6.18458 19.132 6.0485 18.5475 6.00962 17.692C5.9701 16.8345 5.96092 16.5606 5.96092 14.3774C5.96092 12.1942 5.9701 11.9203 6.00941 11.0631C6.04829 10.2073 6.18415 9.62302 6.38282 9.1116C6.5847 8.5752 6.90128 8.0892 7.31037 7.6878C7.71177 7.27872 8.19776 6.96234 8.73417 6.76047C9.24558 6.5618 9.82985 6.42593 10.6856 6.38684C11.5429 6.34775 11.8168 6.33835 14 6.33835C16.1832 6.33835 16.4571 6.34775 17.3143 6.38705C18.1701 6.42593 18.7544 6.5618 19.2658 6.76025C19.8022 6.96213 20.2882 7.27872 20.6898 7.6878C21.0987 8.08942 21.4153 8.5752 21.6169 9.1116C21.8158 9.62302 21.9517 10.2073 21.9908 11.0631C22.0299 11.9203 22.039 12.1942 22.039 14.3774C22.039 16.5606 22.0299 16.8345 21.9906 17.6918Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_916_17917">
+                      <rect
+                        width="28"
+                        height="28"
+                        fill="white"
+                        transform="translate(0 0.377441)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Tiktok logo"
+                target="_blank"
+                href="https://www.tiktok.com/@getvoolt"
+                class="transition-all duration-300 hover:opacity-70"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                >
+                  <circle cx="14" cy="14.3774" r="14" fill="white" />
+                  <path
+                    d="M21.9954 12.8742C20.423 12.878 18.8893 12.3876 17.6107 11.4724V17.8553C17.6103 19.0375 17.249 20.1913 16.575 21.1626C15.9011 22.1339 14.9467 22.8763 13.8395 23.2905C12.7323 23.7047 11.525 23.771 10.379 23.4806C9.23309 23.1901 8.20314 22.5567 7.42689 21.6651C6.65063 20.7735 6.16509 19.6662 6.03517 18.4912C5.90525 17.3161 6.13715 16.1295 6.69987 15.0898C7.26258 14.0502 8.12929 13.2071 9.1841 12.6733C10.2389 12.1395 11.4315 11.9405 12.6025 12.1028V15.3132C12.0667 15.1446 11.4913 15.1497 10.9585 15.3277C10.4257 15.5056 9.96278 15.8474 9.63582 16.3042C9.30887 16.7609 9.1346 17.3093 9.13791 17.8711C9.14122 18.4328 9.32193 18.9791 9.65424 19.432C9.98656 19.8848 10.4535 20.2211 10.9883 20.3928C11.5232 20.5645 12.0986 20.5628 12.6324 20.388C13.1662 20.2131 13.6311 19.8741 13.9608 19.4192C14.2904 18.9644 14.4679 18.417 14.4679 17.8553V5.37744H17.6107C17.6085 5.64285 17.6308 5.90789 17.6771 6.16923C17.7864 6.75261 18.0134 7.30759 18.3445 7.8002C18.6755 8.29282 19.1036 8.71272 19.6025 9.03423C20.3123 9.50355 21.1445 9.75369 21.9954 9.75351V12.8742Z"
+                    fill="#091A3F"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Youtube logo"
+                target="_blank"
+                href="https://www.youtube.com/@getvoolt"
+                class="transition-all duration-300 hover:opacity-70"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                >
+                  <circle cx="14" cy="14.3774" r="14" fill="white" />
+                  <path
+                    d="M21.6657 10.1377C21.4817 9.44481 20.9395 8.89913 20.2511 8.71394C19.0033 8.37744 14 8.37744 14 8.37744C14 8.37744 8.99669 8.37744 7.7489 8.71394C7.06052 8.89916 6.51835 9.44481 6.33434 10.1377C6 11.3936 6 14.0138 6 14.0138C6 14.0138 6 16.6341 6.33434 17.8899C6.51835 18.5828 7.06052 19.1057 7.7489 19.2909C8.99669 19.6274 14 19.6274 14 19.6274C14 19.6274 19.0033 19.6274 20.2511 19.2909C20.9395 19.1057 21.4817 18.5828 21.6657 17.8899C22 16.6341 22 14.0138 22 14.0138C22 14.0138 22 11.3936 21.6657 10.1377ZM12.3636 16.3928V11.6348L16.5454 14.0139L12.3636 16.3928Z"
+                    fill="#091A3F"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="js/main-mini.js"></script>
+  </body>
+</html>
